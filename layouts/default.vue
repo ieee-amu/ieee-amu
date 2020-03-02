@@ -1,19 +1,21 @@
 <template>
   <v-app>
-    <v-app-bar fixed app>
-      <v-toolbar-title v-text="title" />
+    <v-app-bar fixed app dark>
+      <v-btn :to="`/`" depressed>
+        <v-toolbar-title v-text="title" />
+      </v-btn>
       <v-spacer />
       <div>
-        <v-btn icon style="margin-right: 0.5em">
+        <v-btn :to="`#about-us`" icon style="margin-right: 0.5em">
           ABOUT
         </v-btn>
-        <v-btn icon style="margin-right: 0.5em">
+        <v-btn :to="`/team`" icon style="margin-right: 0.5em">
           TEAM
         </v-btn>
-        <v-btn icon style="margin-right: 0.5em">
+        <v-btn :to="`/blog`" icon style="margin-right: 0.5em">
           BLOG &nbsp;
         </v-btn>
-        <v-btn icon style="margin-right: 0.5em">
+        <v-btn :to="`/contact`" icon style="margin-right: 0.5em">
           CONTACT
         </v-btn>
       </div>
@@ -24,7 +26,7 @@
       </v-container>
     </v-content>
     <v-footer :fixed="fixed" app>
-      <span>&copy; 2019</span>
+      <span>&copy; 2020</span>
     </v-footer>
   </v-app>
 </template>
