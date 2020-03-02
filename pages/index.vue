@@ -7,13 +7,25 @@
       <v-row row wrap>
         <v-col sm12 lg8>
           <v-row row wrap>
-            <div>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Accusantium aspernatur ex asperiores illum maxime natus, vero
-              <br />
-              aliquid, nam aliquam adipisci architecto expedita blanditiis
-              deserunt sed? Aperiam delectus quibusdam tenetur excepturi?
-            </div>
+            <v-container fluid>
+              <v-row>
+                <v-col cols="12">
+                  <v-row
+                    :align="alignment"
+                    :justify="justify"
+                    class="grey lighten-5"
+                    style="height: 300px;"
+                  >
+                    <v-card class="ma-3 pa-6">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Minus saepe autem id, animi illum praesentium laboriosam
+                      velit odit unde et atque vel fuga inventore dolor, nostrum
+                      facere quaerat a mollitia.
+                    </v-card>
+                  </v-row>
+                </v-col>
+              </v-row>
+            </v-container>
           </v-row>
         </v-col>
       </v-row>
@@ -38,7 +50,18 @@ export default {
         {
           src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
         }
-      ]
+      ],
+      alignmentsAvailable: ['start', 'center', 'end', 'baseline', 'stretch'],
+      alignment: 'center',
+      dense: false,
+      justifyAvailable: [
+        'start',
+        'center',
+        'end',
+        'space-around',
+        'space-between'
+      ],
+      justify: 'center'
     }
   }
 }
