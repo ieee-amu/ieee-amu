@@ -3,13 +3,20 @@
     <v-carousel>
       <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src" />
     </v-carousel>
+    <spacer gap="20" />
     <v-container>
       <v-row row wrap>
         <v-col sm12 lg8>
           <v-row row wrap>
             <v-container fluid>
+              <v-divider></v-divider>
               <v-row>
                 <v-col cols="12">
+                  <v-row justify="center">
+                    <p id="about-us" class="display-3">
+                      About Us
+                    </p>
+                  </v-row>
                   <v-row
                     :align="alignment"
                     :justify="justify"
@@ -61,7 +68,12 @@
 </template>
 
 <script>
+import Spacer from '@/components/Spacer'
+
 export default {
+  components: {
+    Spacer
+  },
   data() {
     return {
       items: [
@@ -77,18 +89,7 @@ export default {
         {
           src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
         }
-      ],
-      alignmentsAvailable: ['start', 'center', 'end', 'baseline', 'stretch'],
-      alignment: 'center',
-      dense: false,
-      justifyAvailable: [
-        'start',
-        'center',
-        'end',
-        'space-around',
-        'space-between'
-      ],
-      justify: 'center'
+      ]
     }
   }
 }
