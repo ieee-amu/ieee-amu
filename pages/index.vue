@@ -14,7 +14,7 @@
                 <v-col cols="12">
                   <v-row justify="center">
                     <p id="about-us" class="display-3">
-                      About
+                      About Us
                     </p>
                   </v-row>
                   <v-row
