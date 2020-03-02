@@ -1,11 +1,15 @@
 <template>
   <v-app>
     <v-app-bar fixed app dark>
+      <v-app-bar-nav-icon
+        @click.stop="drawer = !drawer"
+        class="hidden-md-and-up"
+      ></v-app-bar-nav-icon>
       <v-btn :to="`/`" depressed>
         <v-toolbar-title v-text="title" />
       </v-btn>
       <v-spacer />
-      <div>
+      <div class="hidden-sm-and-down">
         <v-btn :to="`/#about-us`" icon style="margin-right: 0.5em">
           ABOUT
         </v-btn>
@@ -20,15 +24,38 @@
         </v-btn>
       </div>
     </v-app-bar>
+
+    <v-navigation-drawer v-model="drawer" app temporary>
+      <v-list-item>
+        <v-list-item-content>
+          <v-list-item-title>AMU IEEE Chapter</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+
+      <v-divider></v-divider>
+
+      <v-list dense>
+        <v-list-item v-for="item in navItems" :key="item.title" link>
+          <v-list-item-icon>
+            <v-icon>{{ item.icon }}</v-icon>
+          </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title>{{ item.title }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+
     <v-content>
       <v-container>
         <nuxt />
       </v-container>
     </v-content>
+
     <v-footer :fixed="fixed" app dark padless>
       <v-card class="flex" flat tile>
         <v-card-title class="grey darken-4">
-          <strong class="subheading">Get connected with us!</strong>
+          <strong class="subheading">Connect with us!</strong>
 
           <v-spacer></v-spacer>
 
@@ -49,6 +76,7 @@
 export default {
   data() {
     return {
+      drawer: false,
       icons: [
         'mdi-facebook',
         'mdi-twitter',
@@ -56,7 +84,13 @@ export default {
         'mdi-linkedin',
         'mdi-instagram'
       ],
-      title: 'IEEE AMU'
+      title: 'IEEE AMU',
+      navItems: [
+        { title: 'About', icon: 'mdi-home' },
+        { title: 'Team', icon: 'mdi-account' },
+        { title: 'Blog', icon: 'mdi-book' },
+        { title: 'Contact Us', icon: 'mdi-contacts' }
+      ]
     }
   }
 }
