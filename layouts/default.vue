@@ -27,7 +27,7 @@
     </v-content>
     <v-footer :fixed="fixed" app dark padless>
       <v-card class="flex" flat tile>
-        <v-card-title class="black">
+        <v-card-title class="grey darken-4">
           <strong class="subheading">Get connected with us!</strong>
 
           <v-spacer></v-spacer>
