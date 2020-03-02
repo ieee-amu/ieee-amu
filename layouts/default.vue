@@ -1,11 +1,15 @@
 <template>
   <v-app>
     <v-app-bar fixed app dark>
+      <v-app-bar-nav-icon
+        @click.stop="drawer = !drawer"
+        class="hidden-md-and-up"
+      ></v-app-bar-nav-icon>
       <v-btn :to="`/`" depressed>
         <v-toolbar-title v-text="title" />
       </v-btn>
       <v-spacer />
-      <div>
+      <div class="hidden-sm-and-down">
         <v-btn :to="`/#about-us`" icon style="margin-right: 0.5em">
           ABOUT
         </v-btn>
@@ -20,6 +24,28 @@
         </v-btn>
       </div>
     </v-app-bar>
+
+    <v-navigation-drawer v-model="drawer" app temporary>
+      <v-list-item>
+        <v-list-item-content>
+          <v-list-item-title>AMU IEEE Chapter</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+
+      <v-divider></v-divider>
+
+      <v-list dense>
+        <v-list-item v-for="item in navItems" :key="item.title" link>
+          <v-list-item-icon>
+            <v-icon>{{ item.icon }}</v-icon>
+          </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title>{{ item.title }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+
     <v-content>
       <v-container>
         <nuxt />
@@ -41,6 +67,9 @@
           {{ new Date().getFullYear() }} — <strong>IEEE AMU</strong>
         </v-card-text>
       </v-card>
+
+    <v-footer app>
+      <span>&copy; 2020</span>
     </v-footer>
   </v-app>
 </template>
@@ -49,6 +78,7 @@
 export default {
   data() {
     return {
+      drawer: false,
       icons: [
         'mdi-facebook',
         'mdi-twitter',
@@ -56,7 +86,13 @@ export default {
         'mdi-linkedin',
         'mdi-instagram'
       ],
-      title: 'IEEE AMU'
+      title: 'IEEE AMU',
+      navItems: [
+        { title: 'About', icon: 'mdi-home' },
+        { title: 'Team', icon: 'mdi-account' },
+        { title: 'Blog', icon: 'mdi-book' },
+        { title: 'Contact Us', icon: 'mdi-contacts' }
+      ]
     }
   }
 }
