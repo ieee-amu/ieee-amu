@@ -6,7 +6,7 @@
       </v-btn>
       <v-spacer />
       <div>
-        <v-btn :to="`#about-us`" icon style="margin-right: 0.5em">
+        <v-btn :to="`/#about-us`" icon style="margin-right: 0.5em">
           ABOUT
         </v-btn>
         <v-btn :to="`/team`" icon style="margin-right: 0.5em">
