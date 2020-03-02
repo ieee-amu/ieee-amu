@@ -65,7 +65,7 @@
         </v-card-title>
 
         <v-card-text class="py-2 white--text text-center">
-          {{ new Date().getFullYear() }} — <strong>IEEE AMU</strong>
+          &copy; {{ new Date().getFullYear() }} — <strong>IEEE AMU</strong>
         </v-card-text>
       </v-card>
     </v-footer>
@@ -77,13 +77,7 @@ export default {
   data() {
     return {
       drawer: false,
-      icons: [
-        'mdi-facebook',
-        'mdi-twitter',
-        'mdi-google-plus',
-        'mdi-linkedin',
-        'mdi-instagram'
-      ],
+      icons: ['mdi-facebook', 'mdi-instagram'],
       title: 'IEEE AMU',
       navItems: [
         { title: 'About', icon: 'mdi-home' },
