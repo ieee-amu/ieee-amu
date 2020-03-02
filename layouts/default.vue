@@ -51,10 +51,11 @@
         <nuxt />
       </v-container>
     </v-content>
+
     <v-footer :fixed="fixed" app dark padless>
       <v-card class="flex" flat tile>
         <v-card-title class="grey darken-4">
-          <strong class="subheading">Get connected with us!</strong>
+          <strong class="subheading">Connect with us!</strong>
 
           <v-spacer></v-spacer>
 
@@ -67,9 +68,6 @@
           {{ new Date().getFullYear() }} — <strong>IEEE AMU</strong>
         </v-card-text>
       </v-card>
-
-    <v-footer app>
-      <span>&copy; 2020</span>
     </v-footer>
   </v-app>
 </template>
