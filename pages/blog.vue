@@ -1,53 +1,57 @@
 <template>
-  <v-layout>
-    <v-flex xs12 sm6 offset-sm3>
-      <v-card height="100%">
-        <v-img
-          class="white--text"
-          height="200px"
-          src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-        >
-          <v-container fill-height fluid>
-            <v-layout fill-height>
-              <v-flex xs12 align-end flexbox>
-                <span class="headline">How to write a research paper</span>
-              </v-flex>
-            </v-layout>
-          </v-container>
-        </v-img>
-        <v-card-title>
-          <div>
-            <span class="grey--text">November 10</span><br />
-            <span>NL 22</span><br />
-            <span>Electrical Engg. Dept. , ZHCET, AMU</span>
-          </div>
-        </v-card-title>
-        <v-card-text>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos
-            doloribus officia, quae explicabo nulla debitis architecto eius,
-            fugit, accusantium saepe quo! Qui magnam hic ut excepturi. Hic saepe
-            nihil dolorem.
-          </p>
-          <v-img
-            class="white--text"
-            height="100px"
-            src="https://cdn.vuetifyjs.com/images/carousel/sky.jpg"
-          />
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos
-            doloribus officia, quae explicabo nulla debitis architecto eius,
-            fugit, accusantium saepe quo! Qui magnam hic ut excepturi. Hic saepe
-            nihil dolorem.
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos
-            doloribus officia, quae explicabo nulla debitis architecto eius,
-            fugit, accusantium saepe quo! Qui magnam hic ut excepturi. Hic saepe
-            nihil dolorem.
-          </p>
-        </v-card-text>
-      </v-card>
-    </v-flex>
-  </v-layout>
+  <v-card class="mx-auto" max-width="800">
+    <v-container fluid>
+      <v-row dense>
+        <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
+          <v-card>
+            <v-img
+              :src="card.src"
+              class="white--text align-end"
+              gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+              height="400px"
+            >
+              <v-card-title v-text="card.title"></v-card-title>
+            </v-img>
+            <v-card-text v-text="card.text"></v-card-text>
+            <v-card-actions>
+              <v-spacer></v-spacer>
+              <v-btn>Know more</v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+  </v-card>
 </template>
+<script>
+export default {
+  data: () => ({
+    cards: [
+      {
+        title: 'How to write a research paper',
+        text: 'hello world',
+        src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg',
+        flex: 12
+      },
+      {
+        title: 'Solar panel',
+        text: 'hello world',
+        src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg',
+        flex: 6
+      },
+      {
+        title: 'Induction',
+        text: 'hello world',
+        src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg',
+        flex: 6
+      },
+      {
+        title: 'Internship',
+        text: 'hello world',
+        src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg',
+        flex: 12
+      }
+    ]
+  })
+}
+</script>
