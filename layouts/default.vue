@@ -51,36 +51,20 @@
         <nuxt />
       </v-container>
     </v-content>
-
-    <spacer gap="10" />
-
-    <v-footer :fixed="fixed" app dark padless>
-      <v-card class="flex" flat tile>
-        <v-card-title class="grey darken-4">
-          <strong class="subheading">Connect with us!</strong>
-
-          <v-spacer></v-spacer>
-
-          <v-btn v-for="icon in icons" :key="icon" class="mx-4" dark icon>
-            <v-icon size="24px">{{ icon }} </v-icon>
-          </v-btn>
-        </v-card-title>
-
-        <v-card-text class="py-2 white--text text-center">
-          &copy; {{ new Date().getFullYear() }} — <strong>IEEE AMU</strong>
-        </v-card-text>
-      </v-card>
+    <v-footer :fixed="fixed" app dark prominent id="test">
+      <v-row justify="center">
+        <v-col cols="12">
+          <v-row justify="center">
+            <span>&copy; IEEE AMU 2020</span>
+          </v-row>
+        </v-col>
+      </v-row>
     </v-footer>
   </v-app>
 </template>
 
 <script>
-import Spacer from '@/components/Spacer'
-
 export default {
-  components: {
-    Spacer
-  },
   data() {
     return {
       drawer: false,
@@ -96,3 +80,8 @@ export default {
   }
 }
 </script>
+<style scoped>
+#test {
+  padding-top: 20px;
+}
+</style>
