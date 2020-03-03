@@ -52,6 +52,8 @@
       </v-container>
     </v-content>
 
+    <spacer gap="10" />
+
     <v-footer :fixed="fixed" app dark padless>
       <v-card class="flex" flat tile>
         <v-card-title class="grey darken-4">
@@ -73,7 +75,12 @@
 </template>
 
 <script>
+import Spacer from '@/components/Spacer'
+
 export default {
+  components: {
+    Spacer
+  },
   data() {
     return {
       drawer: false,
