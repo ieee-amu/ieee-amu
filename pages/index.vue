@@ -7,14 +7,14 @@
     <v-divider />
     <spacer gap="5" />
     <v-container>
-      <v-card class="mb-3" elevation="10">
+      <v-card id="about-us" class="mb-3" elevation="10">
         <v-row justify="center">
           <p id="about-us-1" class="display-2">
             About Us
           </p>
         </v-row>
         <v-text class="card-text">
-          <p id="about-us-2">
+          <p id="about-us-2" class="blockquote">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
             expedita exercitationem vitae qui fugit totam quam eos alias ullam
             obcaecati, nostrum nemo odio recusandae! Laboriosam ipsa nesciunt
