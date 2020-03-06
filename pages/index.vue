@@ -3,9 +3,9 @@
     <v-carousel cycle>
       <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src" />
     </v-carousel>
-    <spacer gap="10" />
+    <spacer gap="5" />
     <v-divider />
-    <spacer gap="10" />
+    <spacer gap="5" />
     <v-container>
       <v-card class="mb-3" elevation="10">
         <v-row justify="center">
