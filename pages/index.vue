@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-carousel>
+    <v-carousel cycle>
       <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src" />
     </v-carousel>
     <spacer gap="20" />
