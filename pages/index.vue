@@ -5,6 +5,7 @@
     </v-carousel>
     <spacer gap="10" />
     <v-divider />
+    <spacer gap="10" />
     <v-container>
       <v-card class="mb-3" elevation="10">
         <v-row justify="center">
