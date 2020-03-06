@@ -9,12 +9,12 @@
     <v-container>
       <v-card class="mb-3" elevation="10">
         <v-row justify="center">
-          <p class="display-2">
+          <p id="about-us-1" class="display-2">
             About Us
           </p>
         </v-row>
         <v-text class="card-text">
-          <p id="about-us">
+          <p id="about-us-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
             expedita exercitationem vitae qui fugit totam quam eos alias ullam
             obcaecati, nostrum nemo odio recusandae! Laboriosam ipsa nesciunt
@@ -60,7 +60,10 @@ export default {
 }
 </script>
 <style scoped>
-#about-us {
+#about-us-1 {
+  padding-top: 15px;
+}
+#about-us-2 {
   text-align: justify;
   margin-left: 50px;
   margin-right: 50px;
