@@ -3,7 +3,7 @@
     <v-container fluid>
       <v-row dense>
         <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
-          <v-card>
+          <v-card elevation="10">
             <v-img
               :src="card.src"
               class="white--text align-end"
