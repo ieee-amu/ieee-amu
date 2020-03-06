@@ -35,7 +35,12 @@
       <v-divider></v-divider>
 
       <v-list dense>
-        <v-list-item v-for="item in navItems" :key="item.title" link>
+        <v-list-item
+          v-for="item in navItems"
+          :key="item.title"
+          :to="item.link"
+          link
+        >
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-icon>
@@ -87,10 +92,10 @@ export default {
       icons: ['mdi-facebook', 'mdi-instagram'],
       title: 'IEEE AMU',
       navItems: [
-        { title: 'About', icon: 'mdi-home' },
-        { title: 'Team', icon: 'mdi-account' },
-        { title: 'Blog', icon: 'mdi-book' },
-        { title: 'Contact Us', icon: 'mdi-contacts' }
+        { title: 'About', icon: 'mdi-home', link: '/#about-us' },
+        { title: 'Team', icon: 'mdi-account', link: '/team' },
+        { title: 'Blog', icon: 'mdi-book', link: '/blog' },
+        { title: 'Contact Us', icon: 'mdi-contacts', link: '/contact' }
       ]
     }
   }
