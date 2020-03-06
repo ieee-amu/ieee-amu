@@ -1,69 +1,30 @@
 <template>
   <div>
-    <v-carousel>
+    <v-carousel cycle>
       <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src" />
     </v-carousel>
-    <spacer gap="20" />
-    <v-container>
-      <v-row row wrap>
-        <v-col sm12 lg8>
-          <v-row row wrap>
-            <v-container fluid>
-              <v-divider></v-divider>
-              <v-row>
-                <v-col cols="12">
-                  <v-row justify="center">
-                    <p id="about-us" class="display-3">
-                      About Us
-                    </p>
-                  </v-row>
-                  <v-row
-                    :align="alignment"
-                    :justify="justify"
-                    class="grey lighten-5"
-                    style="height: 300px;"
-                  >
-                    <v-card class="ma-3 pa-6">
-                      <p>
-                        Bacon ipsum dolor amet shoulder alcatra chislic ball tip
-                        kielbasa ground round kevin tongue flank pork. Pork
-                        belly flank rump jowl capicola buffalo meatloaf meatball
-                        fatback pastrami alcatra ham hock frankfurter. Alcatra
-                        short ribs bacon spare ribs brisket fatback. Spare ribs
-                        beef shank sirloin, meatloaf strip steak jerky alcatra
-                        ham hock. Venison andouille bresaola, picanha kevin
-                        tenderloin turducken alcatra pork chop salami.
-                      </p>
-
-                      <p>
-                        kielbasa porchetta shoulder ham hock, tail ribeye
-                        prosciutto pork loin buffalo meatloaf drumstick
-                        pancetta. Landjaeger shoulder brisket tenderloin ground
-                        round. Turkey andouille strip steak bacon pork loin
-                        meatball tail short ribs. Fatback pork kevin, alcatra
-                        pork loin chuck sirloin filet mignon. Fatback t-bone
-                        landjaeger, kielbasa strip steak tri-tip capicola
-                        sirloin ribeye turkey burgdoggen tail pork chop biltong.
-                      </p>
-                      <p>
-                        Pork chop strip steak salami pork belly rump leberkas.
-                        Short loin porchetta landjaeger jowl salami ribeye
-                        sausage drumstick shank. Pork loin corned beef spare
-                        ribs beef ribs, brisket capicola pork chop pastrami rump
-                        pig burgdoggen picanha fatback tail. Landjaeger bresaola
-                        pork loin picanha jerky. Short loin ham kevin pork
-                        salami pastrami leberkas drumstick turducken capicola
-                        short ribs andouille.
-                      </p>
-                    </v-card>
-                  </v-row>
-                </v-col>
-              </v-row>
-            </v-container>
-          </v-row>
-        </v-col>
+    <spacer gap="50" />
+    <v-card class="mb-3">
+      <v-row justify="center">
+        <p class="display-2">
+          About Us
+        </p>
       </v-row>
-    </v-container>
+      <v-text class="card-text">
+        <p id="about-us">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+          expedita exercitationem vitae qui fugit totam quam eos alias ullam
+          obcaecati, nostrum nemo odio recusandae! Laboriosam ipsa nesciunt sunt
+          neque recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Quam culpa ad est debitis, dolor a quibusdam non perspiciatis
+          fugiat odio rem, blanditiis facilis repudiandae. Sint ab suscipit
+          reprehenderit a quidem! Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. Quisquam repellendus adipisci voluptatum architecto
+          nemo qui unde repellat sequi suscipit sint iure sed minima quis
+          aspernatur sapiente error corporis, earum quas?
+        </p>
+      </v-text>
+    </v-card>
   </div>
 </template>
 
@@ -94,3 +55,10 @@ export default {
   }
 }
 </script>
+<style scoped>
+#about-us {
+  text-align: justify;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+</style>
