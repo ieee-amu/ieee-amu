@@ -14,7 +14,7 @@
     <spacer gap="3" />
     <v-container>
       <v-row justify="space-between">
-        <v-col v-for="card in cards" :key="card.title">
+        <v-col v-for="card in cards" :key="card.title" cols="auto">
           <v-card>
             <v-img
               :src="card.src"
@@ -43,39 +43,39 @@ export default {
   data: () => ({
     cards: [
       {
-        title: 'Duddu boy',
-        text: 'Owner',
-        src: 'https://avatars3.githubusercontent.com/u/49076836?s=400&v=4'
+        title: 'Pnijhara',
+        text: 'Bug Killer',
+        src: 'https://avatars0.githubusercontent.com/u/40136154?s=460&v=4'
       },
       {
-        title: 'Duddu boy',
-        text: 'Owner',
-        src: 'https://avatars3.githubusercontent.com/u/49076836?s=400&v=4'
+        title: 'Pnijhara',
+        text: 'Bug Killer',
+        src: 'https://avatars0.githubusercontent.com/u/40136154?s=460&v=4'
       },
       {
-        title: 'Duddu boy',
-        text: 'Owner',
-        src: 'https://avatars3.githubusercontent.com/u/49076836?s=400&v=4'
+        title: 'Pnijhara',
+        text: 'Bug Killer',
+        src: 'https://avatars0.githubusercontent.com/u/40136154?s=460&v=4'
       },
       {
-        title: 'Duddu boy',
-        text: 'Owner',
-        src: 'https://avatars3.githubusercontent.com/u/49076836?s=400&v=4'
+        title: 'Pnijhara',
+        text: 'Bug Killer',
+        src: 'https://avatars0.githubusercontent.com/u/40136154?s=460&v=4'
       },
       {
-        title: 'Duddu boy',
-        text: 'Owner',
-        src: 'https://avatars3.githubusercontent.com/u/49076836?s=400&v=4'
+        title: 'Pnijhara',
+        text: 'Bug Killer',
+        src: 'https://avatars0.githubusercontent.com/u/40136154?s=460&v=4'
       },
       {
-        title: 'Duddu boy',
-        text: 'Owner',
-        src: 'https://avatars3.githubusercontent.com/u/49076836?s=400&v=4'
+        title: 'Pnijhara',
+        text: 'Bug Killer',
+        src: 'https://avatars0.githubusercontent.com/u/40136154?s=460&v=4'
       },
       {
-        title: 'Duddu boy',
-        text: 'Owner',
-        src: 'https://avatars3.githubusercontent.com/u/49076836?s=400&v=4'
+        title: 'Pnijhara',
+        text: 'Bug Killer',
+        src: 'https://avatars0.githubusercontent.com/u/40136154?s=460&v=4'
       }
     ]
   })
