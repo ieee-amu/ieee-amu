@@ -1,37 +1,35 @@
 <template>
-  <v-card class="mx-auto" max-width="800">
-    <v-container fluid>
-      <v-row dense>
-        <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
-          <v-card>
-            <v-img
-              :src="card.src"
-              class="white--text align-end"
-              gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-              height="400px"
-            >
-              <v-card-title v-text="card.title"></v-card-title>
-            </v-img>
-            <v-card-text v-text="card.text"></v-card-text>
-            <v-row justify="center">
-              <v-dialog v-model="dialog" width="600px">
-                <v-spacer />
-                <template v-slot:activator="{ on }">
-                  <v-btn id="know-more" v-on="on">Know more</v-btn>
-                </template>
-                <v-card>
-                  <v-card-title>
-                    <span class="headline">{{ card.title }}</span>
-                  </v-card-title>
-                  <v-card-text>{{ card.content }}</v-card-text>
-                </v-card>
-              </v-dialog>
-            </v-row>
-          </v-card>
-        </v-col>
-      </v-row>
-    </v-container>
-  </v-card>
+  <v-container fluid>
+    <v-row justify="center">
+      <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
+        <v-card id="blog" class="mx-auto">
+          <v-img
+            :src="card.src"
+            class="white--text align-end"
+            gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+            height="400px"
+          >
+            <v-card-title v-text="card.title"></v-card-title>
+          </v-img>
+          <v-card-text v-text="card.text"></v-card-text>
+          <v-row justify="center">
+            <v-dialog v-model="dialog" width="600px">
+              <v-spacer />
+              <template v-slot:activator="{ on }">
+                <v-btn id="know-more" v-on="on">Know more</v-btn>
+              </template>
+              <v-card>
+                <v-card-title class="headline grey lighten-2 text-center">
+                  {{ card.title }}
+                </v-card-title>
+                <v-card-text>{{ card.content }}</v-card-text>
+              </v-card>
+            </v-dialog>
+          </v-row>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 <script>
 export default {
@@ -68,6 +66,14 @@ export default {
           'Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae expedita exercitationem vitae qui fugit totam quam eos alias ullam obcaecati, nostrum nemo odio recusandae! Laboriosam ipsa nesciunt sunt neque recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam culpa ad est debitis, dolor a quibusdam non perspiciatis fugiat odio rem, blanditiis facilis repudiandae. Sint ab suscipit reprehenderit a quidem! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam repellendus adipisci voluptatum architecto nemo qui unde repellat sequi suscipit sint iure sed minima quis aspernatur sapiente error corporis, earum quas?',
         src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg',
         flex: 12
+      },
+      {
+        title: 'Induction',
+        text: '12/11/2019',
+        content:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae expedita exercitationem vitae qui fugit totam quam eos alias ullam obcaecati, nostrum nemo odio recusandae! Laboriosam ipsa nesciunt sunt neque recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam culpa ad est debitis, dolor a quibusdam non perspiciatis fugiat odio rem, blanditiis facilis repudiandae. Sint ab suscipit reprehenderit a quidem! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam repellendus adipisci voluptatum architecto nemo qui unde repellat sequi suscipit sint iure sed minima quis aspernatur sapiente error corporis, earum quas?',
+        src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg',
+        flex: 6
       }
     ]
   })
@@ -77,5 +83,9 @@ export default {
 #know-more {
   padding: auto;
   margin-bottom: 10px;
+}
+#blog {
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 </style>
