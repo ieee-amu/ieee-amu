@@ -10,18 +10,18 @@
       </v-btn>
       <v-spacer />
       <div class="hidden-sm-and-down">
-        <v-btn :to="`/#about-us`" icon style="margin-right: 0.5em">
-          ABOUT
-        </v-btn>
-        <v-btn :to="`/team`" icon style="margin-right: 0.5em">
-          TEAM
-        </v-btn>
-        <v-btn :to="`/blog`" icon style="margin-right: 0.5em">
-          BLOG &nbsp;
-        </v-btn>
-        <v-btn :to="`/contact`" icon style="margin-right: 0.5em">
-          CONTACT
-        </v-btn>
+        <v-btn :to="`/#about-us`">
+          <v-icon> mdi-home </v-icon>&nbsp; ABOUT &nbsp;</v-btn
+        >
+        <v-btn :to="`/team`">
+          <v-icon> mdi-account </v-icon>&nbsp; TEAM &nbsp;</v-btn
+        >
+        <v-btn :to="`/blog`">
+          <v-icon> mdi-book </v-icon>&nbsp; BLOG &nbsp;</v-btn
+        >
+        <v-btn :to="`/contact`">
+          <v-icon> mdi-contacts </v-icon>&nbsp; CONTACT &nbsp;</v-btn
+        >
       </div>
     </v-app-bar>
 
