@@ -66,8 +66,15 @@
 
           <v-spacer></v-spacer>
 
-          <v-btn v-for="icon in icons" :key="icon" class="mx-4" dark icon>
-            <v-icon size="24px">{{ icon }} </v-icon>
+          <v-btn
+            v-for="socials in social"
+            :key="socials.icon"
+            :to="socials.link"
+            class="mx-4"
+            dark
+            icon
+          >
+            <v-icon size="24px">{{ socials.icon }} </v-icon>
           </v-btn>
         </v-card-title>
 
@@ -89,7 +96,10 @@ export default {
   data() {
     return {
       drawer: false,
-      icons: ['mdi-facebook', 'mdi-instagram'],
+      social: [
+        { icon: 'mdi-facebook', link: 'https://facebook.com' },
+        { icon: 'mdi-instagram', link: 'https://instagaram.com' }
+      ],
       title: 'IEEE AMU',
       navItems: [
         { title: 'About', icon: 'mdi-home', link: '/#about-us' },
