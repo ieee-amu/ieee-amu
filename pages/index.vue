@@ -31,7 +31,7 @@
     </v-container>
     <v-container>
       <v-row justify="center">
-        <v-col cols="10" sm="6">
+        <v-col cols="12" sm="12">
           <v-card color="rgba(53, 177, 208, 1)">
             <v-card-text class="text-center headline black--text">
               Know more about us
@@ -43,33 +43,29 @@
       <v-divider />
     </v-container>
     <v-container>
-      <v-row align="center">
-        <v-col class="text-center" cols="12" sm="4">
-          <div class="my-2">
-            <v-btn :to="`/team`" x-large rounded color="rgba(144, 131, 226, 1)"
-              >Team</v-btn
-            >
-          </div>
+      <v-row justify="center">
+        <v-col cols="10" sm="4">
+          <v-card :to="`/team`" shaped color="rgba(230, 223, 148, 1)">
+            <v-card-text class="text-center headline">
+              Team
+            </v-card-text>
+          </v-card>
         </v-col>
 
-        <v-col class="text-center" cols="12" sm="4">
-          <div class="my-2">
-            <v-btn :to="`/blog`" x-large rounded color="rgba(230, 223, 148, 1)"
-              >Blogs</v-btn
-            >
-          </div>
+        <v-col cols="10" sm="4">
+          <v-card :to="`/blog`" shaped color="rgba(144, 131, 226, 1)">
+            <v-card-text class="text-center headline">
+              Blogs
+            </v-card-text>
+          </v-card>
         </v-col>
 
-        <v-col class="text-center" cols="12" sm="4">
-          <div class="my-2">
-            <v-btn
-              :to="`/contact`"
-              x-large
-              rounded
-              color="rgba(235, 168, 235, 1)"
-              >Contacts</v-btn
-            >
-          </div>
+        <v-col cols="10" sm="4">
+          <v-card :to="`/contact`" shaped color="rgba(235, 168, 235, 1)">
+            <v-card-text class="text-center headline">
+              Contacts
+            </v-card-text>
+          </v-card>
         </v-col>
       </v-row>
     </v-container>
