@@ -69,7 +69,7 @@
           <v-btn
             v-for="socials in social"
             :key="socials.icon"
-            :to="socials.link"
+            :href="socials.link"
             class="mx-4"
             dark
             icon
@@ -97,8 +97,8 @@ export default {
     return {
       drawer: false,
       social: [
-        { icon: 'mdi-facebook', link: 'https://facebook.com' },
-        { icon: 'mdi-instagram', link: 'https://instagaram.com' }
+        { icon: 'mdi-facebook', link: 'https://www.facebook.com/AMUIEEE' },
+        { icon: 'mdi-instagram', link: 'https://instagram.com/ieeeamu' }
       ],
       title: 'IEEE AMU',
       navItems: [
