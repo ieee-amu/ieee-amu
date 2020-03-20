@@ -20,7 +20,7 @@
             works, seminars, conferences and accreditations while advocating
             benefits to its members. Being the world's largest technical
             profeesional society, IEEE's benefits include venues and tools for
-            members to network, build valuable profeesional connections, and
+            members to network, build valuable professional connections, and
             leadership skills.
             <br />
             <br />
