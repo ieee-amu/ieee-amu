@@ -69,22 +69,22 @@ export default {
       },
       {
         title: 'Arushi Varshney',
-        text: 'Coordinitor (Membership Drive)',
+        text: 'Coordinator (Membership Drive)',
         src: 'arushi.jpg'
       },
       {
         title: 'Pakhil Singh',
-        text: 'Coordinitor (SIGHT)',
+        text: 'Coordinator (SIGHT)',
         src: 'pakhil.jpg'
       },
       {
         title: 'Hina Tomar',
-        text: 'Coordinitor (Media Interaction)',
+        text: 'Coordinator (Media Interaction)',
         src: 'https://avatars0.githubusercontent.com/u/40136154?s=460&v=4'
       },
       {
         title: 'Rashid Ahmed Khan',
-        text: 'Coordinitor (Media Interaction)',
+        text: 'Coordinator (Media Interaction)',
         src: 'rashid.jpg'
       }
     ]
