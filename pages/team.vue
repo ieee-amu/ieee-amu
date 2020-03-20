@@ -20,8 +20,8 @@
               :src="card.src"
               class="white--text align-end"
               gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-              height="300px"
-              max-width="350px"
+              height="310px"
+              max-width="310px"
               position="center"
             >
               <v-card-title v-text="card.title"></v-card-title>
@@ -43,39 +43,49 @@ export default {
   data: () => ({
     cards: [
       {
-        title: 'Pnijhara',
-        text: 'Bug Killer',
+        title: 'Jaffar Ali Lone',
+        text: 'Chairperson',
+        src: 'jaffer.jpg'
+      },
+      {
+        title: 'Asadullah Khan',
+        text: 'Vice-Chairperson',
+        src: 'asad.jpg'
+      },
+      {
+        title: 'Syed Zubair Ali',
+        text: 'Secretary',
+        src: 'zubair.jpg'
+      },
+      {
+        title: 'Abbas Syed Nooruddin',
+        text: 'Joint-Secretary',
+        src: 'abbas.jpg'
+      },
+      {
+        title: 'Shahrukh Khan',
+        text: 'Treasurer',
         src: 'https://avatars0.githubusercontent.com/u/40136154?s=460&v=4'
       },
       {
-        title: 'Pnijhara',
-        text: 'Bug Killer',
+        title: 'Arushi Varshney',
+        text: 'Coordinitor (Membership Drive)',
+        src: 'arushi.jpg'
+      },
+      {
+        title: 'Pakhil Singh',
+        text: 'Coordinitor (SIGHT)',
+        src: 'pakhil.jpg'
+      },
+      {
+        title: 'Hina Tomar',
+        text: 'Coordinitor (Media Interaction)',
         src: 'https://avatars0.githubusercontent.com/u/40136154?s=460&v=4'
       },
       {
-        title: 'Pnijhara',
-        text: 'Bug Killer',
-        src: 'https://avatars0.githubusercontent.com/u/40136154?s=460&v=4'
-      },
-      {
-        title: 'Pnijhara',
-        text: 'Bug Killer',
-        src: 'https://avatars0.githubusercontent.com/u/40136154?s=460&v=4'
-      },
-      {
-        title: 'Pnijhara',
-        text: 'Bug Killer',
-        src: 'https://avatars0.githubusercontent.com/u/40136154?s=460&v=4'
-      },
-      {
-        title: 'Pnijhara',
-        text: 'Bug Killer',
-        src: 'https://avatars0.githubusercontent.com/u/40136154?s=460&v=4'
-      },
-      {
-        title: 'Pnijhara',
-        text: 'Bug Killer',
-        src: 'https://avatars0.githubusercontent.com/u/40136154?s=460&v=4'
+        title: 'Rashid Ahmed Khan',
+        text: 'Coordinitor (Media Interaction)',
+        src: 'rashid.jpg'
       }
     ]
   })
