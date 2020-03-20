@@ -15,16 +15,16 @@
         </v-row>
         <v-text class="card-text">
           <p id="about-us-2" class="blockquote">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-            expedita exercitationem vitae qui fugit totam quam eos alias ullam
-            obcaecati, nostrum nemo odio recusandae! Laboriosam ipsa nesciunt
-            sunt neque recusandae. Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit. Quam culpa ad est debitis, dolor a quibusdam non
-            perspiciatis fugiat odio rem, blanditiis facilis repudiandae. Sint
-            ab suscipit reprehenderit a quidem! Lorem ipsum dolor, sit amet
-            consectetur adipisicing elit. Quisquam repellendus adipisci
-            voluptatum architecto nemo qui unde repellat sequi suscipit sint
-            iure sed minima quis aspernatur sapiente error corporis, earum quas?
+            Welcome to IEEE-AMU, A community of erudite and professorial
+            individuals whose purpose is to disseminate knowledge on technical
+            works, seminars, conferences and accreditations while advocating
+            benefits to its members. Being the world's largest technical
+            profeesional society, IEEE's benfits include venues and tools for
+            members to network, build valuable profeesional connections, and
+            leadership skills.
+            <br />
+            <br />
+            Thank you for stopping by IEEE-AMU
           </p>
         </v-text>
       </v-card>
