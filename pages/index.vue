@@ -113,8 +113,8 @@ export default {
 }
 #about-us-2 {
   text-align: justify;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 20x;
+  margin-right: 20px;
   padding: 10px;
 }
 </style>
