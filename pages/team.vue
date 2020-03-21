@@ -23,7 +23,16 @@
               height="310px"
               max-width="310px"
               position="center"
+              lazy-src="https://www.aminz.org.nz/themes/portal/uploads/profile-default-large.jpg"
             >
+              <template v-slot:placeholder>
+                <v-row class="fill-height ma-0" align="center" justify="center">
+                  <v-progress-circular
+                    indeterminate
+                    color="grey lighten-5"
+                  ></v-progress-circular>
+                </v-row>
+              </template>
               <v-card-title v-text="card.title"></v-card-title>
             </v-img>
             <v-card-text v-text="card.text" class="blockquote"></v-card-text>
