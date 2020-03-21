@@ -45,47 +45,56 @@ export default {
       {
         title: 'Jaffar Ali Lone',
         text: 'Chairperson',
-        src: 'jaffer.jpg'
+        src:
+          'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/jaffer-min.jpg?alt=media&token=7ce520dc-5489-497f-992b-9293a1c93d8c'
       },
       {
         title: 'Asadullah Khan',
         text: 'Vice-Chairperson',
-        src: 'asad.jpg'
+        src:
+          'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/asad-min.jpg?alt=media&token=356963d5-33f8-43a8-be2e-dd25ab94ee35'
       },
       {
         title: 'Syed Zubair Ali',
         text: 'Secretary',
-        src: 'zubair.jpg'
+        src:
+          'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/zubair.jpg?alt=media&token=b7e9d986-84e6-465c-b921-ad60da59c398'
       },
       {
         title: 'Abbas Syed Nooruddin',
         text: 'Joint-Secretary',
-        src: 'abbas.jpg'
+        src:
+          'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/abbas-min.jpg?alt=media&token=ce8b429c-da87-481b-96f6-95883889a120'
       },
       {
         title: 'Shahrukh Khan',
         text: 'Treasurer',
-        src: 'https://avatars0.githubusercontent.com/u/40136154?s=460&v=4'
+        src:
+          'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/shahrukh.jpg?alt=media&token=880fb247-f644-4fbb-a417-d4741f5cf0f6'
       },
       {
         title: 'Arushi Varshney',
         text: 'Coordinator (Membership Drive)',
-        src: 'arushi.jpg'
+        src:
+          'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/arushi-min.jpg?alt=media&token=eb3b66d1-3d13-44c9-96db-34a66c3c456f'
       },
       {
         title: 'Pakhil Singh',
         text: 'Coordinator (SIGHT)',
-        src: 'pakhil.jpg'
+        src:
+          'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/pakhil.JPG?alt=media&token=7e2d506a-f84c-44ff-a3ee-f4a12f2ac84a'
       },
       {
         title: 'Hina Tomar',
         text: 'Coordinator (Media Interaction)',
-        src: 'https://avatars0.githubusercontent.com/u/40136154?s=460&v=4'
+        src:
+          'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/hina-min.jpg?alt=media&token=945d17c2-46ba-43b8-bc53-15b6bf056ca6'
       },
       {
         title: 'Rashid Ahmed Khan',
         text: 'Coordinator (Media Interaction)',
-        src: 'rashid.jpg'
+        src:
+          'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/rashid.jpg?alt=media&token=d7d05f44-d901-4cc4-ba54-6766499e58e9'
       }
     ]
   })
