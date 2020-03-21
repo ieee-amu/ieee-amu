@@ -32,7 +32,7 @@
     <v-container>
       <v-row justify="center">
         <v-col cols="12" sm="12">
-          <v-card color="rgba(53, 177, 208, 1)">
+          <v-card color="rgba(157, 201, 231, 1)">
             <v-card-text class="text-center headline black--text">
               Know more about us
             </v-card-text>
@@ -45,7 +45,7 @@
     <v-container>
       <v-row justify="center">
         <v-col cols="10" sm="4">
-          <v-card :to="`/team`" shaped color="rgba(230, 223, 148, 1)">
+          <v-card :to="`/team`" shaped color="rgba(245, 195, 173, 1)">
             <v-card-text class="text-center headline">
               Team
             </v-card-text>
@@ -53,7 +53,7 @@
         </v-col>
 
         <v-col cols="10" sm="4">
-          <v-card :to="`/blog`" shaped color="rgba(144, 131, 226, 1)">
+          <v-card :to="`/blog`" shaped color="rgba(173, 235, 183, 1)">
             <v-card-text class="text-center headline">
               Blogs
             </v-card-text>
@@ -61,7 +61,7 @@
         </v-col>
 
         <v-col cols="10" sm="4">
-          <v-card :to="`/contact`" shaped color="rgba(235, 168, 235, 1)">
+          <v-card :to="`/contact`" shaped color="rgba(251, 219, 247, 1)">
             <v-card-text class="text-center headline">
               Contacts
             </v-card-text>
@@ -113,7 +113,7 @@ export default {
 }
 #about-us-2 {
   text-align: justify;
-  margin-left: 20px;
+  margin-left: 20x;
   margin-right: 20px;
   padding: 10px;
 }
