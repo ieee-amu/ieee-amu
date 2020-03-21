@@ -52,6 +52,24 @@ export default {
   data: () => ({
     cards: [
       {
+        title: 'Prof. M. M. Sufyan Beg',
+        text: 'Principal',
+        src:
+          'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/sufiyan.jpeg?alt=media&token=f6c93551-2707-4379-a5e5-762fdcbd5042'
+      },
+      {
+        title: 'Dr. Mohd Rihan',
+        text: 'Branch Coordinator',
+        src:
+          'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/rehan.jpeg?alt=media&token=e843047c-228f-4234-acc2-e7f92a25f30a'
+      },
+      {
+        title: 'Mr. Mohammad Zaid',
+        text: 'Branch Counsellor',
+        src:
+          'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/zaid.jpg?alt=media&token=5546cd39-6a18-4c0a-985f-d7205d69a97a'
+      },
+      {
         title: 'Jaffar Ali Lone',
         text: 'Chairperson',
         src:
