@@ -92,15 +92,15 @@ export default {
         },
         {
           src:
-            'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/carousel3.jpeg?alt=media&token=49967e25-b6e9-4cac-a7f1-1dfd691023e9'
-        },
-        {
-          src:
             'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/carousel4.jpeg?alt=media&token=f0d73c2d-4705-4f0f-9645-d1feec377869'
         },
         {
           src:
             'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/carousel2.jpeg?alt=media&token=5b481cdd-3e5c-44fc-9937-ee177c63a886'
+        },
+        {
+          src:
+            'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/carousel3.jpeg?alt=media&token=49967e25-b6e9-4cac-a7f1-1dfd691023e9'
         }
       ]
     }
