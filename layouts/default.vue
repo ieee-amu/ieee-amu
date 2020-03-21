@@ -59,12 +59,20 @@
 
     <spacer gap="10" />
 
-    <v-footer :fixed="fixed" app dark padless>
+    <v-footer dark height="auto" class="footer pa-0">
       <v-card class="flex" flat tile>
         <v-card-title class="grey darken-4">
-          <strong class="subheading">Connect with us!</strong>
-
-          <v-spacer></v-spacer>
+          <div class="px-3 py-2">
+            <v-btn
+              text
+              href="https://github.com/ieee-amu/ieee-amu/graphs/contributors"
+              target="_blank"
+              rel="noopener"
+            >
+              <v-icon>mdi-dev-to</v-icon>Developers
+            </v-btn>
+          </div>
+          <v-spacer />
 
           <v-btn
             v-for="socials in social"
