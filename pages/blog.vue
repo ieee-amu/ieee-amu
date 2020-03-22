@@ -22,7 +22,9 @@
                 <v-card-title class="headline grey lighten-2 text-center">
                   {{ card.title }}
                 </v-card-title>
-                <v-card-text>{{ card.content }}</v-card-text>
+                <v-card-text class="body-1 black--text font-weight-regular">{{
+                  card.content
+                }}</v-card-text>
               </v-card>
             </v-dialog>
           </v-row>
