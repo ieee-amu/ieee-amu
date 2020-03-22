@@ -4,20 +4,18 @@
       <v-col cols="10" sm="6">
         <v-card color="rgba(182, 187, 165, 1)">
           <v-card-text class="text-center headline black--text">
-            Our Team
+            FACULTY ADVISORS
           </v-card-text>
         </v-card>
       </v-col>
     </v-row>
     <spacer gap="3" />
-    <v-divider />
-    <spacer gap="3" />
     <v-container>
       <v-row justify="space-between">
-        <v-col v-for="card in cards" :key="card.title" cols="auto">
+        <v-col v-for="faculty in faculties" :key="faculty.title" cols="auto">
           <v-card>
             <v-img
-              :src="card.src"
+              :src="faculty.src"
               class="white--text align-end"
               gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
               height="310px"
@@ -33,9 +31,50 @@
                   ></v-progress-circular>
                 </v-row>
               </template>
-              <v-card-title v-text="card.title"></v-card-title>
+              <v-card-title v-text="faculty.title"></v-card-title>
             </v-img>
-            <v-card-text v-text="card.text" class="blockquote"></v-card-text>
+            <v-card-text v-text="faculty.text" class="blockquote"></v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+    <spacer gap="3" />
+    <v-divider></v-divider>
+    <spacer gap="3" />
+    <v-row justify="center">
+      <v-col cols="10" sm="6">
+        <v-card color="rgba(182, 187, 165, 1)">
+          <v-card-text class="text-center headline black--text">
+            OFFICE BEARERS
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+    <spacer gap="3" />
+    <v-container>
+      <v-row justify="space-between">
+        <v-col v-for="student in students" :key="student.title" cols="auto">
+          <v-card>
+            <v-img
+              :src="student.src"
+              class="white--text align-end"
+              gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+              height="310px"
+              max-width="310px"
+              position="center"
+              lazy-src="https://www.aminz.org.nz/themes/portal/uploads/profile-default-large.jpg"
+            >
+              <template v-slot:placeholder>
+                <v-row class="fill-height ma-0" align="center" justify="center">
+                  <v-progress-circular
+                    indeterminate
+                    color="grey lighten-5"
+                  ></v-progress-circular>
+                </v-row>
+              </template>
+              <v-card-title v-text="student.title"></v-card-title>
+            </v-img>
+            <v-card-text v-text="student.text" class="blockquote"></v-card-text>
           </v-card>
         </v-col>
       </v-row>
@@ -50,25 +89,7 @@ export default {
     Spacer
   },
   data: () => ({
-    cards: [
-      {
-        title: 'Prof. M. M. Sufyan Beg',
-        text: 'Principal',
-        src:
-          'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/sufiyan.jpeg?alt=media&token=f6c93551-2707-4379-a5e5-762fdcbd5042'
-      },
-      {
-        title: 'Dr. Mohd Rihan',
-        text: 'Branch Coordinator',
-        src:
-          'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/rehan.jpeg?alt=media&token=e843047c-228f-4234-acc2-e7f92a25f30a'
-      },
-      {
-        title: 'Mr. Mohammad Zaid',
-        text: 'Branch Counsellor',
-        src:
-          'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/zaid.jpg?alt=media&token=5546cd39-6a18-4c0a-985f-d7205d69a97a'
-      },
+    students: [
       {
         title: 'Jaffar Ali Lone',
         text: 'Chairperson',
@@ -122,6 +143,26 @@ export default {
         text: 'Coordinator (Media Interaction)',
         src:
           'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/rashid.jpg?alt=media&token=d7d05f44-d901-4cc4-ba54-6766499e58e9'
+      }
+    ],
+    faculties: [
+      {
+        title: 'Prof. M. M. Sufyan Beg',
+        text: 'Principal',
+        src:
+          'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/sufiyan.jpeg?alt=media&token=f6c93551-2707-4379-a5e5-762fdcbd5042'
+      },
+      {
+        title: 'Dr. Mohd Rihan',
+        text: 'Branch Coordinator',
+        src:
+          'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/rehan.jpeg?alt=media&token=e843047c-228f-4234-acc2-e7f92a25f30a'
+      },
+      {
+        title: 'Mr. Mohammad Zaid',
+        text: 'Branch Counsellor',
+        src:
+          'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/zaid.jpg?alt=media&token=5546cd39-6a18-4c0a-985f-d7205d69a97a'
       }
     ]
   })
