@@ -28,6 +28,24 @@
           </p>
         </v-text>
       </v-card>
+      <v-row dense>
+        <!-- prettier-ignore -->
+        <v-img
+          contain
+          src="https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/ieee.jpeg?alt=media&token=230d055f-f6c7-48ea-879e-4cfe63ac994b"
+          width="250px"
+          height="250px"
+        >
+        </v-img>
+        <!-- prettier-ignore -->
+        <v-img
+          contain
+          src="https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/amu.jpeg?alt=media&token=2ef08fee-fb64-4559-b20d-0cf9e9a58b09"
+          width="250px"
+          height="250px"
+        >
+        </v-img>
+      </v-row>
     </v-container>
     <v-container>
       <v-row justify="center">
