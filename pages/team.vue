@@ -75,6 +75,26 @@
               <v-card-title v-text="student.title"></v-card-title>
             </v-img>
             <v-card-text v-text="student.text" class="blockquote"></v-card-text>
+            <v-col class="lighten-3 text-center pa-0">
+              <v-btn
+                v-for="(link, type) in student.links"
+                :key="type"
+                :color="iconColor(type)"
+                class="mx-3 my-2"
+                fab
+                dark
+                small
+              >
+                <a
+                  :href="getLink(link, type)"
+                  target="_blank"
+                  rel="noopener"
+                  style="text-decoration: none; color: inherit"
+                >
+                  <v-icon dark size="18">{{ icon(type) }}</v-icon>
+                </a>
+              </v-btn>
+            </v-col>
           </v-card>
         </v-col>
       </v-row>
@@ -93,6 +113,10 @@ export default {
       {
         title: 'Jaffar Ali Lone',
         text: 'Chairperson',
+        links: {
+          email: 'prajjwalnijhara@gmail.com',
+          twitter: 'https://twitter.com/NijharaPrajjwal'
+        },
         src:
           'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/jaffer-min.jpg?alt=media&token=7ce520dc-5489-497f-992b-9293a1c93d8c'
       },
@@ -165,6 +189,44 @@ export default {
           'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/zaid.jpg?alt=media&token=5546cd39-6a18-4c0a-985f-d7205d69a97a'
       }
     ]
-  })
+  }),
+  methods: {
+    iconColor(type) {
+      switch (type) {
+        case 'facebook':
+          return 'blue darken-4'
+        case 'email':
+          return 'red darken-1'
+        case 'g-plus':
+          return 'red darken-4'
+        case 'linkedin':
+          return 'indigo darken-1'
+        case 'mobile':
+          return 'green darken-3'
+        case 'twitter':
+          return 'light-blue darken-1'
+      }
+    },
+    icon(type) {
+      switch (type) {
+        case 'g-plus':
+          return 'mdi-google-plus'
+        case 'mobile':
+          return 'mdi-phone'
+        default:
+          return `mdi-${type}`
+      }
+    },
+    getLink(link, type) {
+      if (type === 'email') {
+        return 'mailto:' + link
+      } else if (type === 'mobile') {
+        return 'tel:' + link
+      } else if (!link.startsWith('http://') && !link.startsWith('https://')) {
+        return '//' + link
+      }
+      return link
+    }
+  }
 }
 </script>
