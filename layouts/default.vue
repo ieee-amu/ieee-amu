@@ -78,6 +78,8 @@
             v-for="socials in social"
             :key="socials.icon"
             :href="socials.link"
+            target="_blank"
+            rel="noopener"
             class="mx-4"
             dark
             icon
