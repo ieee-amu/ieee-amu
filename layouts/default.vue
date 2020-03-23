@@ -73,7 +73,7 @@
               target="_blank"
               rel="noopener"
             >
-              <v-icon>mdi-dev-to</v-icon>Developers
+              made with<v-icon>mdi-heart</v-icon>by db
             </v-btn>
           </div>
           <v-spacer />
