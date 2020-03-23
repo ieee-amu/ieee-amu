@@ -34,6 +34,26 @@
               <v-card-title v-text="faculty.title"></v-card-title>
             </v-img>
             <v-card-text v-text="faculty.text" class="blockquote"></v-card-text>
+            <v-col class="lighten-3 text-center pa-0">
+              <v-btn
+                v-for="(link, type) in faculty.links"
+                :key="type"
+                :color="iconColor(type)"
+                class="mx-3 my-2"
+                fab
+                dark
+                small
+              >
+                <a
+                  :href="getLink(link, type)"
+                  target="_blank"
+                  rel="noopener"
+                  style="text-decoration: none; color: inherit"
+                >
+                  <v-icon dark size="18">{{ icon(type) }}</v-icon>
+                </a>
+              </v-btn>
+            </v-col>
           </v-card>
         </v-col>
       </v-row>
@@ -114,8 +134,11 @@ export default {
         title: 'Jaffar Ali Lone',
         text: 'Chairperson',
         links: {
-          email: 'prajjwalnijhara@gmail.com',
-          twitter: 'https://twitter.com/NijharaPrajjwal'
+          email: 'jalone@myamu.ac.in',
+          mobile: '+919682606700',
+          twitter: 'https://twitter.com/jaffarlone11',
+          facebook: 'https://facebook.com/jaffar.lone.5',
+          linkedin: 'https://linkedin.com/in/jaffar-ali-lone-958128129'
         },
         src:
           'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/jaffer-min.jpg?alt=media&token=7ce520dc-5489-497f-992b-9293a1c93d8c'
@@ -123,48 +146,84 @@ export default {
       {
         title: 'Asadullah Khan',
         text: 'Vice-Chairperson',
+        links: {
+          email: 'Asadkhan1550899@gmail.com',
+          mobile: '+919045690938',
+          linkedin:
+            'https://www.linkedin.com/mwlite/in/asadullah-khan-83944115a'
+        },
         src:
           'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/asad-min.jpg?alt=media&token=356963d5-33f8-43a8-be2e-dd25ab94ee35'
       },
       {
         title: 'Syed Zubair Ali',
         text: 'Secretary',
+        links: {
+          email: 'zubairali28.zhcet@gmail.com',
+          mobile: '+919412690509',
+          linkedin: 'https://www.linkedin.com/in/zubair-ali-b551a2179'
+        },
         src:
           'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/zubair.jpg?alt=media&token=b7e9d986-84e6-465c-b921-ad60da59c398'
       },
       {
         title: 'Abbas Syed Nooruddin',
         text: 'Joint-Secretary',
+        links: {
+          email: 'abbasnooruddin02@gmail.com',
+          linkedin: 'https://www.linkedin.com/in/abbas-nooruddin-a0a68a19a'
+        },
         src:
           'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/abbas-min.jpg?alt=media&token=ce8b429c-da87-481b-96f6-95883889a120'
       },
       {
         title: 'Shahrukh Khan',
         text: 'Treasurer',
+        links: {
+          email: 'khansrk9452971632@gmail.com',
+          linkedin: 'https://www.linkedin.com/in/shahrukh-khan-24711217b'
+        },
         src:
           'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/shahrukh.jpg?alt=media&token=880fb247-f644-4fbb-a417-d4741f5cf0f6'
       },
       {
         title: 'Arushi Varshney',
         text: 'Coordinator (Membership Drive)',
+        links: {
+          email: 'arushi21varshney@gmail.com',
+          linkedin: 'https://www.linkedin.com/in/arushi-varshney-379428166'
+        },
         src:
           'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/arushi-min.jpg?alt=media&token=eb3b66d1-3d13-44c9-96db-34a66c3c456f'
       },
       {
         title: 'Pakhil Singh',
         text: 'Coordinator (SIGHT)',
+        links: {
+          email: 'pakhilsingh171998@gmail.com',
+          linkedin: 'https://www.linkedin.com/in/pakhil-singh-59995715a'
+        },
         src:
           'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/pakhil.JPG?alt=media&token=7e2d506a-f84c-44ff-a3ee-f4a12f2ac84a'
       },
       {
         title: 'Hina Tomar',
         text: 'Coordinator (Media Interaction)',
+        links: {
+          email: 'hinatomar868@gmail.com',
+          linkedin: 'https://www.linkedin.com/in/hinatomar22'
+        },
         src:
           'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/hina-min.jpg?alt=media&token=945d17c2-46ba-43b8-bc53-15b6bf056ca6'
       },
       {
         title: 'Rashid Ahmed Khan',
         text: 'Coordinator (Media Interaction)',
+        links: {
+          email: 'rakhan@myamu.ac.in',
+          mobile: '+918265820477',
+          linkedin: 'https://www.linkedin.com/in/rashidkhanamu'
+        },
         src:
           'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/rashid.jpg?alt=media&token=d7d05f44-d901-4cc4-ba54-6766499e58e9'
       }
@@ -173,18 +232,21 @@ export default {
       {
         title: 'Prof. M. M. Sufyan Beg',
         text: 'Principal',
+        links: { email: 'mmsbeg@cs.berkeley.edu' },
         src:
           'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/sufiyan.jpeg?alt=media&token=f6c93551-2707-4379-a5e5-762fdcbd5042'
       },
       {
         title: 'Dr. Mohd Rihan',
         text: 'Branch Coordinator',
+        links: { email: 'm.rihan.ee@amu.ac.in' },
         src:
           'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/rehan.jpeg?alt=media&token=e843047c-228f-4234-acc2-e7f92a25f30a'
       },
       {
         title: 'Mr. Mohammad Zaid',
         text: 'Branch Counsellor',
+        links: { email: 'MOHAMMAD.ZAID@zhcet.ac.in' },
         src:
           'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/zaid.jpg?alt=media&token=5546cd39-6a18-4c0a-985f-d7205d69a97a'
       }
