@@ -51,8 +51,8 @@
     <v-container>
       <v-row justify="center">
         <v-col cols="12" sm="12">
-          <v-card color="rgba(0, 0, 0, 1)">
-            <v-card-text class="text-center headline">
+          <v-card color="rgba(74, 74, 74, 1)">
+            <v-card-text class="text-center white--text headline">
               Know more about us
             </v-card-text>
           </v-card>
@@ -64,24 +64,24 @@
     <v-container>
       <v-row justify="center">
         <v-col cols="10" sm="4">
-          <v-card :to="`/team`" shaped color="rgba(0, 0, 0, 1)">
-            <v-card-text class="text-center headline">
+          <v-card :to="`/team`" shaped color="rgba(74, 74, 74, 1)">
+            <v-card-text class="text-center white--text headline">
               Team
             </v-card-text>
           </v-card>
         </v-col>
 
         <v-col cols="10" sm="4">
-          <v-card :to="`/blog`" shaped color="rgba(0, 0, 0, 1)">
-            <v-card-text class="text-center headline">
+          <v-card :to="`/blog`" shaped color="rgba(74, 74, 74, 1)">
+            <v-card-text class="text-center white--text headline">
               Blogs
             </v-card-text>
           </v-card>
         </v-col>
 
         <v-col cols="10" sm="4">
-          <v-card :to="`/contact`" shaped color="rgba(0, 0, 0, 1)">
-            <v-card-text class="text-center headline">
+          <v-card :to="`/contact`" shaped color="rgba(74, 74, 74, 1)">
+            <v-card-text class="text-center white--text headline">
               Contacts
             </v-card-text>
           </v-card>
