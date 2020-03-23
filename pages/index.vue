@@ -103,7 +103,7 @@ export default {
       items: [
         {
           src:
-            'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/carousel6.jpg?alt=media&token=66f1c6c6-bd59-4338-827b-08e41684d89e'
+            'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/default.png?alt=media&token=62b294ec-f592-43ea-850b-58509fda3d22'
         },
         {
           src:
