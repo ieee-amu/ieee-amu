@@ -7,7 +7,7 @@
       ></v-app-bar-nav-icon>
       <v-btn :to="`/`" depressed width="250px" height="50px">
         <v-img
-          src="https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/default.svg?alt=media&token=bfe0111c-7406-4852-940b-f88352f924c7"
+          src="https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/logo.svg?alt=media&token=4f818ffd-d53e-463b-ada8-78b568e323cd"
           width="250px"
           height="50px"
         ></v-img>
