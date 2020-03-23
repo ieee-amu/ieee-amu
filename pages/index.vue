@@ -30,7 +30,6 @@
       </v-card>
       <spacer gap="5" />
       <v-row dense>
-        <!-- prettier-ignore -->
         <v-img
           contain
           src="https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/ieee.jpeg?alt=media&token=230d055f-f6c7-48ea-879e-4cfe63ac994b"
@@ -38,8 +37,7 @@
           height="250px"
         >
         </v-img>
-        <!-- prettier-ignore -->
-        <v-spacer></v-spacer>
+
         <v-img
           contain
           src="https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/amu.jpeg?alt=media&token=2ef08fee-fb64-4559-b20d-0cf9e9a58b09"
