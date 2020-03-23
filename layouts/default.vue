@@ -73,7 +73,9 @@
               target="_blank"
               rel="noopener"
             >
-              made with<v-icon>mdi-heart</v-icon>by db
+              <span class="developers"
+                >made with<v-icon>mdi-heart</v-icon>by db</span
+              >
             </v-btn>
           </div>
           <v-spacer />
@@ -125,3 +127,8 @@ export default {
   }
 }
 </script>
+<style scoped>
+.developers {
+  font-size: 10px;
+}
+</style>
