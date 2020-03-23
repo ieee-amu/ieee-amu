@@ -15,16 +15,16 @@
         </v-row>
         <v-text class="card-text">
           <p id="about-us-2" class="blockquote">
-            Welcome to IEEE-AMU, A community of erudite and professional
-            individuals whose purpose is to disseminate knowledge on technical
-            works, seminars, conferences and accreditations while advocating
-            benefits to its members. Being the world's largest technical
-            profeesional society, IEEE's benefits include venues and tools for
-            members to network, build valuable professional connections, and
+            Welcome to IEEE-AMU, a community of erudite and professional
+            individuals, whose purpose is to disseminate knowledge on technical
+            work, seminars, conferences and accreditations while advocating
+            benefits to it's members. Being the world's largest technical
+            professional society, IEEE's benefits include venues and tools for
+            members to network, and build valuable professional connections and
             leadership skills.
             <br />
             <br />
-            Thank you for stopping by IEEE-AMU
+            Thank you for stopping by.
           </p>
         </v-text>
       </v-card>
