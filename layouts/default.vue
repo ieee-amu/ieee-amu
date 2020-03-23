@@ -74,7 +74,8 @@
               rel="noopener"
             >
               <span class="developers"
-                >made with<v-icon>mdi-heart</v-icon>by db</span
+                >made with<v-icon class="developers">mdi-heart</v-icon> by
+                db</span
               >
             </v-btn>
           </div>
