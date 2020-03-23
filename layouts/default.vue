@@ -5,8 +5,12 @@
         @click.stop="drawer = !drawer"
         class="hidden-md-and-up"
       ></v-app-bar-nav-icon>
-      <v-btn :to="`/`" depressed>
-        <v-toolbar-title v-text="title" />
+      <v-btn :to="`/`" depressed width="250px" height="50px">
+        <v-img
+          src="https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/default.svg?alt=media&token=bfe0111c-7406-4852-940b-f88352f924c7"
+          width="250px"
+          height="50px"
+        ></v-img>
       </v-btn>
       <v-spacer />
       <div class="hidden-sm-and-down">
