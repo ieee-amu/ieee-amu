@@ -244,6 +244,13 @@ export default {
           'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/rehan.jpeg?alt=media&token=e843047c-228f-4234-acc2-e7f92a25f30a'
       },
       {
+        title: 'Dr. Mohd Tariq',
+        text: 'Branch Coordinator',
+        links: { email: 'tariq.iitkgp@gmail.com' },
+        src:
+          'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/tariq.jpg?alt=media&token=1f7b407d-1b8f-41f8-a2fb-9a134a0fb00d'
+      },
+      {
         title: 'Mr. Mohammad Zaid',
         text: 'Branch Counsellor',
         links: { email: 'MOHAMMAD.ZAID@zhcet.ac.in' },
