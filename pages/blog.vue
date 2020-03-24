@@ -9,7 +9,7 @@
             gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
             height="400px"
           >
-            <v-card-title v-text="card.title"></v-card-title>
+            <div class="justify-blog">{{ card.title }}</div>
           </v-img>
           <v-card-text v-text="card.text"></v-card-text>
           <v-row justify="center">
@@ -19,9 +19,9 @@
                 <v-btn id="know-more" v-on="on">Know more</v-btn>
               </template>
               <v-card>
-                <v-card-title class="headline grey lighten-2 text-center">
+                <div class="justify-blog grey lighten-2">
                   {{ card.title }}
-                </v-card-title>
+                </div>
                 <v-card-text class="body-1 black--text font-weight-regular">{{
                   card.content
                 }}</v-card-text>
@@ -84,5 +84,12 @@ export default {
 #blog {
   margin-bottom: 20px;
   margin-top: 10px;
+}
+.justify-blog {
+  text-align: center;
+  text-justify: inter-word;
+  font-size: 20px;
+  font-weight: 550;
+  margin-bottom: 10px;
 }
 </style>
