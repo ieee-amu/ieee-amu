@@ -41,35 +41,28 @@ export default {
         title: 'How to write a research paper',
         text: '24/09/2019',
         content:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae expedita exercitationem vitae qui fugit totam quam eos alias ullam obcaecati, nostrum nemo odio recusandae! Laboriosam ipsa nesciunt sunt neque recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam culpa ad est debitis, dolor a quibusdam non perspiciatis fugiat odio rem, blanditiis facilis repudiandae. Sint ab suscipit reprehenderit a quidem! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam repellendus adipisci voluptatum architecto nemo qui unde repellat sequi suscipit sint iure sed minima quis aspernatur sapiente error corporis, earum quas?',
+        'The session was orated by Dr Khaliqur Rehman, Assistant Professor, Electrical Engineering Dept, ZHCET, AMU and attended by more than 170 students from various undergraduate and postgraduate courses. He began with the emphasis on the writing process and the structure of a research paper. His main focus was on proper planning and designing, evaluation and interpretation of data obtained, research ethics, statistical analysis  and the practical application of the writings. Dr Khaliq advised against publishing very old research papers, non-previewed publications and the use self cited old papers.The session was also marked by the doubts raised by the students.Mr Mohd.Zaid concluded the session and asked the students to interact with the office bearers of IEEE student’s branch for their queries.'
         src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg'
       },
       {
         title: 'Solar panel',
         text: '18/10/2019',
         content:
-          "Aligarh Muslim University, the university I chose to pursue my bachelor's degree. It was not an easy decision, but somehow I managed to get in there. Electrical Engineering was never on my list, but when you are unable to get your dream branch you have to be satisfied with what your faith is. So, here I am studying Electrical Engineering at AMU. First month, away from home was like jumping straight into hell. I have never met so many new people in such a short span of time. But still I managed to make myself comfortable away from home. I kept myself busy with college work. One of the best platforms that I encountered at AMU was the AMU-OSS (Open source society of Aligarh Muslim University). There I met a lot of awesome seniors. They never treated me as their junior, rather they treated me as their brother. Though I was familiar with git and GitHub before joining college, here I came to know the real power of it. Version Control System was the real term and the power that I learnt there. GSOC and ROS, two terms that made my semester full of curiosity. And it let me gain an interest in web development and robotics . Along with this I improvised my Python skills by reading books such as Learn Python The Hard Way. MIT's course 6.00.1(Introduction to Computer Science and Programming in Python) was a great help. Later, I made my first Pull Request with the help of the AMU-OSS team. Apart from technical learning, I decided to join a sport which I never played and thus I joined the hockey club of my hostel. Playing hockey was not a cakewalk as I have never played it in my life. I practised daily and even managed to enter the club's team for the interhall tournament. I fought really hard with academics as it was not easy to manage academics and learning coding simultaneously. Well, the curriculum of AMU is easy from other universities so I was able to score decent marks. Final Exams got over, time for vacations and new plans . I decided to learn concepts of backend and Django. And a wait for the beginning of next semester……………..",
-        src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg'
+        'The session was chaired by Dr.Adil Sarwar,Assistant Professor,Electrical Enginnering, AMU, Aligarh.He ia member of IEEE,USA and has published more than 40 research papers in the reputed journals. His research interest includes Power Convertors, Solar PV system and microcontrollers.Dr.Adil Sarwar explained about the Indian Scenario of solar energy, their structure and working principles. He discussed about the problems faced due to the over consumption of conventional sources. He discussed about various renewable resources of energry and urged the students to use them wisely.'
+       src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg'
       },
-      {
-        title: 'Induction',
-        text: '12/11/2019',
-        content:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae expedita exercitationem vitae qui fugit totam quam eos alias ullam obcaecati, nostrum nemo odio recusandae! Laboriosam ipsa nesciunt sunt neque recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam culpa ad est debitis, dolor a quibusdam non perspiciatis fugiat odio rem, blanditiis facilis repudiandae. Sint ab suscipit reprehenderit a quidem! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam repellendus adipisci voluptatum architecto nemo qui unde repellat sequi suscipit sint iure sed minima quis aspernatur sapiente error corporis, earum quas?',
-        src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg'
-      },
-      {
+       {
         title: 'Internship',
         text: '07/03/2020',
         content:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae expedita exercitationem vitae qui fugit totam quam eos alias ullam obcaecati, nostrum nemo odio recusandae! Laboriosam ipsa nesciunt sunt neque recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam culpa ad est debitis, dolor a quibusdam non perspiciatis fugiat odio rem, blanditiis facilis repudiandae. Sint ab suscipit reprehenderit a quidem! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam repellendus adipisci voluptatum architecto nemo qui unde repellat sequi suscipit sint iure sed minima quis aspernatur sapiente error corporis, earum quas?',
+          'The talk was delivered by Mr Mohammad Bilal, final year student of Civil Engineering. Being a summer intern at IIT Kanpur and a recipient of the prestigious MITACS fellowship, he encouraged the students about the fellowship.He also explained each step of application in detail and prerequisites the student must acquire for higher probability in selection to such research internship programs. He also enhanced the audience with the long term benefits of the MITACS internship program. Mr Jaffar A Lone concluded the talk with a thank you note.'
         src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg'
       },
       {
         title: 'Induction',
-        text: '12/11/2019',
+        text: '12/10/2019',
         content:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae expedita exercitationem vitae qui fugit totam quam eos alias ullam obcaecati, nostrum nemo odio recusandae! Laboriosam ipsa nesciunt sunt neque recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam culpa ad est debitis, dolor a quibusdam non perspiciatis fugiat odio rem, blanditiis facilis repudiandae. Sint ab suscipit reprehenderit a quidem! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam repellendus adipisci voluptatum architecto nemo qui unde repellat sequi suscipit sint iure sed minima quis aspernatur sapiente error corporis, earum quas?',
+          'The orientation ceremony was conducted on 12th October,2019 with the welcome of the students,faculty members and was marked by the presence of Prof.Imtiaz Ashraf (HOD, Electrical Dept), Dr.Mohd.Rihan (Branch Coordinator), Mr.Mohd Zaid (Branch Counsellor) & other professors.The gathering was endorsed by the welcome note of Mr. Mohd Zaid and briefed about one of the biggest conferences in India i.e., "UPCON-2019".This was followed by Dr Mohd. Rihan who gave a presentation on origin and functioning of IEEE. Prof. Imtiaz Ashraf,then congratulated the office bearers and recapitulated the importance of IEEE. Next, Dr Adil Sarwar illuminated the audience about various societies and their roles. Mr Jaffar A. Lone (Chairperson) proposed the vote of thanks.'
         src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg'
       }
     ]
