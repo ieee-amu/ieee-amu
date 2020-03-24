@@ -90,6 +90,8 @@ export default {
   text-justify: inter-word;
   font-size: 20px;
   font-weight: 550;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-left: 2px;
 }
 </style>
