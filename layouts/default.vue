@@ -114,7 +114,6 @@ export default {
     return {
       drawer: false,
       social: [
-        { icon: 'mdi-facebook', link: 'https://www.facebook.com/AMUIEEE' },
         { icon: 'mdi-instagram', link: 'https://instagram.com/ieeeamu' }
       ],
       title: 'IEEE AMU',
