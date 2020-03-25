@@ -124,7 +124,7 @@ export default {
         {
           title: 'Contact Us',
           icon: 'mdi-contacts',
-          link: 'https://mailchi.mp/36e966322a6f/contact'
+          link: 'https://mailchi.mp/36e966322a6f/contact '
         }
       ]
     }
