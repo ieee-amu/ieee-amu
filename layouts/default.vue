@@ -23,7 +23,7 @@
         <v-btn :to="`/blog`">
           <v-icon> mdi-book </v-icon>&nbsp; BLOG &nbsp;</v-btn
         >
-        <v-btn :href="`https://mailchi.mp/4550fa604ca7/contact`">
+        <v-btn :href="`https://mailchi.mp/36e966322a6f/contact `">
           <v-icon> mdi-contacts </v-icon>&nbsp; CONTACT &nbsp;</v-btn
         >
       </div>
@@ -125,7 +125,7 @@ export default {
         {
           title: 'Contact Us',
           icon: 'mdi-contacts',
-          link: 'https://mailchi.mp/4550fa604ca7/contact'
+          link: 'https://mailchi.mp/36e966322a6f/contact'
         }
       ]
     }

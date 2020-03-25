@@ -81,7 +81,7 @@
 
         <v-col cols="10" sm="4">
           <v-card
-            :href="`https://mailchi.mp/4550fa604ca7/contact`"
+            :href="`https://mailchi.mp/36e966322a6f/contact `"
             target="_blank"
             rel="noopener"
             shaped
