@@ -23,7 +23,7 @@
         <v-btn :to="`/blog`">
           <v-icon> mdi-book </v-icon>&nbsp; BLOG &nbsp;</v-btn
         >
-        <v-btn :to="`/contact`">
+        <v-btn :href="`https://mailchi.mp/4550fa604ca7/contact`">
           <v-icon> mdi-contacts </v-icon>&nbsp; CONTACT &nbsp;</v-btn
         >
       </div>
@@ -42,7 +42,7 @@
         <v-list-item
           v-for="item in navItems"
           :key="item.title"
-          :to="item.link"
+          :href="item.link"
           link
         >
           <v-list-item-icon>
@@ -122,7 +122,11 @@ export default {
         { title: 'About', icon: 'mdi-home', link: '/#about-us' },
         { title: 'Team', icon: 'mdi-account', link: '/team' },
         { title: 'Blog', icon: 'mdi-book', link: '/blog' },
-        { title: 'Contact Us', icon: 'mdi-contacts', link: '/contact' }
+        {
+          title: 'Contact Us',
+          icon: 'mdi-contacts',
+          link: 'https://mailchi.mp/4550fa604ca7/contact'
+        }
       ]
     }
   }

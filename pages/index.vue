@@ -80,7 +80,13 @@
         </v-col>
 
         <v-col cols="10" sm="4">
-          <v-card :to="`/contact`" shaped color="rgba(74, 74, 74, 1)">
+          <v-card
+            :href="`https://mailchi.mp/4550fa604ca7/contact`"
+            target="_blank"
+            rel="noopener"
+            shaped
+            color="rgba(74, 74, 74, 1)"
+          >
             <v-card-text class="text-center white--text headline">
               Contacts
             </v-card-text>
