@@ -207,6 +207,16 @@ export default {
           'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/pakhil.JPG?alt=media&token=7e2d506a-f84c-44ff-a3ee-f4a12f2ac84a'
       },
       {
+        title: 'Prajjwal Nijhara',
+        text: 'Coordinator (Industry Interaction)',
+        links: {
+          email: 'prajjwalnijhara@gmail.com',
+          linkedin: 'https://www.linkedin.com/in/nijharaprajjwal'
+        },
+        src:
+          'https://photos.app.goo.gl/ZHwJvW3LJSDUPBdf6'
+      },
+      {
         title: 'Hina Tomar',
         text: 'Coordinator (Media Interaction)',
         links: {
