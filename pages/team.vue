@@ -214,7 +214,7 @@ export default {
           linkedin: 'https://www.linkedin.com/in/nijharaprajjwal'
         },
         src:
-          'https://photos.app.goo.gl/ZHwJvW3LJSDUPBdf6'
+          'https://www.googleapis.com/drive/v3/files/1srq40qsjjW3P7c4Bu38r11gAIP3f9QP-?alt=media&key=AIzaSyDqQwZPx9JpBIRyQCWT2hcLhaak4o2vzII'
       },
       {
         title: 'Hina Tomar',
