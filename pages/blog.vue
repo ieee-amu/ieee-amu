@@ -8,7 +8,16 @@
             class="white--text align-end"
             gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
             height="400px"
+            lazy-src="https://placeimg.com/800/400/tech/grayscale?t=1585342692664"
           >
+            <template v-slot:placeholder>
+              <v-row class="fill-height ma-0" align="top">
+                <v-progress-linear
+                  indeterminate
+                  color="blue"
+                ></v-progress-linear>
+              </v-row>
+            </template>
             <div class="justify-blog">{{ card.title }}</div>
           </v-img>
           <v-card-text v-text="card.text"></v-card-text>
