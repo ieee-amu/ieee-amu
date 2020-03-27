@@ -19,7 +19,7 @@
                 <v-btn id="know-more" v-on="on">Know more</v-btn>
               </template>
               <v-card>
-                <div class="justify-blog grey lighten-2">
+                <div id="dailog-title" class="grey lighten-2">
                   {{ card.title }}
                 </div>
                 <v-card-text class="body-1 black--text font-weight-regular">{{
@@ -112,6 +112,16 @@ export default {
 #blog {
   margin-bottom: 20px;
   margin-top: 10px;
+}
+#dailog-title {
+  text-align: center;
+  text-justify: inter-word;
+  font-size: 20px;
+  font-weight: 550;
+  margin-bottom: 10px;
+  padding-left: 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .justify-blog {
   text-align: center;
