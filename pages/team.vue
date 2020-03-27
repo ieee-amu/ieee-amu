@@ -136,8 +136,6 @@ export default {
         links: {
           email: 'jalone@myamu.ac.in',
           mobile: '+919682606700',
-          twitter: 'https://twitter.com/jaffarlone11',
-          facebook: 'https://facebook.com/jaffar.lone.5',
           linkedin: 'https://linkedin.com/in/jaffar-ali-lone-958128129'
         },
         src:
@@ -205,16 +203,6 @@ export default {
         },
         src:
           'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/pakhil.JPG?alt=media&token=7e2d506a-f84c-44ff-a3ee-f4a12f2ac84a'
-      },
-      {
-        title: 'Prajjwal Nijhara',
-        text: 'Coordinator (Industry Interaction)',
-        links: {
-          email: 'prajjwalnijhara@gmail.com',
-          linkedin: 'https://www.linkedin.com/in/nijharaprajjwal'
-        },
-        src:
-          'https://www.googleapis.com/drive/v3/files/1srq40qsjjW3P7c4Bu38r11gAIP3f9QP-?alt=media&key=AIzaSyDqQwZPx9JpBIRyQCWT2hcLhaak4o2vzII'
       },
       {
         title: 'Hina Tomar',
