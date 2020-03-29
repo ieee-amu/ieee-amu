@@ -136,8 +136,6 @@ export default {
         links: {
           email: 'jalone@myamu.ac.in',
           mobile: '+919682606700',
-          twitter: 'https://twitter.com/jaffarlone11',
-          facebook: 'https://facebook.com/jaffar.lone.5',
           linkedin: 'https://linkedin.com/in/jaffar-ali-lone-958128129'
         },
         src:

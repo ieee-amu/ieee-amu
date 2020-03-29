@@ -2,7 +2,7 @@
   "name": "ieee",
   "version": "1.0.0",
   "description": "Website for the IEEE organisation",
-  "author": "Roshan Sharma",
+  "author": "Prajjwal Nijhara",
   "private": true,
   "scripts": {
     "dev": "nuxt",

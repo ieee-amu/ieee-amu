@@ -8,7 +8,16 @@
             class="white--text align-end"
             gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
             height="400px"
+            lazy-src="https://placeimg.com/800/400/tech/grayscale?t=1585342692664"
           >
+            <template v-slot:placeholder>
+              <v-row class="fill-height ma-0" align="top">
+                <v-progress-linear
+                  indeterminate
+                  color="blue"
+                ></v-progress-linear>
+              </v-row>
+            </template>
             <div class="justify-blog">{{ card.title }}</div>
           </v-img>
           <v-card-text v-text="card.text"></v-card-text>
@@ -19,7 +28,7 @@
                 <v-btn id="know-more" v-on="on">Know more</v-btn>
               </template>
               <v-card>
-                <div class="justify-blog grey lighten-2">
+                <div id="dailog-title" class="grey lighten-2">
                   {{ card.title }}
                 </div>
                 <v-card-text class="body-1 black--text font-weight-regular">{{
@@ -112,6 +121,16 @@ export default {
 #blog {
   margin-bottom: 20px;
   margin-top: 10px;
+}
+#dailog-title {
+  text-align: center;
+  text-justify: inter-word;
+  font-size: 20px;
+  font-weight: 550;
+  margin-bottom: 10px;
+  padding-left: 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .justify-blog {
   text-align: center;
