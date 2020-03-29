@@ -192,7 +192,7 @@ export default {
           linkedin: 'https://www.linkedin.com/in/arushi-varshney-379428166'
         },
         src:
-          'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/arushi-min.jpg?alt=media&token=eb3b66d1-3d13-44c9-96db-34a66c3c456f'
+          'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/arushi.jpg?alt=media&token=1571a78e-41c1-4fd3-a31f-ea20c0c63bc9'
       },
       {
         title: 'Pakhil Singh',
@@ -209,10 +209,12 @@ export default {
         text: 'Coordinator (Industry Interaction)',
         links: {
           email: 'prajjwalnijhara@gmail.com',
-          linkedin: 'https://www.linkedin.com/in/nijharaprajjwal'
+          linkedin: 'https://www.linkedin.com/in/nijharaprajjwal',
+          twitter: 'https://twitter/NijharaPrajjwal',
+          github: 'https://github.com/pnijhara'
         },
         src:
-          'https://avatars3.githubusercontent.com/u/40136154?s=400&u=5a3c9a6677d313dd75533fe9a7defc43a9c662cd&v=4'
+          'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/pnijhara.jpg?alt=media&token=7d19e303-32a9-4aa6-8709-4b5dd2c0d735'
       },
       {
         title: 'Hina Tomar',
@@ -282,6 +284,8 @@ export default {
           return 'green darken-3'
         case 'twitter':
           return 'light-blue darken-1'
+        case 'github':
+          return 'black'
       }
     },
     icon(type) {

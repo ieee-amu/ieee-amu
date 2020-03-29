@@ -1,8 +1,8 @@
 {
   "name": "ieee",
   "version": "1.0.0",
-  "description": "Website for the IEEE organisation",
-  "author": "Prajjwal Nijhara",
+  "description": "Website for the IEEE-AMU organisation",
+  "author": "Duddu-Coder",
   "private": true,
   "scripts": {
     "dev": "nuxt",
