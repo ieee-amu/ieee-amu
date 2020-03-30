@@ -210,7 +210,7 @@ export default {
         links: {
           email: 'prajjwalnijhara@gmail.com',
           linkedin: 'https://www.linkedin.com/in/nijharaprajjwal',
-          twitter: 'https://twitter/NijharaPrajjwal',
+          twitter: 'https://twitter.com/NijharaPrajjwal',
           github: 'https://github.com/pnijhara'
         },
         src:
