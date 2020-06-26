@@ -13,6 +13,9 @@
         ></v-img>
       </v-btn>
       <v-spacer />
+      <v-btn @click="changeMode" icon>
+        <v-icon>mdi-weather-sunny </v-icon>
+      </v-btn>
       <div class="hidden-sm-and-down">
         <v-btn :to="`/#about-us`">
           <v-icon> mdi-home </v-icon>&nbsp; ABOUT &nbsp;</v-btn
@@ -32,7 +35,12 @@
     <v-navigation-drawer v-model="drawer" app temporary>
       <v-list-item>
         <v-list-item-content>
-          <v-list-item-title>AMU IEEE Chapter</v-list-item-title>
+          <v-list-item-title
+            >AMU IEEE Chapter
+            <v-btn @click="changeMode" icon>
+              <v-icon>mdi-weather-sunny </v-icon>
+            </v-btn></v-list-item-title
+          >
         </v-list-item-content>
       </v-list-item>
 
@@ -128,6 +136,15 @@ export default {
           link: 'https://mailchi.mp/36e966322a6f/contact'
         }
       ]
+    }
+  },
+  methods: {
+    changeMode() {
+      if (this.$vuetify.theme.dark === true) {
+        this.$vuetify.theme.dark = false
+      } else {
+        this.$vuetify.theme.dark = true
+      }
     }
   }
 }
