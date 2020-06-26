@@ -32,7 +32,7 @@
       <v-row dense>
         <v-img
           contain
-          src="https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/ieee.jpeg?alt=media&token=230d055f-f6c7-48ea-879e-4cfe63ac994b"
+          src="https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/amu-logo.png?alt=media&token=fe5c2453-4526-4934-8679-0ca61b0883f8"
           width="250px"
           height="250px"
         >
@@ -40,7 +40,7 @@
 
         <v-img
           contain
-          src="https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/amu.jpeg?alt=media&token=2ef08fee-fb64-4559-b20d-0cf9e9a58b09"
+          src="https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/ieee-logo.png?alt=media&token=3b7d2df4-15b8-4b65-b148-72b0249f5cb8"
           width="250px"
           height="250px"
         >
