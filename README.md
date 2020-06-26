@@ -1,4 +1,5 @@
 # ieee
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a1bb8c64-efaa-4ac3-94b5-bec42f76cfc7/deploy-status)](https://app.netlify.com/sites/ieee-amu/deploys)
 
 > Website for the IEEE organisation
 
