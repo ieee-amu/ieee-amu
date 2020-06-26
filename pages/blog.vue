@@ -31,7 +31,7 @@
                 <div id="dailog-title" class="grey lighten-2">
                   {{ card.title }}
                 </div>
-                <v-card-text class="body-1 black--text font-weight-regular">{{
+                <v-card-text class="body-1 font-weight-regular">{{
                   card.content
                 }}</v-card-text>
                 <v-divider></v-divider>
