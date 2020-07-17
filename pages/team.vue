@@ -119,6 +119,70 @@
         </v-col>
       </v-row>
     </v-container>
+    <spacer gap="3" />
+    <v-divider></v-divider>
+    <spacer gap="3" />
+    <v-row justify="center">
+      <v-col cols="10" sm="6">
+        <v-card color="rgba(182, 187, 165, 1)">
+          <v-card-text class="text-center headline black--text">
+            VOLUNTEERS
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+    <spacer gap="3" />
+    <v-container>
+      <v-row justify="space-between">
+        <v-col
+          v-for="volunteer in volunteers"
+          :key="volunteer.title"
+          cols="auto"
+        >
+          <v-card>
+            <v-img
+              :src="volunteer.src"
+              class="white--text align-end"
+              gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+              height="310px"
+              max-width="310px"
+              position="center"
+              lazy-src="https://www.aminz.org.nz/themes/portal/uploads/profile-default-large.jpg"
+            >
+              <template v-slot:placeholder>
+                <v-row class="fill-height ma-0" align="center" justify="center">
+                  <v-progress-circular
+                    indeterminate
+                    color="grey lighten-5"
+                  ></v-progress-circular>
+                </v-row>
+              </template>
+              <v-card-title v-text="volunteer.title"></v-card-title>
+            </v-img>
+            <v-col class="lighten-3 text-center pa-0">
+              <v-btn
+                v-for="(link, type) in volunteer.links"
+                :key="type"
+                :color="iconColor(type)"
+                class="mx-3 my-2"
+                fab
+                dark
+                small
+              >
+                <a
+                  :href="getLink(link, type)"
+                  target="_blank"
+                  rel="noopener"
+                  style="text-decoration: none; color: inherit"
+                >
+                  <v-icon dark size="18">{{ icon(type) }}</v-icon>
+                </a>
+              </v-btn>
+            </v-col>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
   </v-container>
 </template>
 <script>
@@ -205,18 +269,6 @@ export default {
           'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/pakhil.JPG?alt=media&token=7e2d506a-f84c-44ff-a3ee-f4a12f2ac84a'
       },
       {
-        title: 'Prajjwal Nijhara',
-        text: 'Coordinator (Industry Interaction)',
-        links: {
-          email: 'prajjwalnijhara@gmail.com',
-          linkedin: 'https://www.linkedin.com/in/nijharaprajjwal',
-          twitter: 'https://twitter.com/NijharaPrajjwal',
-          github: 'https://github.com/pnijhara'
-        },
-        src:
-          'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/pnijhara.jpg?alt=media&token=7d19e303-32a9-4aa6-8709-4b5dd2c0d735'
-      },
-      {
         title: 'Hina Tomar',
         text: 'Coordinator (Media Interaction)',
         links: {
@@ -266,6 +318,68 @@ export default {
         links: { email: 'MOHAMMAD.ZAID@zhcet.ac.in' },
         src:
           'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/zaid.jpg?alt=media&token=5546cd39-6a18-4c0a-985f-d7205d69a97a'
+      }
+    ],
+    volunteers: [
+      {
+        title: 'Nidhi Chawla',
+        links: {
+          email: 'nidhichawla951@gmail.com',
+          linkedin: 'https://www.linkedin.com/in/nidhi-chawla-a644b01b1'
+        },
+        src: 'http://i.xp.io/1pIRaiiD.png'
+      },
+      {
+        title: 'Yusra Amir',
+        links: {
+          email: 'amiryusra0571@gmail.com',
+          linkedin: 'https://www.linkedin.com/in/yusra-amir-33805517a'
+        },
+        src: 'http://i.xp.io/1pJawHA3.jpg'
+      },
+      {
+        title: 'Kunal Sharma',
+        links: {
+          email: 'kcunalsharma@gmail.com',
+          mobile: '9639025077',
+          linkedin: 'https://www.linkedin.com/in/kunal-sharma-b757021a1'
+        },
+        src: 'http://i.xp.io/1pJ8bQsK.jpg'
+      },
+      {
+        title: 'Sharib Ahmed',
+        links: {
+          email: 'msharibahmed@gmail.com',
+          mobile: '8052889228',
+          linkedin: 'https://www.linkedin.com/in/sharib-ahmed-b3b930174'
+        },
+        src: 'http://i.xp.io/1pJ5TiyY.jpg'
+      },
+      {
+        title: 'Aditya Mishra',
+        links: {
+          email: 'm.aditya.a7459@gmail.com',
+          mobile: '7459952961',
+          linkedin: 'https://www.linkedin.com/in/aditya-mishra-839726182'
+        },
+        src: 'http://i.xp.io/1pJ3AxMg.jpg'
+      },
+      {
+        title: 'Mahena Mahmood',
+        links: {
+          email: 'mahenak.2@gmail.com',
+          linkedin: 'https://www.linkedin.com/in/mahena-mahmood-8b77321b1'
+        },
+        src: 'http://i.xp.io/1pKH6mPD.jpg'
+      },
+      {
+        title: 'Laiba Sagheer',
+        links: {
+          email: 'sagheerlaiba124@gmail.com',
+          linkedin: 'https://www.linkedin.com/in/laiba-sagheer-10a994180'
+        },
+        src:
+          'https://www.aminz.org.nz/themes/portal/uploads/profile-default-large.jpg'
       }
     ]
   }),
