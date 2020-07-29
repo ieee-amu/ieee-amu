@@ -1,0 +1,11 @@
+version = 1
+
+[[analyzers]]
+name = "javascript"
+enabled = true
+
+  [analyzers.meta]
+  ecma_version = "2016"
+  module_system = "es-modules"
+  environment = ["nodejs"]
+  style_guide = "standard"
