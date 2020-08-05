@@ -1,8 +1,12 @@
 <template>
   <v-container mt-4>
-    <v-row justify="space-around">
-      <v-col cols="12">
-        <h1 class="text-left display-3">Reach out</h1>
+    <v-row justify="center">
+      <v-col cols="12" sm="6" md="4">
+        <h1 class="text-left display-3 font-weight-regular">Reach out to us</h1>
+        <v-divider class="mt-4" />
+      </v-col>
+      <v-col cols="12" sm="2" md="2">
+        <span></span>
       </v-col>
     </v-row>
     <v-form>
