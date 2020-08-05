@@ -17,16 +17,16 @@
         <v-icon>mdi-weather-sunny </v-icon>
       </v-btn>
       <div class="hidden-sm-and-down">
-        <v-btn to="/#about-us">
+        <v-btn text small to="/#about-us">
           <v-icon> mdi-home </v-icon>&nbsp; ABOUT &nbsp;
         </v-btn>
-        <v-btn to="/team">
+        <v-btn text small to="/team">
           <v-icon> mdi-account </v-icon>&nbsp; TEAM &nbsp;
         </v-btn>
-        <v-btn to="/blog">
+        <v-btn text small to="/blog">
           <v-icon> mdi-book </v-icon>&nbsp; BLOG &nbsp;
         </v-btn>
-        <v-btn to="/contact">
+        <v-btn text small to="/contact">
           <v-icon> mdi-contacts </v-icon>&nbsp; CONTACT &nbsp;
         </v-btn>
       </div>
