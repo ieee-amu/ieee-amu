@@ -17,18 +17,18 @@
         <v-icon>mdi-weather-sunny </v-icon>
       </v-btn>
       <div class="hidden-sm-and-down">
-        <v-btn :to="`/#about-us`">
-          <v-icon> mdi-home </v-icon>&nbsp; ABOUT &nbsp;</v-btn
-        >
-        <v-btn :to="`/team`">
-          <v-icon> mdi-account </v-icon>&nbsp; TEAM &nbsp;</v-btn
-        >
-        <v-btn :to="`/blog`">
-          <v-icon> mdi-book </v-icon>&nbsp; BLOG &nbsp;</v-btn
-        >
-        <v-btn href="https://mailchi.mp/36e966322a6f/contact">
-          <v-icon> mdi-contacts </v-icon>&nbsp; CONTACT &nbsp;</v-btn
-        >
+        <v-btn to="/#about-us">
+          <v-icon> mdi-home </v-icon>&nbsp; ABOUT &nbsp;
+        </v-btn>
+        <v-btn to="/team">
+          <v-icon> mdi-account </v-icon>&nbsp; TEAM &nbsp;
+        </v-btn>
+        <v-btn to="/blog">
+          <v-icon> mdi-book </v-icon>&nbsp; BLOG &nbsp;
+        </v-btn>
+        <v-btn to="/contact">
+          <v-icon> mdi-contacts </v-icon>&nbsp; CONTACT &nbsp;
+        </v-btn>
       </div>
     </v-app-bar>
 
@@ -130,11 +130,7 @@ export default {
         { title: 'About', icon: 'mdi-home', link: '/#about-us' },
         { title: 'Team', icon: 'mdi-account', link: '/team' },
         { title: 'Blog', icon: 'mdi-book', link: '/blog' },
-        {
-          title: 'Contact Us',
-          icon: 'mdi-contacts',
-          link: 'https://mailchi.mp/36e966322a6f/contact'
-        }
+        { title: 'Contact Us', icon: 'mdi-contacts', link: '/contact' }
       ]
     }
   },

@@ -81,14 +81,14 @@
 
         <v-col cols="10" sm="4">
           <v-card
-            :href="`https://mailchi.mp/36e966322a6f/contact `"
+            to="/contact"
             target="_blank"
             rel="noopener"
             shaped
             color="rgba(74, 74, 74, 1)"
           >
             <v-card-text class="text-center white--text headline">
-              Contacts
+              Contact Us
             </v-card-text>
           </v-card>
         </v-col>
