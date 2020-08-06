@@ -50,7 +50,7 @@
         <v-list-item
           v-for="item in navItems"
           :key="item.title"
-          :href="item.link"
+          :to="item.link"
           link
         >
           <v-list-item-icon>
@@ -63,11 +63,11 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-content>
+    <v-main>
       <v-container>
         <nuxt />
       </v-container>
-    </v-content>
+    </v-main>
 
     <spacer gap="10" />
 
