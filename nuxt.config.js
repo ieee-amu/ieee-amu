@@ -61,7 +61,8 @@ export default {
           measurementId: 'G-CCJMCFY88W'
         },
         services: {
-          firestore: true
+          firestore: true,
+          auth: true
         }
       }
     ]
