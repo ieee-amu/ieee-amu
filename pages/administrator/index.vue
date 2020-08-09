@@ -53,8 +53,8 @@ export default {
     this.$fireStore
       .collection('messages')
       .get()
-      .then((querySnapShot) => {
-        querySnapShot.forEach((doc) => {
+      .then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
           const data = doc.data()
           data.id = doc.id // Add doc id field for v-for key
           this.messages.push(data)
