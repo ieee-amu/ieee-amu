@@ -13,7 +13,7 @@
             About Us
           </p>
         </v-row>
-        <v-text class="card-text">
+        <v-main class="card-text">
           <p id="about-us-2" class="blockquote">
             Welcome to IEEE-AMU, a community of erudite and professional
             individuals, whose purpose is to disseminate knowledge on technical
@@ -26,7 +26,7 @@
             <br />
             Thank you for stopping by.
           </p>
-        </v-text>
+        </v-main>
       </v-card>
       <spacer gap="5" />
       <v-row dense>
