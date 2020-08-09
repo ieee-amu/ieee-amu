@@ -46,7 +46,26 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: 'AIzaSyBJO1KqqJpKLn_Hv2-Kr2wZnX1o4h34EyM',
+          authDomain: 'ieee-amu-7deee.firebaseapp.com',
+          databaseURL: 'https://ieee-amu-7deee.firebaseio.com',
+          projectId: 'ieee-amu-7deee',
+          storageBucket: 'ieee-amu-7deee.appspot.com',
+          messagingSenderId: '1053430145974',
+          appId: '1:1053430145974:web:989e51fa111c102dfd9717',
+          measurementId: 'G-CCJMCFY88W'
+        },
+        services: {
+          firestore: true,
+          auth: true
+        }
+      }
+    ]
   ],
   /*
    ** Axios module configuration
