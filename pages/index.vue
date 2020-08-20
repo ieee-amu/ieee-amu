@@ -48,6 +48,7 @@
       </v-row>
       <spacer gap="5" />
     </v-container>
+    <Calendar />
     <v-container>
       <v-row justify="center">
         <v-col cols="12" sm="12">
@@ -99,10 +100,12 @@
 
 <script>
 import Spacer from '@/components/Spacer'
+import Calendar from '@/components/Calendar'
 
 export default {
   components: {
-    Spacer
+    Spacer,
+    Calendar
   },
   data() {
     return {
