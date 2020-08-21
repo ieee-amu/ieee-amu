@@ -32,7 +32,7 @@
       </v-container>
     </v-form>
     <div class="text-center">
-      <v-btn @click="submit" large color="dark">
+      <v-btn large color="dark" @click="submit">
         Send &nbsp; <v-icon>mdi-send</v-icon>
       </v-btn>
     </div>
@@ -51,14 +51,14 @@ export default {
       sendSuccess: false,
       name: '',
       email: '',
-      message: ''
+      message: '',
     }
   },
 
   computed: {
     formOk() {
       return !!(this.name && this.email && this.message)
-    }
+    },
   },
 
   methods: {
@@ -69,18 +69,18 @@ export default {
           .add({
             visitor: {
               email: this.email,
-              fullName: this.name
+              fullName: this.name,
             },
             message: this.message,
             didAdminRespond: false,
-            date: new Date().toDateString()
+            date: new Date().toDateString(),
           })
           .then(() => {
             // Render dialog-box component on success
             this.componentName = DialogBox
           })
       }
-    }
-  }
+    },
+  },
 }
 </script>

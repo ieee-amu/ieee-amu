@@ -7,9 +7,9 @@ export default {
   props: {
     gap: {
       type: String,
-      default: '5'
-    }
-  }
+      default: '5',
+    },
+  },
 }
 </script>
 

@@ -59,7 +59,7 @@
 export default {
   data() {
     return {
-      posts: []
+      posts: [],
     }
   },
   created() {
@@ -73,7 +73,7 @@ export default {
           this.posts.push(docObj)
         })
       })
-  }
+  },
 }
 </script>
 

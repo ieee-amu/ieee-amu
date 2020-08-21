@@ -33,7 +33,7 @@
               </template>
               <v-card-title v-text="team.title"></v-card-title>
             </v-img>
-            <v-card-text v-text="team.text" class="blockquote"></v-card-text>
+            <v-card-text class="blockquote" v-text="team.text"></v-card-text>
             <v-col class="lighten-3 text-center pa-0">
               <v-btn
                 v-for="(link, type) in team.links"
@@ -48,7 +48,7 @@
                   :href="getLink(link, type)"
                   target="_blank"
                   rel="noopener"
-                  style="text-decoration: none; color: inherit"
+                  style="text-decoration: none; color: inherit;"
                 >
                   <v-icon dark size="18">{{ icon(type) }}</v-icon>
                 </a>
@@ -65,11 +65,11 @@ import Spacer from '@/components/Spacer'
 
 export default {
   components: {
-    Spacer
+    Spacer,
   },
   data() {
     return {
-      teams: []
+      teams: [],
     }
   },
   created() {
@@ -122,7 +122,7 @@ export default {
         return '//' + link
       }
       return link
-    }
-  }
+    },
+  },
 }
 </script>

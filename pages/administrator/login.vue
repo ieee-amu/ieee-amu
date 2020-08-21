@@ -25,7 +25,7 @@
         </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn @click="login" color="primary">Login</v-btn>
+          <v-btn color="primary" @click="login">Login</v-btn>
         </v-card-actions>
       </v-card>
     </v-col>
@@ -37,7 +37,7 @@ export default {
   data() {
     return {
       email: '',
-      password: ''
+      password: '',
     }
   },
   methods: {
@@ -51,7 +51,7 @@ export default {
         .catch((err) => {
           this.$router.push('/administrator/login')
         })
-    }
-  }
+    },
+  },
 }
 </script>

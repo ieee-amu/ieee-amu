@@ -12,7 +12,7 @@
       <v-card-actions>
         <v-spacer></v-spacer>
 
-        <v-btn @click="closeDialog" text>OK</v-btn>
+        <v-btn text @click="closeDialog">OK</v-btn>
       </v-card-actions>
     </v-card>
   </v-dialog>
@@ -23,19 +23,19 @@ export default {
   props: {
     show: {
       type: Boolean,
-      required: true
-    }
+      required: true,
+    },
   },
 
   data() {
     return {
-      showDialog: this.show
+      showDialog: this.show,
     }
   },
   methods: {
     closeDialog() {
       this.showDialog = false
-    }
-  }
+    },
+  },
 }
 </script>

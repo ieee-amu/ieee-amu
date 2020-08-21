@@ -2,8 +2,8 @@
   <v-app>
     <v-app-bar fixed app dark>
       <v-app-bar-nav-icon
-        @click.stop="drawer = !drawer"
         class="hidden-md-and-up"
+        @click.stop="drawer = !drawer"
       ></v-app-bar-nav-icon>
       <v-btn :to="`/`" depressed width="250px" height="50px">
         <v-img
@@ -13,7 +13,7 @@
         ></v-img>
       </v-btn>
       <v-spacer />
-      <v-btn @click="changeMode" icon>
+      <v-btn icon @click="changeMode">
         <v-icon>mdi-weather-sunny </v-icon>
       </v-btn>
       <div class="hidden-sm-and-down">
@@ -37,7 +37,7 @@
         <v-list-item-content>
           <v-list-item-title
             >AMU IEEE Chapter
-            <v-btn @click="changeMode" icon>
+            <v-btn icon @click="changeMode">
               <v-icon>mdi-weather-sunny </v-icon>
             </v-btn></v-list-item-title
           >
@@ -116,22 +116,22 @@ import Spacer from '@/components/Spacer'
 
 export default {
   components: {
-    Spacer
+    Spacer,
   },
   data() {
     return {
       drawer: false,
       social: [
         { icon: 'mdi-facebook', link: 'https://facebook.com/AMUIEEE' },
-        { icon: 'mdi-instagram', link: 'https://instagram.com/ieeeamu' }
+        { icon: 'mdi-instagram', link: 'https://instagram.com/ieeeamu' },
       ],
       title: 'IEEE AMU',
       navItems: [
         { title: 'About', icon: 'mdi-home', link: '/#about-us' },
         { title: 'Team', icon: 'mdi-account', link: '/team' },
         { title: 'Blog', icon: 'mdi-book', link: '/blog' },
-        { title: 'Contact Us', icon: 'mdi-contacts', link: '/contact' }
-      ]
+        { title: 'Contact Us', icon: 'mdi-contacts', link: '/contact' },
+      ],
     }
   },
   methods: {
@@ -141,8 +141,8 @@ export default {
       } else {
         this.$vuetify.theme.dark = true
       }
-    }
-  }
+    },
+  },
 }
 </script>
 <style scoped>

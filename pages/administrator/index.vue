@@ -46,7 +46,7 @@
 export default {
   data() {
     return {
-      messages: []
+      messages: [],
     }
   },
   created() {
@@ -65,6 +65,6 @@ export default {
     if (!this.$fireAuth.currentUser) {
       return this.$router.push({ path: '/administrator/login' })
     }
-  }
+  },
 }
 </script>

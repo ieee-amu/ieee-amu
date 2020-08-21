@@ -3,20 +3,20 @@
     <v-col>
       <v-sheet height="64">
         <v-toolbar flat color="light-grey">
-          <v-btn @click="setToday" outlined class="mr-4">
+          <v-btn outlined class="mr-4" @click="setToday">
             Today
           </v-btn>
-          <v-btn @click="prev" fab text small>
+          <v-btn fab text small @click="prev">
             <v-icon small>mdi-chevron-left</v-icon>
           </v-btn>
-          <v-btn @click="next" fab text small>
+          <v-btn fab text small @click="next">
             <v-icon small>mdi-chevron-right</v-icon>
           </v-btn>
           <v-toolbar-title>{{ title }}</v-toolbar-title>
           <div class="flex-grow-1"></div>
           <v-menu bottom right>
             <template v-slot:activator="{ on }">
-              <v-btn v-on="on" outlined>
+              <v-btn outlined v-on="on">
                 <span>{{ typeToLabel[type] }}</span>
                 <v-icon right>mdi-menu-down</v-icon>
               </v-btn>
@@ -47,11 +47,11 @@
           :event-margin-bottom="3"
           :now="today"
           :type="type"
+          color="primary"
           @click:event="showEvent"
           @click:more="viewDay"
           @click:date="setDialogDate"
           @change="updateRange"
-          color="primary"
         ></v-calendar>
         <v-menu
           v-model="selectedOpen"
@@ -62,7 +62,7 @@
         >
           <v-card :width="350" color="grey lighten-4" flat>
             <v-toolbar :color="selectedEvent.color" dark>
-              <v-toolbar-title v-html="selectedEvent.name"></v-toolbar-title>
+              <v-toolbar-title>{{ selectedEvent.name }}</v-toolbar-title>
               <div class="flex-grow-1"></div>
             </v-toolbar>
 
@@ -71,7 +71,7 @@
             </v-card-text>
 
             <v-card-actions>
-              <v-btn @click="selectedOpen = false" text color="secondary">
+              <v-btn text color="secondary" @click="selectedOpen = false">
                 close
               </v-btn>
             </v-card-actions>
@@ -92,7 +92,7 @@ export default {
       month: 'Month',
       week: 'Week',
       day: 'Day',
-      '4day': '4 Days'
+      '4day': '4 Days',
     },
     name: null,
     details: null,
@@ -104,7 +104,7 @@ export default {
     selectedOpen: false,
     events: [],
     dialog: false,
-    dialogDate: false
+    dialogDate: false,
   }),
   computed: {
     title() {
@@ -134,9 +134,9 @@ export default {
     monthFormatter() {
       return this.$refs.calendar.getFormatter({
         timeZone: 'UTC',
-        month: 'long'
+        month: 'long',
       })
-    }
+    },
   },
   mounted() {
     this.getEvents()
@@ -194,7 +194,7 @@ export default {
       return d > 3 && d < 21
         ? 'th'
         : ['th', 'st', 'nd', 'rd', 'th', 'th', 'th', 'th', 'th', 'th'][d % 10]
-    }
-  }
+    },
+  },
 }
 </script>
