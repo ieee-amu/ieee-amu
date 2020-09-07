@@ -3,9 +3,7 @@
     <v-col>
       <v-sheet height="64">
         <v-toolbar flat color="light-grey">
-          <v-btn outlined class="mr-4" @click="setToday">
-            Today
-          </v-btn>
+          <v-btn outlined class="mr-4" @click="setToday"> Today </v-btn>
           <v-btn fab text small @click="prev">
             <v-icon small>mdi-chevron-left</v-icon>
           </v-btn>

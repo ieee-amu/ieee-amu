@@ -9,9 +9,7 @@
     <v-container>
       <v-card id="about-us" class="mb-3" elevation="10">
         <v-row justify="center">
-          <p id="about-us-1" class="display-2">
-            About Us
-          </p>
+          <p id="about-us-1" class="display-2">About Us</p>
         </v-row>
         <v-main class="card-text">
           <p id="about-us-2" class="blockquote">

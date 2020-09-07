@@ -48,7 +48,7 @@
                   :href="getLink(link, type)"
                   target="_blank"
                   rel="noopener"
-                  style="text-decoration: none; color: inherit;"
+                  style="text-decoration: none; color: inherit"
                 >
                   <v-icon dark size="18">{{ icon(type) }}</v-icon>
                 </a>
