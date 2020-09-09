@@ -69,54 +69,19 @@
       </v-container>
     </v-main>
 
-    <spacer gap="10" />
-
-    <v-footer dark height="auto" class="footer pa-0">
-      <v-card class="flex" flat tile>
-        <v-card-title class="grey darken-4">
-          <div class="px-3 py-2">
-            <v-btn
-              text
-              href="https://github.com/ieee-amu/ieee-amu/graphs/contributors"
-              target="_blank"
-              rel="noopener"
-            >
-              <span class="developers"
-                >made with<v-icon class="developers">mdi-heart</v-icon> by
-                db</span
-              >
-            </v-btn>
-          </div>
-          <v-spacer />
-
-          <v-btn
-            v-for="socials in social"
-            :key="socials.icon"
-            :href="socials.link"
-            target="_blank"
-            rel="noopener"
-            class="mx-4"
-            dark
-            icon
-          >
-            <v-icon size="24px">{{ socials.icon }} </v-icon>
-          </v-btn>
-        </v-card-title>
-
-        <v-card-text class="py-2 white--text text-center">
-          &copy; {{ new Date().getFullYear() }} — <strong>IEEE AMU</strong>
-        </v-card-text>
-      </v-card>
-    </v-footer>
+    <spacer gap="3" />
+    <Footer />
   </v-app>
 </template>
 
 <script>
+import Footer from '@/components/Footer'
 import Spacer from '@/components/Spacer'
 
 export default {
   components: {
     Spacer,
+    Footer,
   },
   data() {
     return {
