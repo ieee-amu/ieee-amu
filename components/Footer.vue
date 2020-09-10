@@ -41,7 +41,7 @@
           </v-btn>
         </v-card-text>
         <v-card-text class="white--text">
-          {{ new Date().getFullYear() }} — <strong>IEEE AMU</strong>
+          &copy; {{ new Date().getFullYear() }} — <strong>IEEE AMU</strong>
         </v-card-text>
       </v-card>
     </v-footer>
