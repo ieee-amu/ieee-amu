@@ -10,7 +10,7 @@
       </v-col>
     </v-row>
     <spacer gap="2" />
-    <v-container justify="center">
+    <v-container justify="center space-between">
       <v-row>
         <v-col v-for="team in teams" :key="team.title" cols="12" md="6">
           <v-card height="500px" width="400px">
@@ -19,7 +19,6 @@
               :src="team.src"
               gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
               lazy-src="https://www.aminz.org.nz/themes/portal/uploads/profile-default-large.jpg"
-              alt="Avatar"
             >
               <template v-slot:placeholder>
                 <v-row class="fill-height ma-0" align="center" justify="center">
