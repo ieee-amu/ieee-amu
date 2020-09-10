@@ -9,19 +9,17 @@
         </v-card>
       </v-col>
     </v-row>
-    <spacer gap="3" />
-    <v-container>
-      <v-row justify="space-between">
-        <v-col v-for="team in teams" :key="team.title" cols="auto">
-          <v-card>
+    <spacer gap="2" />
+    <v-container justify="center">
+      <v-row>
+        <v-col v-for="team in teams" :key="team.title" cols="12" md="6">
+          <v-card height="500px" width="400px">
             <v-img
+              class="center"
               :src="team.src"
-              class="white--text align-end"
               gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-              height="310px"
-              max-width="310px"
-              position="center"
               lazy-src="https://www.aminz.org.nz/themes/portal/uploads/profile-default-large.jpg"
+              alt="Avatar"
             >
               <template v-slot:placeholder>
                 <v-row class="fill-height ma-0" align="center" justify="center">
@@ -31,9 +29,13 @@
                   ></v-progress-circular>
                 </v-row>
               </template>
-              <v-card-title v-text="team.title"></v-card-title>
             </v-img>
-            <v-card-text class="blockquote" v-text="team.text"></v-card-text>
+            <v-card-text class="title text-center">
+              {{ team.title }}
+            </v-card-text>
+            <v-card-text class="blockquote text-center">{{
+              team.text
+            }}</v-card-text>
             <v-col class="lighten-3 text-center pa-0">
               <v-btn
                 v-for="(link, type) in team.links"
@@ -126,3 +128,12 @@ export default {
   },
 }
 </script>
+<style scoped>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  height: 60%;
+}
+</style>
