@@ -13,7 +13,7 @@
     <v-container justify="center space-between">
       <v-row>
         <v-col v-for="team in teams" :key="team.title" cols="12" md="6">
-          <v-card style="margin: auto" height="500px" width="400px">
+          <v-card style="margin: auto" height="520px" width="400px">
             <v-img
               class="center"
               :src="team.src"
