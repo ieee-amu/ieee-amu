@@ -150,6 +150,6 @@ export default {
 .v-card__subtitle,
 .v-card__text,
 .v-card__title {
-  padding: 12px;
+  padding: 6px;
 }
 </style>
