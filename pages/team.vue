@@ -152,12 +152,4 @@ export default {
 .v-card__title {
   padding: 12px;
 }
-@media (max-width: 480px) {
-  .team-card {
-    height: fit-content;
-  }
-  .blockquote {
-    padding: 5px;
-  }
-}
 </style>
