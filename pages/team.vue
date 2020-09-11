@@ -12,10 +12,17 @@
     <spacer gap="2" />
     <v-container justify="center space-between">
       <v-row>
-        <v-col v-for="team in teams" :key="team.title" cols="12" md="6">
-          <v-card style="margin: auto" height="550px" width="450px">
+        <v-col
+          v-for="team in teams"
+          :key="team.title"
+          :style="{ order: team.order }"
+          cols="12"
+          md="6"
+        >
+          <v-card class="team-card">
             <v-img
               class="center"
+              style="width: 100%"
               :src="team.src"
               gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
               lazy-src="https://www.aminz.org.nz/themes/portal/uploads/profile-default-large.jpg"
@@ -134,5 +141,23 @@ export default {
   margin-right: auto;
   width: 85%;
   height: 60%;
+}
+.team-card {
+  margin: auto;
+  height: 530px;
+  width: 380px;
+}
+.v-card__subtitle,
+.v-card__text,
+.v-card__title {
+  padding: 12px;
+}
+@media (max-width: 480px) {
+  .team-card {
+    height: fit-content;
+  }
+  .blockquote {
+    padding: 5px;
+  }
 }
 </style>
