@@ -144,12 +144,22 @@ export default {
 }
 .team-card {
   margin: auto;
-  height: 550px;
-  width: 420px;
+  height: 510px;
+  width: 380px;
 }
 .v-card__subtitle,
 .v-card__text,
 .v-card__title {
-  padding: 6px;
+  padding: 12px;
+}
+@media (max-width: 480px) {
+  .v-card__subtitle,
+  .v-card__text,
+  .v-card__title {
+    padding: 6px;
+  }
+  .blockquote {
+    padding: 6px;
+  }
 }
 </style>
