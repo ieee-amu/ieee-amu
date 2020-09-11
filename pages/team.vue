@@ -144,8 +144,8 @@ export default {
 }
 .team-card {
   margin: auto;
-  height: 530px;
-  width: 380px;
+  height: 550px;
+  width: 420px;
 }
 .v-card__subtitle,
 .v-card__text,
