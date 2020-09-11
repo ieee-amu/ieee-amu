@@ -13,10 +13,10 @@
         ></v-img>
       </v-btn>
       <v-spacer />
-      <v-btn icon @click="changeMode">
-        <v-icon>mdi-weather-sunny </v-icon>
-      </v-btn>
       <div class="hidden-sm-and-down">
+        <v-btn icon @click="changeMode">
+          <v-icon>mdi-weather-sunny </v-icon>
+        </v-btn>
         <v-btn text small to="/#about-us">
           <v-icon> mdi-home </v-icon>&nbsp; ABOUT &nbsp;
         </v-btn>
