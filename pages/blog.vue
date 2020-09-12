@@ -1,7 +1,12 @@
 <template>
   <v-container fluid>
     <v-row justify="center">
-      <v-col v-for="post in posts" :key="post.id" cols="12">
+      <v-col
+        v-for="post in posts"
+        :key="post.id"
+        cols="12"
+        :style="{ order: -post.order }"
+      >
         <v-card id="blog" class="mx-auto">
           <v-img
             :src="post.src"
