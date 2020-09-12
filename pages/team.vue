@@ -140,12 +140,12 @@ export default {
   margin-left: auto;
   margin-right: auto;
   width: 85%;
-  height: 60%;
+  height: 65%;
 }
 .team-card {
   margin: auto;
-  height: 495px;
-  width: 380px;
+  height: 500px;
+  width: 340px;
 }
 .v-card__subtitle,
 .v-card__text,
