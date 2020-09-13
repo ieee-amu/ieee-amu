@@ -46,90 +46,190 @@
       </v-row>
       <spacer gap="5" />
     </v-container>
-    <Calendar />
+
     <v-container>
       <v-row justify="center">
+        <v-col cols="12" md="12">
+          <div class="container">
+            <div
+              class="row team_cont"
+              style="justify-content: center; background-color: #e3e1e1"
+            >
+              <v-col cols="12" sm="12">
+                <v-card color="rgba(74, 74, 74, 1)">
+                  <v-card-text class="text-center white--text headline">
+                    Team-Coordinators
+                  </v-card-text>
+                </v-card>
+              </v-col>
+
+              <v-col
+                v-for="coordinator in coordinators"
+                :key="coordinator.id"
+                cols="10"
+                sm="6"
+                md="3"
+              >
+                <v-card class="team-card our-team">
+                  <v-img
+                    id="pic"
+                    class="center"
+                    style="width: 100%, background-position: inherit"
+                    :src="coordinator.src"
+                    gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                    lazy-src="https://www.aminz.org.nz/themes/portal/uploads/profile-default-large.jpg"
+                  >
+                  </v-img>
+                  <v-card-text class="title text-center">
+                    {{ coordinator.name }}
+                  </v-card-text>
+                </v-card>
+              </v-col>
+              <v-btn href="/team" class="btn">
+                <a> View Team &nbsp;<v-icon>mdi-arrow-right-bold</v-icon></a>
+              </v-btn>
+            </div>
+          </div>
+        </v-col>
+      </v-row>
+      <v-row>
         <v-col cols="12" sm="12">
-          <v-card color="rgba(74, 74, 74, 1)">
-            <v-card-text class="text-center white--text headline">
-              Know more about us
+          <v-card flat>
+            <v-card-text class="text-center headline">
+              Recent News
             </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col cols="12" sm="8" md="4">
+          <v-card class="mx-auto" max-width="344" height="500" outlined>
+            <v-title class="headline mb-1"
+              >WASTE HEAT MANAGEMENT AND ELECTRICITY GENERATATION</v-title
+            >
+            <spacer />
+
+            <v-text>
+              IEEE SIGHT student’s chapter (AMU) organised an informative
+              session for the students of Women’s polytechnic, Aligarh Muslim
+              University to spread awareness about the utilisation of
+              technologies for Humanitarian causes and sustainable development.
+              A lecture was delivered by Pakhil Singh, IEEE SIGHT Student
+              Coordinator on “Waste Heat Management and Electricity Generation”.
+            </v-text>
+            <spacer />
+            <v-btn class="btn" to="./blog"
+              ><a
+                >Read More Newsletters &nbsp;<v-icon
+                  >mdi-arrow-right-bold</v-icon
+                ></a
+              ></v-btn
+            >
+          </v-card>
+        </v-col>
+        <v-col cols="12" sm="8" md="4">
+          <v-card class="mx-auto" max-width="344" height="500" outlined>
+            <v-title class="headline mb-1">facebook</v-title>
+            <spacer />
+
+            <v-text>
+              IEEE SIGHT student’s chapter (AMU) organised an informative
+              session for the students of Women’s polytechnic, Aligarh Muslim
+              University to spread awareness about the utilisation of
+              technologies for Humanitarian causes and sustainable development.
+              A lecture was delivered by Pakhil Singh, IEEE SIGHT Student
+              Coordinator on “Waste Heat Management and Electricity Generation”.
+            </v-text>
+            <spacer />
+            <v-btn class="btn" to="./blog"
+              ><a
+                >Read More Newsletters &nbsp;<v-icon
+                  >mdi-arrow-right-bold</v-icon
+                ></a
+              ></v-btn
+            >
+          </v-card>
+        </v-col>
+        <v-col cols="12" sm="8" md="4">
+          <v-card class="mx-auto" max-width="344" height="500" outlined>
+            <v-title class="headline mb-1">instagram</v-title>
+            <spacer />
+
+            <v-text>
+              IEEE SIGHT student’s chapter (AMU) organised an informative
+              session for the students of Women’s polytechnic, Aligarh Muslim
+              University to spread awareness about the utilisation of
+              technologies for Humanitarian causes and sustainable development.
+              A lecture was delivered by Pakhil Singh, IEEE SIGHT Student
+              Coordinator on “Waste Heat Management and Electricity Generation”.
+            </v-text>
+            <spacer />
+            <v-btn class="btn" to="./blog"
+              ><a
+                >Read More Newsletters &nbsp;<v-icon
+                  >mdi-arrow-right-bold</v-icon
+                ></a
+              ></v-btn
+            >
           </v-card>
         </v-col>
       </v-row>
-      <spacer gap="1" />
-      <v-divider />
-    </v-container>
-    <v-container>
-      <v-row justify="center">
-        <v-col cols="10" sm="4">
-          <v-card :to="`/team`" shaped color="rgba(74, 74, 74, 1)">
-            <v-card-text class="text-center white--text headline">
-              Team
-            </v-card-text>
-          </v-card>
-        </v-col>
-
-        <v-col cols="10" sm="4">
-          <v-card :to="`/blog`" shaped color="rgba(74, 74, 74, 1)">
-            <v-card-text class="text-center white--text headline">
-              Blogs
-            </v-card-text>
-          </v-card>
-        </v-col>
-
-        <v-col cols="10" sm="4">
-          <v-card
-            to="/contact"
-            target="_blank"
-            rel="noopener"
-            shaped
-            color="rgba(74, 74, 74, 1)"
-          >
-            <v-card-text class="text-center white--text headline">
-              Contact Us
-            </v-card-text>
-          </v-card>
-        </v-col>
-      </v-row>
+      <v-card>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3525.5822502153687!2d78.07415941490626!3d27.914790282706377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3974a4fcb0ea6ddb%3A0x765b62941f223b8e!2sZakir%20Husain%20College%20of%20Engineering%20and%20Technology%2C%20AMU!5e0!3m2!1sen!2sin!4v1600017095357!5m2!1sen!2sin"
+          width="400"
+          height="300"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </v-card>
     </v-container>
   </div>
 </template>
 
 <script>
 import Spacer from '@/components/Spacer'
-import Calendar from '@/components/Calendar'
 
 export default {
   components: {
     Spacer,
-    Calendar,
   },
   data() {
     return {
+      coordinators: [],
       items: [
         {
           src:
-            'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/default.png?alt=media&token=62b294ec-f592-43ea-850b-58509fda3d22',
+            'https://firebasestorage.googleapis.com/v0/b/ieee-amu-7deee.appspot.com/o/Logopit_1591939004987%201%402x.png?alt=media&token=ab8d9a74-757d-4171-ad17-b030a36fd48a',
         },
-        {
-          src:
-            'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/carousel.jpeg?alt=media&token=3d78298d-d66b-413c-9154-9c33b7420257',
-        },
+
         {
           src:
             'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/carousel4.jpeg?alt=media&token=f0d73c2d-4705-4f0f-9645-d1feec377869',
         },
         {
           src:
-            'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/carousel2.jpeg?alt=media&token=5b481cdd-3e5c-44fc-9937-ee177c63a886',
+            'https://firebasestorage.googleapis.com/v0/b/ieee-amu-7deee.appspot.com/o/IMG_20191108_122555_50_1_58.jpg?alt=media&token=e0f748c5-0643-4109-8981-ebbbd77934d1',
         },
         {
           src:
-            'https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/carousel3.jpeg?alt=media&token=49967e25-b6e9-4cac-a7f1-1dfd691023e9',
+            'https://firebasestorage.googleapis.com/v0/b/ieee-amu-7deee.appspot.com/o/IMG_20191110_140243_1_60_1_58_1_64.jpg?alt=media&token=a48305cd-31f0-4b76-a4d6-6604668ce9b7',
         },
       ],
     }
+  },
+  created() {
+    this.$fireStore
+      .collection('coordinators')
+      .get()
+      .then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+          const docObj = doc.data()
+          docObj.id = doc.id
+          this.coordinators.push(docObj)
+        })
+      })
   },
 }
 </script>
@@ -142,5 +242,55 @@ export default {
   margin-left: 20px;
   margin-right: 20px;
   padding: 10px;
+}
+.center {
+  display: block;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 60%;
+  width: 240px;
+  border-radius: 100%;
+  background-size: cover;
+  height: 240px;
+}
+#pic {
+  margin-top: 10px;
+  border-radius: 100%;
+  background-size: cover;
+  height: 240px;
+}
+
+.team-card {
+  margin: auto;
+  height: 330px;
+  background-color: rgba(0, 0, 0, 0.23);
+  width: 380px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.btn {
+  margin-top: 20px;
+  color: royalblue;
+  background: white;
+  border: white 2px solid;
+  padding: 10px;
+  transition: all 0.2s;
+}
+.btn a {
+  text-decoration: none;
+}
+.team_cont {
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  padding-bottom: 1.5rem;
+}
+
+.btn:hover {
+  color: white;
+  background: royalblue;
+  border: royalblue 2px solid;
 }
 </style>
