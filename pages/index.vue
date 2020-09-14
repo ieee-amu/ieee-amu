@@ -94,11 +94,9 @@
       </v-row>
       <v-row>
         <v-col cols="12" sm="12">
-          <v-card flat>
-            <v-card-text class="text-center headline">
-              Recent News
-            </v-card-text>
-          </v-card>
+          <v-card-text class="text-center" style="margin: 3rem auto"
+            ><h1>Recent News</h1></v-card-text
+          >
         </v-col>
         <v-col style="margin: auto" cols="12" sm="8" md="4">
           <v-card class="mx-auto" outlined>
