@@ -94,14 +94,12 @@
       </v-row>
       <v-row>
         <v-col cols="12" sm="12">
-          <v-card flat>
-            <v-card-text class="text-center headline">
-              Recent News
-            </v-card-text>
-          </v-card>
+          <v-card-text class="text-center" style="margin: 3rem auto"
+            ><h1>Recent News</h1></v-card-text
+          >
         </v-col>
-        <v-col cols="12" sm="8" md="4">
-          <v-card class="mx-auto" max-width="344" height="500" outlined>
+        <v-col style="margin: auto" cols="12" sm="8" md="4">
+          <v-card class="mx-auto" outlined>
             <v-title class="headline mb-1"
               >WASTE HEAT MANAGEMENT AND ELECTRICITY GENERATATION</v-title
             >
@@ -125,8 +123,8 @@
             >
           </v-card>
         </v-col>
-        <v-col cols="12" sm="8" md="4">
-          <v-card class="mx-auto" max-width="344" height="500" outlined>
+        <v-col style="margin: auto" cols="12" sm="8" md="4">
+          <v-card class="mx-auto" outlined>
             <v-title class="headline mb-1">facebook</v-title>
             <spacer />
 
@@ -148,52 +146,61 @@
             >
           </v-card>
         </v-col>
-        <v-col cols="12" sm="8" md="4">
-          <v-card class="mx-auto" max-width="344" height="500" outlined>
-            <v-title class="headline mb-1">instagram</v-title>
-            <spacer />
-
-            <v-text>
-              IEEE SIGHT student’s chapter (AMU) organised an informative
-              session for the students of Women’s polytechnic, Aligarh Muslim
-              University to spread awareness about the utilisation of
-              technologies for Humanitarian causes and sustainable development.
-              A lecture was delivered by Pakhil Singh, IEEE SIGHT Student
-              Coordinator on “Waste Heat Management and Electricity Generation”.
-            </v-text>
-            <spacer />
-            <v-btn class="btn" to="./blog"
-              ><a
-                >Read More Newsletters &nbsp;<v-icon
-                  >mdi-arrow-right-bold</v-icon
-                ></a
-              ></v-btn
-            >
+        <v-col style="margin: auto; height: auto" cols="12" sm="8" md="4">
+          <v-card>
+            <instagram-embed
+              class="insta"
+              :url="'https://www.instagram.com/p/CE6Nls1gPbf/?igshid=u6liozf0coet'"
+            />
           </v-card>
         </v-col>
       </v-row>
-      <v-card>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3525.5822502153687!2d78.07415941490626!3d27.914790282706377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3974a4fcb0ea6ddb%3A0x765b62941f223b8e!2sZakir%20Husain%20College%20of%20Engineering%20and%20Technology%2C%20AMU!5e0!3m2!1sen!2sin!4v1600017095357!5m2!1sen!2sin"
-          width="400"
-          height="300"
-          frameborder="0"
-          style="border: 0"
-          allowfullscreen=""
-          aria-hidden="false"
-          tabindex="0"
-        ></iframe>
-      </v-card>
+      <v-row>
+        <v-card-text class="text-center" style="margin: 3rem auto"
+          ><h1>Contact Us</h1></v-card-text
+        >
+        <v-col class="contact" cols="8" md="4"
+          ><v-icon style="color: black" size="50">mdi-cellphone-iphone</v-icon>
+          <h3 style="padding: 1rem 0">Phone</h3>
+          <v-card-subtitle>9412690509</v-card-subtitle></v-col
+        >
+        <v-col class="contact" cols="8" md="4"
+          ><v-icon style="color: black" size="50">mdi-email</v-icon>
+          <h3 style="padding: 1rem 0">Email</h3>
+          <v-card-subtitle>ieee-amu@gmail.com</v-card-subtitle></v-col
+        ><v-col class="contact" cols="8" md="4">
+          <v-icon style="color: black" size="50">mdi-google-maps</v-icon>
+          <h3 style="padding: 1rem 0">Address</h3>
+          <v-card-subtitle class="text-center">
+            Electrical Engineering Department ZHCET, Uttar Pradesh 202002
+          </v-card-subtitle>
+        </v-col>
+      </v-row>
+      <v-row
+        ><v-col cols="12">
+          <v-card>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3525.5822502153687!2d78.07415941490626!3d27.914790282706377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3974a4fcb0ea6ddb%3A0x765b62941f223b8e!2sZakir%20Husain%20College%20of%20Engineering%20and%20Technology%2C%20AMU!5e0!3m2!1sen!2sin!4v1600017095357!5m2!1sen!2sin"
+              frameborder="0"
+              style="border: 0"
+              width="100%"
+              height="200px"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe> </v-card></v-col
+      ></v-row>
     </v-container>
   </div>
 </template>
 
 <script>
 import Spacer from '@/components/Spacer'
-
+import InstagramEmbed from 'vue-instagram-embed'
 export default {
   components: {
     Spacer,
+    InstagramEmbed,
   },
   data() {
     return {
@@ -236,6 +243,11 @@ export default {
 <style scoped>
 #about-us-1 {
   padding-top: 15px;
+}
+.insta {
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
 }
 #about-us-2 {
   text-align: justify;
@@ -292,5 +304,12 @@ export default {
   color: white;
   background: royalblue;
   border: royalblue 2px solid;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 </style>
