@@ -76,6 +76,7 @@
                     class="center"
                     style="width: 100%, background-position: inherit"
                     :src="coordinator.src"
+                    gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
                     lazy-src="https://www.aminz.org.nz/themes/portal/uploads/profile-default-large.jpg"
                   >
                   </v-img>
@@ -93,36 +94,43 @@
       </v-row>
       <v-row>
         <v-col cols="12" sm="12">
-          <v-card-text class="text-center" style="margin: 3rem auto"
-            ><h1>Recent News</h1></v-card-text
-          >
-        </v-col>
-        <v-col style="margin: auto" cols="12" sm="8" md="4">
-          <v-card class="mx-auto" outlined>
-            <v-title class="headline mb-1"
-              >WASTE HEAT MANAGEMENT AND ELECTRICITY GENERATATION</v-title
-            >
-            <spacer />
-
-            <v-text>
-              IEEE SIGHT student’s chapter (AMU) organised an informative
-              session for the students of Women’s polytechnic, Aligarh Muslim
-              University to spread awareness about the utilisation of
-              technologies for Humanitarian causes and sustainable development.
-              A lecture was delivered by Pakhil Singh, IEEE SIGHT Student
-              Coordinator on “Waste Heat Management and Electricity Generation”.
-            </v-text>
-            <spacer />
-            <v-btn class="btn" to="./blog"
-              ><a
-                >Read More Newsletters &nbsp;<v-icon
-                  >mdi-arrow-right-bold</v-icon
-                ></a
-              ></v-btn
-            >
+          <v-card flat>
+            <v-card-text class="text-center headline">
+              Recent News
+            </v-card-text>
           </v-card>
         </v-col>
-        <v-col style="margin: auto" cols="12" sm="8" md="4">
+        <v-col
+          v-for="(post, index) in posts"
+          :key="index.id"
+          style="margin: 0 auto"
+          cols="12"
+          sm="8"
+          md="4"
+        >
+          <template>
+            <v-card class="mx-auto" max-width="400">
+              <v-img
+                class="white--text align-end"
+                height="200px"
+                :src="post.src"
+              >
+                <v-card-title style="color: black">{{
+                  post.title
+                }}</v-card-title>
+              </v-img>
+
+              <v-card-text class="text--primary">
+                <div>{{ post.content }}</div>
+              </v-card-text>
+
+              <v-card-actions>
+                <v-btn color="orange" to="./blog" text> Explore </v-btn>
+              </v-card-actions>
+            </v-card>
+          </template>
+        </v-col>
+        <v-col style="margin: 0 auto" cols="12" sm="8" md="4">
           <v-card class="mx-auto" outlined>
             <v-title class="headline mb-1">facebook</v-title>
             <spacer />
@@ -131,9 +139,10 @@
               IEEE SIGHT student’s chapter (AMU) organised an informative
               session for the students of Women’s polytechnic, Aligarh Muslim
               University to spread awareness about the utilisation of
-              technologies for Humanitarian causes and sustainable development.
-              A lecture was delivered by Pakhil Singh, IEEE SIGHT Student
-              Coordinator on “Waste Heat Management and Electricity Generation”.
+              technologies for Humanitarian causes and sustainable
+              development... A lecture was delivered by Pakhil Singh, IEEE SIGHT
+              Student Coordinator on “Waste Heat Management and Electricity
+              Generation”.
             </v-text>
             <spacer />
             <v-btn class="btn" to="./blog"
@@ -203,6 +212,18 @@ export default {
   },
   data() {
     return {
+      posts: [
+        {
+          title: 'WASTE HEAT MANAGEMENT AND ELECTRICITY  GENERATATION',
+          link:
+            'https://drive.google.com/file/d/1OTsY4bfp0mvKBVOdkDrekGO-n0L91GF4/view?usp=sharing',
+          content:
+            'IEEE SIGHT student’s chapter (AMU) organised an informative session for the students of Women’s polytechnic, Aligarh Muslim University to spread awareness about the utilisation of technologies for Humanitarian causes and sustainable development. A lecture was delivered by Pakhil Singh, IEEE SIGHT Student Coordinator on “Waste Heat Management and Electricity Generation”...',
+
+          src:
+            'https://www.greenbiz.com/sites/default/files/styles/gbz_article_primary_breakpoints_kalapicture_screen-lg_1x/public/images/articles/featured/partnership_0.jpg?itok=ZekH-so_&timestamp=1445488550',
+        },
+      ],
       coordinators: [],
       items: [
         {
@@ -225,6 +246,7 @@ export default {
       ],
     }
   },
+
   created() {
     this.$fireStore
       .collection('coordinators')
