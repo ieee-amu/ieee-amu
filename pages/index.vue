@@ -76,7 +76,6 @@
                     class="center"
                     style="width: 100%, background-position: inherit"
                     :src="coordinator.src"
-                    gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
                     lazy-src="https://www.aminz.org.nz/themes/portal/uploads/profile-default-large.jpg"
                   >
                   </v-img>
