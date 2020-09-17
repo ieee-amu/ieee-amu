@@ -11,7 +11,7 @@
         <v-row justify="center">
           <p id="about-us-1" class="display-2">About Us</p>
         </v-row>
-        <v-main class="card-text">
+        <v-main style="padding: 0" class="card-text">
           <p id="about-us-2" class="blockquote">
             Welcome to IEEE-AMU, a community of erudite and professional
             individuals, whose purpose is to disseminate knowledge on technical
@@ -97,60 +97,69 @@
             ><h1>Recent News</h1></v-card-text
           >
         </v-col>
-        <v-col style="margin: auto" cols="12" sm="8" md="4">
-          <v-card class="mx-auto" outlined>
-            <v-title class="headline mb-1"
-              >WASTE HEAT MANAGEMENT AND ELECTRICITY GENERATATION</v-title
-            >
-            <spacer />
 
-            <v-text>
+        <v-col style="margin: 0 auto" cols="12" sm="8" md="4">
+          <v-card class="mx-auto" max-width="400">
+            <v-img
+              class="white--text align-end"
+              height="200px"
+              src="https://www.greenbiz.com/sites/default/files/styles/gbz_article_primary_breakpoints_kalapicture_screen-lg_1x/public/images/articles/featured/partnership_0.jpg?itok=ZekH-so_&timestamp=1445488550"
+            >
+              <v-card-title style="color: midnightblue"
+                >WASTE HEAT MANAGEMENT AND ELECTRICITY
+                GENERATATION</v-card-title
+              >
+            </v-img>
+
+            <v-card-text class="text--primary">
               IEEE SIGHT student’s chapter (AMU) organised an informative
               session for the students of Women’s polytechnic, Aligarh Muslim
               University to spread awareness about the utilisation of
               technologies for Humanitarian causes and sustainable development.
               A lecture was delivered by Pakhil Singh, IEEE SIGHT Student
               Coordinator on “Waste Heat Management and Electricity Generation”.
-            </v-text>
-            <spacer />
-            <v-btn class="btn" to="./blog"
-              ><a
-                >Read More Newsletters &nbsp;<v-icon
-                  >mdi-arrow-right-bold</v-icon
-                ></a
-              ></v-btn
-            >
-          </v-card>
-        </v-col>
-        <v-col style="margin: auto" cols="12" sm="8" md="4">
-          <v-card class="mx-auto" outlined>
-            <v-title class="headline mb-1">facebook</v-title>
-            <spacer />
+              In this lecture, the utilisation and recovery of waste heat from
+              exhausts of vehicles, outdoor units of Air conditioners, Power
+              Plants, Refineries, heat wasted in aeroplane drag and their
+              effective conversion into Electricity was discussed.
+            </v-card-text>
 
-            <v-text>
-              IEEE SIGHT student’s chapter (AMU) organised an informative
-              session for the students of Women’s polytechnic, Aligarh Muslim
-              University to spread awareness about the utilisation of
-              technologies for Humanitarian causes and sustainable development.
-              A lecture was delivered by Pakhil Singh, IEEE SIGHT Student
-              Coordinator on “Waste Heat Management and Electricity Generation”.
-            </v-text>
-            <spacer />
-            <v-btn class="btn" to="./blog"
-              ><a
-                >Read More Newsletters &nbsp;<v-icon
-                  >mdi-arrow-right-bold</v-icon
-                ></a
-              ></v-btn
-            >
+            <v-card-actions>
+              <v-btn
+                color="orange"
+                href="https://drive.google.com/file/d/1OTsY4bfp0mvKBVOdkDrekGO-n0L91GF4/view?usp=sharing"
+                target="_blank"
+                rel="noopener"
+                text
+              >
+                Read More
+              </v-btn>
+
+              <v-btn color="orange" to="./blog" text> Explore </v-btn>
+            </v-card-actions>
           </v-card>
         </v-col>
-        <v-col style="margin: auto; height: auto" cols="12" sm="8" md="4">
+        <v-col style="margin: 0 auto; height: auto" cols="12" sm="8" md="4">
           <v-card>
             <instagram-embed
               class="insta"
               :url="'https://www.instagram.com/p/CE6Nls1gPbf/?igshid=u6liozf0coet'"
             />
+          </v-card>
+        </v-col>
+        <v-col style="margin: 0 auto" cols="12" sm="8" md="4">
+          <v-card class="mx-auto">
+            <iframe
+              class="feed"
+              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAMUIEEE%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+              height="500"
+              width="250"
+              style="border: none; overflow: hidden; width: fit-content"
+              scrolling="no"
+              frameborder="0"
+              allowTransparency="true"
+              allow="encrypted-media"
+            ></iframe>
           </v-card>
         </v-col>
       </v-row>
@@ -304,7 +313,8 @@ export default {
   background: royalblue;
   border: royalblue 2px solid;
 }
-.contact {
+.contact,
+.feed {
   display: flex;
   flex-direction: column;
   justify-content: center;
