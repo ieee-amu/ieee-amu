@@ -12,6 +12,7 @@
             v-for="social in socials"
             :key="social.icon"
             :href="social.link"
+            :color="social.color"
             target="_blank"
             rel="noopener"
             class="mx-4"
@@ -52,12 +53,25 @@
 export default {
   data: () => ({
     socials: [
-      { icon: 'mdi-facebook', link: 'https://facebook.com/AMUIEEE' },
-      { icon: 'mdi-github', link: 'https://github.com/ieee-amu' },
-      { icon: 'mdi-instagram', link: 'https://instagram.com/ieeeamu' },
+      {
+        icon: 'mdi-facebook',
+        link: 'https://facebook.com/AMUIEEE',
+        color: 'blue',
+      },
+      {
+        icon: 'mdi-github',
+        link: 'https://github.com/ieee-amu',
+        color: 'black',
+      },
+      {
+        icon: 'mdi-instagram',
+        link: 'https://instagram.com/ieeeamu',
+        color: 'pink',
+      },
       {
         icon: 'mdi-linkedin',
         link: 'https://www.linkedin.com/company/ieee-amu-student-branch/',
+        color: 'indigo',
       },
     ],
   }),
