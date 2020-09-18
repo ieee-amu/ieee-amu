@@ -61,7 +61,7 @@ export default {
       {
         icon: 'mdi-github',
         link: 'https://github.com/ieee-amu',
-        color: 'black',
+        color: '',
       },
       {
         icon: 'mdi-instagram',
