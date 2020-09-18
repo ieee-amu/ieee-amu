@@ -36,7 +36,8 @@
             rel="noopener"
           >
             <span class="developers"
-              >made with <v-icon class="developers">mdi-heart</v-icon> by
+              >made with
+              <v-icon color="red" class="developers">mdi-heart</v-icon> by
               db</span
             >
           </v-btn>
