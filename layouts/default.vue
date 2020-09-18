@@ -1,11 +1,11 @@
 <template>
   <v-app>
-    <v-app-bar fixed app dark>
+    <v-app-bar fixed app class="blue">
       <v-app-bar-nav-icon
         class="hidden-md-and-up"
         @click.stop="drawer = !drawer"
       ></v-app-bar-nav-icon>
-      <v-btn :to="`/`" depressed width="250px" height="50px">
+      <v-btn :to="`/`" depressed width="200px" height="50px" color="blue">
         <v-img
           src="https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/logo.svg?alt=media&token=4f818ffd-d53e-463b-ada8-78b568e323cd"
           width="250px"

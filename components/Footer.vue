@@ -1,12 +1,7 @@
 <template>
   <v-card>
     <v-footer dark height="auto" class="footer pa-0">
-      <v-card
-        flat
-        width="100%"
-        tile
-        class="dark lighten-1 white--text text-center"
-      >
+      <v-card flat width="100%" tile class="blue white--text text-center">
         <v-card-text>
           <v-btn
             v-for="social in socials"
@@ -56,7 +51,6 @@ export default {
       {
         icon: 'mdi-facebook',
         link: 'https://facebook.com/AMUIEEE',
-        color: 'blue',
       },
       {
         icon: 'mdi-github',
