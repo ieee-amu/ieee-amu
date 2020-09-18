@@ -171,14 +171,20 @@
           ><v-icon style="color: black" size="50">mdi-cellphone-iphone</v-icon>
           <h3 style="padding: 1rem 0">Phone</h3>
           <v-card-subtitle
-            ><a href="tel:+919412690509">+91-9412690509</a></v-card-subtitle
+            ><a
+              style="text-decoration: none; color: inherit"
+              href="tel:+919412690509"
+              >+91-9412690509</a
+            ></v-card-subtitle
           ></v-col
         >
         <v-col class="contact" cols="8" md="4"
           ><v-icon style="color: black" size="50">mdi-email</v-icon>
           <h3 style="padding: 1rem 0">Email</h3>
           <v-card-subtitle
-            ><a href="mailto:ieeeamu.zhcet@gmail.com"
+            ><a
+              href="mailto:ieeeamu.zhcet@gmail.com"
+              style="text-decoration: none; color: inherit"
               >ieeeamu.zhcet@gmail.com</a
             ></v-card-subtitle
           ></v-col
