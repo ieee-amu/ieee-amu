@@ -5,7 +5,6 @@ name = "javascript"
 enabled = true
 
   [analyzers.meta]
-  ecma_version = "2016"
-  module_system = "es-modules"
+  module_system = "commonjs"
+  plugins = ["vue"]
   environment = ["nodejs"]
-  style_guide = "standard"
