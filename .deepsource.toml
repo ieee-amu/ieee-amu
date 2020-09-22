@@ -5,6 +5,9 @@ name = "javascript"
 enabled = true
 
   [analyzers.meta]
-  module_system = "commonjs"
+  environment = [
+    "nodejs",
+    "browser"
+  ]
   plugins = ["vue"]
-  environment = ["nodejs"]
+  dialect = "typescript"
