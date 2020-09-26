@@ -29,6 +29,9 @@
         <v-btn text small to="/contact">
           <v-icon> mdi-contacts </v-icon>&nbsp; CONTACT &nbsp;
         </v-btn>
+        <v-btn text medium to="/IEEE-sight">
+          <v-icon> mdi-contacts </v-icon>&nbsp; IEEE-SIGHT &nbsp;
+        </v-btn>
       </div>
     </v-app-bar>
 
@@ -96,6 +99,7 @@ export default {
         { title: 'Team', icon: 'mdi-account', link: '/team' },
         { title: 'Blog', icon: 'mdi-book', link: '/blog' },
         { title: 'Contact Us', icon: 'mdi-contacts', link: '/contact' },
+        { title: 'IEEE-sight', icon: 'mdi-contacts', link: '/IEEE-sight' },
       ],
     }
   },
