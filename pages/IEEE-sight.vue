@@ -1,15 +1,17 @@
 <template>
   <div>
     <div>
+      <div class="d-flex flex-column justify-space-between align-center">
+        <v-img
+          contain
+          src="https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/amu-logo.png?alt=media&token=fe5c2453-4526-4934-8679-0ca61b0883f8"
+          width="250px"
+          height="250px"
+        >
+        </v-img>
+      </div>
       <v-container>
         <v-card class="mx-auto" max-width="1000">
-          <v-img
-            class="white--text align-end"
-            height="200px"
-            src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-          >
-          </v-img>
-
           <v-card-text class="text--primary">
             <div text small>
               IEEE SIGHT AMU is a student affinity group whose mission is to
@@ -33,6 +35,15 @@
           </v-card-text>
         </v-card>
       </v-container>
+      <spacer gap="3" />
+      <v-carousel hide-delimiters>
+        <v-carousel-item
+          v-for="(item, i) in items"
+          :key="i"
+          :src="item.src"
+        ></v-carousel-item>
+      </v-carousel>
+      <spacer gap="3" />
 
       <v-row justify="center">
         <v-col cols="12" md="12">
@@ -81,13 +92,6 @@
           </div>
         </v-col>
       </v-row>
-      <v-carousel hide-delimiters>
-        <v-carousel-item
-          v-for="(item, i) in items"
-          :key="i"
-          :src="item.src"
-        ></v-carousel-item>
-      </v-carousel>
     </div>
   </div>
 </template>
@@ -127,22 +131,38 @@
 </style>
 
 <script>
+import Spacer from '@/components/Spacer'
 export default {
+  components: {
+    Spacer,
+  },
   data() {
     return {
       sight_team: [],
       items: [
         {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
+          src:
+            'https://firebasestorage.googleapis.com/v0/b/ieee-amu-7deee.appspot.com/o/sight-photos%2Fdoctor-870361_1920.jpg?alt=media&token=c42e73f7-027a-4f96-96e5-f2ecd649faea',
         },
         {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+          src:
+            'https://firebasestorage.googleapis.com/v0/b/ieee-amu-7deee.appspot.com/o/sight-photos%2Fpoverty-1028841_1920.jpg?alt=media&token=4af98777-8409-45fd-830f-947d95b94f15',
         },
         {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
+          src:
+            'https://firebasestorage.googleapis.com/v0/b/ieee-amu-7deee.appspot.com/o/sight-photos%2Fhumanitarian-aid-939723_1280.jpg?alt=media&token=32cc5e32-bd55-440b-ab2e-3c61ae214e2d',
         },
         {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
+          src:
+            'https://firebasestorage.googleapis.com/v0/b/ieee-amu-7deee.appspot.com/o/sight-photos%2Fpollution-4077113_1920.jpg?alt=media&token=48248fef-7879-4dd2-aa3d-a40d79b2c69d',
+        },
+        {
+          src:
+            'https://firebasestorage.googleapis.com/v0/b/ieee-amu-7deee.appspot.com/o/sight-photos%2Fsolar-pv.jpg?alt=media&token=10350cc3-9cc1-4a1e-bbf7-eac19b1fe4eb',
+        },
+        {
+          src:
+            'https://firebasestorage.googleapis.com/v0/b/ieee-amu-7deee.appspot.com/o/sight-photos%2Fpollution-4077113_1920.jpg?alt=media&token=48248fef-7879-4dd2-aa3d-a40d79b2c69d',
         },
       ],
     }
