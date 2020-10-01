@@ -14,10 +14,10 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
-      }
+        content: process.env.npm_package_description || '',
+      },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
   /*
    ** Customize the progress-bar color
@@ -38,7 +38,7 @@ export default {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     '@nuxtjs/vuetify',
-    '@nuxtjs/color-mode'
+    '@nuxtjs/color-mode',
   ],
   /*
    ** Nuxt.js modules
@@ -58,14 +58,14 @@ export default {
           storageBucket: 'ieee-amu-7deee.appspot.com',
           messagingSenderId: '1053430145974',
           appId: '1:1053430145974:web:989e51fa111c102dfd9717',
-          measurementId: 'G-CCJMCFY88W'
+          measurementId: 'G-CCJMCFY88W',
         },
         services: {
           firestore: true,
-          auth: true
-        }
-      }
-    ]
+          auth: true,
+        },
+      },
+    ],
   ],
   /*
    ** Axios module configuration
@@ -88,10 +88,10 @@ export default {
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
-          success: colors.green.accent3
-        }
-      }
-    }
+          success: colors.green.accent3,
+        },
+      },
+    },
   },
   /*
    ** Build configuration
@@ -100,6 +100,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
-  }
+    extend(config, ctx) {},
+  },
 }
