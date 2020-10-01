@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar fixed app dark>
+    <v-app-bar fixed app class="blue">
       <v-app-bar-nav-icon
         class="hidden-md-and-up"
         @click.stop="drawer = !drawer"
@@ -113,5 +113,11 @@ export default {
 <style scoped>
 .developers {
   font-size: 10px;
+}
+.theme--dark.v-application {
+  background-color: var(--v-background-base, #2b2d30) !important;
+}
+.theme--light.v-application {
+  background-color: var(--v-background-base, rgb(213, 219, 221)) !important;
 }
 </style>
