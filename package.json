@@ -15,7 +15,7 @@
     "@nuxtjs/axios": "5.12.2",
     "@nuxtjs/firebase": "6.1.1",
     "@nuxtjs/pwa": "3.0.2",
-    "firebase": "7.20.0",
+    "firebase": "7.22.0",
     "nuxt": "2.14.5",
     "vue-instagram-embed": "^1.0.0"
   },
