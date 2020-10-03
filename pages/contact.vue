@@ -156,7 +156,7 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
 
-h1 {
+.order-last .font-weight-regular {
   width: 70%;
   margin: auto;
   font-size: 0.6rem;
