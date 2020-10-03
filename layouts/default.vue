@@ -23,6 +23,9 @@
         <v-btn text small to="/team">
           <v-icon> mdi-account </v-icon>&nbsp; TEAM &nbsp;
         </v-btn>
+        <v-btn text small to="/events">
+          <v-icon> mdi-calendar </v-icon>&nbsp; EVENTS &nbsp;
+        </v-btn>
         <v-btn text small to="/blog">
           <v-icon> mdi-book </v-icon>&nbsp; BLOG &nbsp;
         </v-btn>
@@ -94,6 +97,7 @@ export default {
       navItems: [
         { title: 'About', icon: 'mdi-home', link: '/#about-us' },
         { title: 'Team', icon: 'mdi-account', link: '/team' },
+        { title: 'Events', icon: 'mdi-calendar', link: '/events' },
         { title: 'Blog', icon: 'mdi-book', link: '/blog' },
         { title: 'Contact Us', icon: 'mdi-contacts', link: '/contact' },
       ],
