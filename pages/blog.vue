@@ -23,7 +23,12 @@
                 ></v-progress-linear>
               </v-row>
             </template>
-            <div class="justify-blog">{{ post.title }}</div>
+            <div
+              class="justify-blog"
+              style="font-family: 'Hammersmith One', sans-serif !important"
+            >
+              {{ post.title }}
+            </div>
           </v-img>
           <v-card-text v-text="post.date"></v-card-text>
           <v-row justify="center">

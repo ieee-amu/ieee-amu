@@ -3,7 +3,10 @@
     <v-row justify="center">
       <v-col cols="10" sm="6">
         <v-card color="rgba(182, 187, 165, 1)">
-          <v-card-text class="text-center headline black--text">
+          <v-card-text
+            class="text-center headline black--text"
+            style="font-family: 'Hammersmith One', sans-serif !important"
+          >
             TEAM MEMBERS
           </v-card-text>
         </v-card>
@@ -135,6 +138,8 @@ export default {
 }
 </script>
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
 .center {
   display: block;
   margin-left: auto;

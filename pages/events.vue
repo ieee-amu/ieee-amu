@@ -3,7 +3,12 @@
     <v-row justify="center">
       <v-col cols="12" sm="10" md="8" lg="6">
         <v-card class="blue black--text">
-          <div class="text-center headline pt-4 pb-4">News Panel</div>
+          <div
+            class="text-center headline pt-4 pb-4"
+            style="font-family: 'Hammersmith One', sans-serif !important"
+          >
+            News Panel
+          </div>
         </v-card>
       </v-col>
     </v-row>
@@ -19,7 +24,12 @@
       >
         <v-card class="mx-auto" max-width="344" elevation="3">
           <v-card-text>
-            <p class="display-1 text--primary">{{ event.title }}</p>
+            <p
+              class="display-1 text--primary"
+              style="font-family: 'Hammersmith One', sans-serif !important"
+            >
+              {{ event.title }}
+            </p>
             <p>{{ event.date }}</p>
             <div class="text--primary">
               {{ event.text }}
