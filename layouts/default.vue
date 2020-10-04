@@ -102,7 +102,7 @@ export default {
         { title: 'Team', icon: 'mdi-account', link: '/team' },
         { title: 'Events', icon: 'mdi-calendar', link: '/events' },
         { title: 'Blog', icon: 'mdi-book', link: '/blog' },
-        { title: 'IEEE-Sight', icon: 'mdi-eye', link: '/sight' },
+        { title: 'IEEE-Sight', icon: 'mdi-leaf', link: '/sight' },
         { title: 'Contact Us', icon: 'mdi-contacts', link: '/contact' },
       ],
     }
