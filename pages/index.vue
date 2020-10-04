@@ -1,8 +1,13 @@
 <template>
   <div>
-    <v-carousel cycle>
+    <v-carousel id="carousel" cycle>
       <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src" />
     </v-carousel>
+    <div id="mobile_header">
+      <v-img
+        src="https://firebasestorage.googleapis.com/v0/b/ieee-amu-7deee.appspot.com/o/Logopit_1591939004987%201%402x.png?alt=media&token=ab8d9a74-757d-4171-ad17-b030a36fd48a"
+      ></v-img>
+    </div>
     <spacer gap="5" />
     <v-divider />
     <spacer gap="5" />
@@ -280,6 +285,17 @@ export default {
 }
 </script>
 <style scoped>
+@media (max-width: 700px) {
+  #carousel {
+    display: none;
+  }
+  #mobile_header {
+    display: block !important;
+  }
+}
+#mobile_header {
+  display: none;
+}
 #about-us-1 {
   padding-top: 15px;
 }
