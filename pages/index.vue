@@ -37,7 +37,7 @@
       </v-card>
       <spacer gap="5" />
       <v-row dense>
-        http://ww1.vuetify.com/<v-img
+        <v-img
           contain
           src="https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/amu-logo.png?alt=media&token=fe5c2453-4526-4934-8679-0ca61b0883f8"
           width="250px"
