@@ -15,25 +15,22 @@
       <v-container>
         <v-card class="mx-auto" max-width="1000">
           <v-card-text class="text--primary">
-            <div text small>
-              IEEE SIGHT AMU is a student affinity group whose mission is to
-              help the local community through social actions and technical
-              projects of a humanitarian and sustainable nature, always seeking
-              to involve the local community in the projects so as to seek to
-              understand a little the reality of this population and then be
-              able to find effective and efficient solutions, obtaining mutual
-              understanding and collaboration. Created in 2016, it had its
-              official foundation before IEEE SIGHT ( Special Interest Group on
-              Humanitarian Technology ) on December 18, 2018, one of the first
-              IEEE SIGHT student affinity groups in India. Our main objective is
-              to put undergraduate students in contact with the population and
-              their needs, as a way of using the knowledge that is passed on to
-              us for a greater good. Our values are empathy, solidarity,
-              teamwork, commitment and, of course, pride in being IEEE SIGHT.
-              What we know and are can help in many different ways to make a
-              better world, so we are always asking members: Shall we make a
-              better world together?
-            </div>
+            IEEE SIGHT AMU is a student affinity group whose mission is to help
+            the local community through social actions and technical projects of
+            a humanitarian and sustainable nature, always seeking to involve the
+            local community in the projects so as to seek to understand a little
+            the reality of this population and then be able to find effective
+            and efficient solutions, obtaining mutual understanding and
+            collaboration. Created in 2016, it had its official foundation
+            before IEEE SIGHT ( Special Interest Group on Humanitarian
+            Technology ) on December 18, 2018, one of the first IEEE SIGHT
+            student affinity groups in India. Our main objective is to put
+            undergraduate students in contact with the population and their
+            needs, as a way of using the knowledge that is passed on to us for a
+            greater good. Our values are empathy, solidarity, teamwork,
+            commitment and, of course, pride in being IEEE SIGHT. What we know
+            and are can help in many different ways to make a better world, so
+            we are always asking members: Shall we make a better world together?
           </v-card-text>
         </v-card>
       </v-container>

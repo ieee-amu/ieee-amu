@@ -29,11 +29,11 @@
         <v-btn text small to="/blog">
           <v-icon> mdi-book </v-icon>&nbsp; BLOG &nbsp;
         </v-btn>
-        <v-btn text small to="/contact">
-          <v-icon> mdi-contacts </v-icon>&nbsp; CONTACT &nbsp;
+        <v-btn text small to="/sight">
+          <v-icon> mdi-leaf </v-icon>&nbsp; IEEE-SIGHT &nbsp;
         </v-btn>
-        <v-btn text medium to="/sight">
-          <v-icon> mdi-eye </v-icon>&nbsp; IEEE-Sight &nbsp;
+        <v-btn text small to="/contact">
+          <v-icon> mdi-contacts </v-icon>&nbsp; CONTACT
         </v-btn>
       </div>
     </v-app-bar>
@@ -102,8 +102,8 @@ export default {
         { title: 'Team', icon: 'mdi-account', link: '/team' },
         { title: 'Events', icon: 'mdi-calendar', link: '/events' },
         { title: 'Blog', icon: 'mdi-book', link: '/blog' },
-        { title: 'Contact Us', icon: 'mdi-contacts', link: '/contact' },
         { title: 'IEEE-Sight', icon: 'mdi-eye', link: '/sight' },
+        { title: 'Contact Us', icon: 'mdi-contacts', link: '/contact' },
       ],
     }
   },
