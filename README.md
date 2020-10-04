@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://ieeeamu.netlify.com" target="_blank">
-    <img src="./static/ieee.jpg">
+    <img src="./static/logo.png">
   </a>
 </p>
 <hr>
