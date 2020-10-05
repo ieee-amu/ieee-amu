@@ -1,6 +1,19 @@
 <template>
   <v-container fluid>
     <v-row justify="center">
+      <v-col cols="12" sm="10" md="8" lg="6">
+        <v-card class="teal white--text">
+          <div
+            class="text-center headline pt-4 pb-4"
+            style="font-family: 'Hammersmith One', sans-serif !important"
+          >
+            Reports
+          </div>
+        </v-card>
+      </v-col>
+    </v-row>
+    <PageLoader v-show="!posts.length" />
+    <v-row justify="center">
       <v-col
         v-for="post in posts"
         :key="post.id"
@@ -66,7 +79,11 @@
   </v-container>
 </template>
 <script>
+import PageLoader from '@/components/PageLoader.vue'
 export default {
+  components: {
+    PageLoader,
+  },
   data() {
     return {
       posts: [],

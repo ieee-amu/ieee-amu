@@ -13,6 +13,7 @@
       </v-col>
     </v-row>
     <spacer gap="2" />
+    <PageLoader v-show="!teams.length" />
     <v-container justify="center space-between">
       <v-row>
         <v-col
@@ -73,10 +74,12 @@
 </template>
 <script>
 import Spacer from '@/components/Spacer'
+import PageLoader from '@/components/PageLoader.vue'
 
 export default {
   components: {
     Spacer,
+    PageLoader,
   },
   data() {
     return {
