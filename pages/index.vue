@@ -289,6 +289,7 @@ export default {
   }
   #mobile_header {
     display: block !important;
+    padding: 4rem 1rem;
   }
 }
 #mobile_header {
