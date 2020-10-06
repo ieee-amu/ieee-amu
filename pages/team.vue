@@ -3,13 +3,17 @@
     <v-row justify="center">
       <v-col cols="10" sm="6">
         <v-card color="rgba(182, 187, 165, 1)">
-          <v-card-text class="text-center headline black--text">
+          <v-card-text
+            class="text-center headline black--text"
+            style="font-family: 'Hammersmith One', sans-serif !important"
+          >
             TEAM MEMBERS
           </v-card-text>
         </v-card>
       </v-col>
     </v-row>
     <spacer gap="2" />
+    <PageLoader v-show="!teams.length" />
     <v-container justify="center space-between">
       <v-row>
         <v-col
@@ -70,10 +74,12 @@
 </template>
 <script>
 import Spacer from '@/components/Spacer'
+import PageLoader from '@/components/PageLoader.vue'
 
 export default {
   components: {
     Spacer,
+    PageLoader,
   },
   data() {
     return {
@@ -135,6 +141,8 @@ export default {
 }
 </script>
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
 .center {
   display: block;
   margin-left: auto;

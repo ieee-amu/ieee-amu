@@ -1,15 +1,24 @@
 <template>
   <div>
-    <v-carousel cycle>
+    <v-carousel id="carousel" cycle>
       <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src" />
     </v-carousel>
+    <div id="mobile_header">
+      <v-img src="./logo.png"></v-img>
+    </div>
     <spacer gap="5" />
     <v-divider />
     <spacer gap="5" />
     <v-container>
       <v-card id="about-us" class="mb-3" elevation="10">
         <v-row justify="center">
-          <p id="about-us-1" class="display-2">About Us</p>
+          <p
+            id="about-us-1"
+            class="display-2"
+            style="font-family: 'Hammersmith One', sans-serif !important"
+          >
+            About Us
+          </p>
         </v-row>
         <v-main style="padding: 0" class="card-text">
           <p id="about-us-2" class="blockquote">
@@ -57,7 +66,12 @@
             >
               <v-col cols="12" sm="12">
                 <v-card color="rgba(74, 74, 74, 1)">
-                  <v-card-text class="text-center white--text headline">
+                  <v-card-text
+                    class="text-center white--text headline"
+                    style="
+                      font-family: 'Hammersmith One', sans-serif !important;
+                    "
+                  >
                     Team-Coordinators
                   </v-card-text>
                 </v-card>
@@ -94,7 +108,9 @@
       <v-row>
         <v-col cols="12" sm="12">
           <v-card-text class="text-center" style="margin: 3rem auto"
-            ><h1>Recent News</h1></v-card-text
+            ><h1 style="font-family: 'Hammersmith One', sans-serif !important">
+              Recent News
+            </h1></v-card-text
           >
         </v-col>
 
@@ -105,7 +121,11 @@
               height="200px"
               src="https://www.greenbiz.com/sites/default/files/styles/gbz_article_primary_breakpoints_kalapicture_screen-lg_1x/public/images/articles/featured/partnership_0.jpg?itok=ZekH-so_&timestamp=1445488550"
             >
-              <v-card-title style="color: midnightblue"
+              <v-card-title
+                style="
+                  color: midnightblue;
+                  font-family: 'Hammersmith One', sans-serif !important;
+                "
                 >WASTE HEAT MANAGEMENT AND ELECTRICITY
                 GENERATATION</v-card-title
               >
@@ -165,7 +185,9 @@
       </v-row>
       <v-row>
         <v-card-text class="text-center" style="margin: 3rem auto"
-          ><h1>Contact Us</h1></v-card-text
+          ><h1 style="font-family: 'Hammersmith One', sans-serif !important">
+            Contact Us
+          </h1></v-card-text
         >
         <v-col class="contact" cols="8" md="4"
           ><v-icon style="color: black" size="50">mdi-cellphone-iphone</v-icon>
@@ -261,6 +283,18 @@ export default {
 }
 </script>
 <style scoped>
+@media (max-width: 700px) {
+  #carousel {
+    display: none;
+  }
+  #mobile_header {
+    display: block !important;
+    padding: 4rem 1rem;
+  }
+}
+#mobile_header {
+  display: none;
+}
 #about-us-1 {
   padding-top: 15px;
 }

@@ -23,11 +23,17 @@
         <v-btn text small to="/team">
           <v-icon> mdi-account </v-icon>&nbsp; TEAM &nbsp;
         </v-btn>
+        <v-btn text small to="/events">
+          <v-icon> mdi-calendar </v-icon>&nbsp; EVENTS &nbsp;
+        </v-btn>
         <v-btn text small to="/blog">
           <v-icon> mdi-book </v-icon>&nbsp; BLOG &nbsp;
         </v-btn>
+        <v-btn text small to="/sight">
+          <v-icon> mdi-leaf </v-icon>&nbsp; IEEE-SIGHT &nbsp;
+        </v-btn>
         <v-btn text small to="/contact">
-          <v-icon> mdi-contacts </v-icon>&nbsp; CONTACT &nbsp;
+          <v-icon> mdi-contacts </v-icon>&nbsp; CONTACT
         </v-btn>
       </div>
     </v-app-bar>
@@ -94,7 +100,9 @@ export default {
       navItems: [
         { title: 'About', icon: 'mdi-home', link: '/#about-us' },
         { title: 'Team', icon: 'mdi-account', link: '/team' },
+        { title: 'Events', icon: 'mdi-calendar', link: '/events' },
         { title: 'Blog', icon: 'mdi-book', link: '/blog' },
+        { title: 'IEEE-Sight', icon: 'mdi-leaf', link: '/sight' },
         { title: 'Contact Us', icon: 'mdi-contacts', link: '/contact' },
       ],
     }

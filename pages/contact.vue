@@ -60,7 +60,10 @@
       <v-col class="order-md-last order-first" cols="12" md="6">
         <v-row
           ><v-col class="mx-auto" cols="10" md="12">
-            <h1 class="text-center display-3 font-weight-regular">
+            <h1
+              class="text-center display-3 font-weight-regular"
+              style="font-family: 'Hammersmith One', sans-serif !important"
+            >
               Contact us
             </h1>
           </v-col></v-row
@@ -151,7 +154,9 @@ export default {
 }
 </script>
 <style>
-h1 {
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+.order-last .font-weight-regular {
   width: 70%;
   margin: auto;
   font-size: 0.6rem;
