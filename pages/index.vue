@@ -1,8 +1,13 @@
 <template>
   <div>
-    <v-carousel id="carousel" cycle>
-      <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src" />
-    </v-carousel>
+    <swiper class="swiper" :options="swiperOption">
+      <swiper-slide v-for="(item, i) in items" :key="i" class="swiper-slide"
+        ><img :src="item.src"
+      /></swiper-slide>
+      <div slot="pagination" class="swiper-pagination"></div>
+      <div slot="button-prev" class="swiper-button-prev"></div>
+      <div slot="button-next" class="swiper-button-next"></div>
+    </swiper>
     <div id="mobile_header">
       <v-img src="./logo.png"></v-img>
     </div>
@@ -239,13 +244,35 @@
 <script>
 import Spacer from '@/components/Spacer'
 import InstagramEmbed from 'vue-instagram-embed'
+import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
+import 'swiper/css/swiper.css'
 export default {
+  name: 'swiper-example-autoplay',
+  title: 'Autoplay',
   components: {
     Spacer,
     InstagramEmbed,
+    Swiper,
+    SwiperSlide,
   },
   data() {
     return {
+      swiperOption: {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      },
       coordinators: [],
       items: [
         {
@@ -283,9 +310,10 @@ export default {
 }
 </script>
 <style scoped>
+/* @import './base.scss'; */
 @media (max-width: 700px) {
-  #carousel {
-    display: none;
+  .swiper {
+    margin-top: 0rem !important;
   }
   #mobile_header {
     display: block !important;
@@ -295,6 +323,24 @@ export default {
 #mobile_header {
   display: none;
 }
+.swiper {
+  height: 450px;
+  width: 100%;
+  margin-top: 3rem;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  background-color: white;
+}
+.swiper-slide img {
+  width: inherit;
+}
+
 #about-us-1 {
   padding-top: 15px;
 }
