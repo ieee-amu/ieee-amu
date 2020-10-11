@@ -1,16 +1,9 @@
 <template>
   <div>
-    <!-- <v-carousel id="carousel" cycle>
-      <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src" />
-    </v-carousel> -->
     <swiper class="swiper" :options="swiperOption">
       <swiper-slide v-for="(item, i) in items" :key="i" class="swiper-slide"
         ><img :src="item.src"
       /></swiper-slide>
-      <!-- <swiper-slide>slide 1</swiper-slide>
-      <swiper-slide>slide 2</swiper-slide>
-      <swiper-slide>slide 3</swiper-slide>
-      <swiper-slide>slide 4</swiper-slide> -->
       <div slot="pagination" class="swiper-pagination"></div>
       <div slot="button-prev" class="swiper-button-prev"></div>
       <div slot="button-next" class="swiper-button-next"></div>
