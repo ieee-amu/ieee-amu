@@ -17,6 +17,8 @@
     "@nuxtjs/pwa": "3.1.2",
     "firebase": "7.20.0",
     "nuxt": "2.14.6",
+    "swiper": "^6.3.3",
+    "vue-awesome-swiper": "^4.1.1",
     "vue-instagram-embed": "^1.0.0"
   },
   "devDependencies": {
