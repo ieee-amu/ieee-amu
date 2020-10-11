@@ -3,34 +3,17 @@
     <!-- <v-carousel id="carousel" cycle>
       <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src" />
     </v-carousel> -->
-    <swiper class="swiper" cycle>
-      <!-- <swiper-slide class="swiper-slide"
-        ><img
-          src="https://firebasestorage.googleapis.com/v0/b/ieee-amu-7deee.appspot.com/o/sight-photos%2Fveterinary-85925_1920.jpg?alt=media&token=70a5fe42-14e3-426d-89c9-020a903ac7e0"
-      /></swiper-slide>
-      <swiper-slide class="swiper-slide"
-        ><img
-          src="https://firebasestorage.googleapis.com/v0/b/ieee-amu-7deee.appspot.com/o/sight-photos%2Fhumanitarian-aid-939723_1280.jpg?alt=media&token=32cc5e32-bd55-440b-ab2e-3c61ae214e2d"
-      /></swiper-slide>
-      <swiper-slide class="swiper-slide"
-        ><img
-          src="https://firebasestorage.googleapis.com/v0/b/ieee-amu-7deee.appspot.com/o/sight-photos%2Fpollution-4077113_1920.jpg?alt=media&token=48248fef-7879-4dd2-aa3d-a40d79b2c69d"
-          alt=""
-      /></swiper-slide>
-      <swiper-slide class="swiper-slide"
-        ><img
-          src="https://firebasestorage.googleapis.com/v0/b/ieee-amu-7deee.appspot.com/o/sight-photos%2Fpoverty-1028841_1920.jpg?alt=media&token=4af98777-8409-45fd-830f-947d95b94f15"
-          alt=""
-      /></swiper-slide> -->
+    <swiper class="swiper" :options="swiperOption">
       <swiper-slide v-for="(item, i) in items" :key="i" class="swiper-slide"
         ><img :src="item.src"
       /></swiper-slide>
-      <!-- <swiper-slide class="swiper-slide">Slide 6</swiper-slide>
-      <swiper-slide class="swiper-slide">Slide 7</swiper-slide>
-      <swiper-slide class="swiper-slide">Slide 8</swiper-slide>
-      <swiper-slide class="swiper-slide">Slide 9</swiper-slide>
-      <swiper-slide class="swiper-slide">Slide 10</swiper-slide> -->
-      <!-- <div class="swiper-pagination" slot="pagination"></div> -->
+      <!-- <swiper-slide>slide 1</swiper-slide>
+      <swiper-slide>slide 2</swiper-slide>
+      <swiper-slide>slide 3</swiper-slide>
+      <swiper-slide>slide 4</swiper-slide> -->
+      <div slot="pagination" class="swiper-pagination"></div>
+      <div slot="button-prev" class="swiper-button-prev"></div>
+      <div slot="button-next" class="swiper-button-next"></div>
     </swiper>
     <div id="mobile_header">
       <v-img src="./logo.png"></v-img>
@@ -269,8 +252,10 @@
 import Spacer from '@/components/Spacer'
 import InstagramEmbed from 'vue-instagram-embed'
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
-import 'swiper/swiper-bundle.css'
+import 'swiper/css/swiper.css'
 export default {
+  name: 'swiper-example-autoplay',
+  title: 'Autoplay',
   components: {
     Spacer,
     InstagramEmbed,
@@ -279,14 +264,22 @@ export default {
   },
   data() {
     return {
-      // swiperOption: {
-      //   slidesPerView: 3,
-      //   spaceBetween: 30,
-      //   pagination: {
-      //     el: '.swiper-pagination',
-      //     clickable: true,
-      //   },
-      // },
+      swiperOption: {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      },
       coordinators: [],
       items: [
         {
@@ -326,8 +319,8 @@ export default {
 <style scoped>
 /* @import './base.scss'; */
 @media (max-width: 700px) {
-  #carousel {
-    display: none;
+  .swiper {
+    margin-top: 0rem !important;
   }
   #mobile_header {
     display: block !important;
@@ -338,8 +331,9 @@ export default {
   display: none;
 }
 .swiper {
-  height: 400px;
+  height: 450px;
   width: 100%;
+  margin-top: 3rem;
 }
 .swiper-slide {
   display: flex;
