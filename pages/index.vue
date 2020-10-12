@@ -103,8 +103,8 @@
                   </v-card-text>
                 </v-card>
               </v-col>
-              <v-btn href="/team" class="btn">
-                <a> View Team &nbsp;<v-icon>mdi-arrow-right-bold</v-icon></a>
+              <v-btn href="/team" class="team_btn">
+                View Team &nbsp;<v-icon>mdi-arrow-right-bold</v-icon>
               </v-btn>
             </div>
           </div>
@@ -383,16 +383,19 @@ export default {
   justify-content: center;
   flex-direction: column;
 }
-.btn {
+.team_btn {
   margin-top: 20px;
   color: royalblue;
   background: white;
-  border: white 2px solid;
+  border: royalblue 2px solid;
   padding: 10px;
   transition: all 0.2s;
 }
-.btn a {
-  text-decoration: none;
+
+.team_btn:hover {
+  color: white;
+  background: royalblue !important;
+  /* border: royalblue 2px solid; */
 }
 .team_cont {
   margin-bottom: 1rem;
@@ -400,11 +403,9 @@ export default {
   padding-bottom: 1.5rem;
 }
 
-.btn:hover {
+/* .team_btn a:hover {
   color: white;
-  background: royalblue;
-  border: royalblue 2px solid;
-}
+} */
 .contact,
 .feed {
   display: flex;

@@ -15,7 +15,7 @@
             :color="social.color"
             target="_blank"
             rel="noopener"
-            class="mx-4"
+            class="mx-4 links"
             dark
             icon
           >
@@ -78,3 +78,11 @@ export default {
   }),
 }
 </script>
+<style scoped>
+.links {
+  transition: all 0.3s ease-out;
+}
+.links:hover {
+  transform: scale(1.1);
+}
+</style>
