@@ -74,14 +74,7 @@
         <v-tabs-items v-model="tab">
           <v-tab-item v-for="item in items1" :key="item.tab">
             <v-card flat contain width="100%">
-              <img
-                id="sight_photo"
-                contain
-                class="center"
-                width="60%"
-                style="background-position: inherit"
-                :src="item.src"
-              />
+              <img id="sight_photo" contain class="center" :src="item.src" />
               <img />
             </v-card>
             <v-card-text
@@ -205,7 +198,7 @@
               "
             >
               Join a desired project group and contribute? Email us at
-              amuieee.zhcet@gmail.com 
+              amuieee.zhcet@gmail.com
             </v-card-text>
           </v-card>
         </v-col>
@@ -236,12 +229,19 @@
   </div>
 </template>
 <style scoped>
+@media (max-width: 600px) {
+  #sight_photo {
+    width: 100% !important;
+  }
+  .team_cont {
+    margin-top: 5rem !important;
+  }
+}
+
 #sight_photo {
   margin-top: 1rem;
-
-  
+  background-position: inherit;
   width: 60%;
-
   /* border-radius: 100%; */
   background-size: cover;
   height: 450px;
@@ -343,4 +343,3 @@ export default {
   },
 }
 </script>
-

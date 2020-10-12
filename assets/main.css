@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 :root {
     --color: #243746;
     --color-primary: #158876;
@@ -27,7 +27,10 @@
   }
   
   body {
-    font-family: 'Source Code Pro', monospace;
+    /* font-family: 'Source Code Pro', monospace;
+     */
+    font-family: 'Nunito', sans-serif !important;
+
     background-color: var(--bg);
     color: var(--color);
     transition: background-color .3s;
@@ -36,6 +39,7 @@
     color: var(--color-primary)
   }
   .v-application{
-    font-family: 'Source Code Pro', monospace !important;
+    /* font-family: 'Source Code Pro', monospace !important; */
+    font-family: 'Nunito', sans-serif !important;
 
   }
