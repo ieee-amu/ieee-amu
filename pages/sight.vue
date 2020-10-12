@@ -182,7 +182,7 @@
               "
             >
               Have an idea which you would love to implement? Email us at
-              amuieee.zhcet@gmail.com Subject of Email : Start-AGroup
+              amuieee.zhcet@gmail.com
             </v-card-text>
           </v-card>
         </v-col>
@@ -205,7 +205,7 @@
               "
             >
               Join a desired project group and contribute? Email us at
-              amuieee.zhcet@gmail.com Subject of Email :Join-AGroup
+              amuieee.zhcet@gmail.com 
             </v-card-text>
           </v-card>
         </v-col>
@@ -227,8 +227,7 @@
                 font-size: 15px;
               "
             >
-              Volunteer with us? Email us at amuieee.zhcet@gmail.com Subject of
-              Email: Volunteer
+              Volunteer with us? Email us at amuieee.zhcet@gmail.com
             </v-card-text>
           </v-card>
         </v-col>
