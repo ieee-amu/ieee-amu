@@ -99,7 +99,7 @@
           </v-container>
         </v-form>
         <div class="text-center">
-          <v-btn large id="submit_btn" color="dark" @click="submit">
+          <v-btn id="submit_btn" large color="dark" @click="submit">
             Send &nbsp; <v-icon>mdi-send</v-icon>
           </v-btn>
         </div>
