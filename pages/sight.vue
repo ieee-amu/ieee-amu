@@ -51,7 +51,7 @@
       </v-container>
       <spacer gap="3" />
 
-      <v-card height="600">
+      <v-card height="700">
         <v-tabs
           v-model="tab"
           height="100"
@@ -78,7 +78,7 @@
                 id="sight_photo"
                 contain
                 class="center"
-                width="50%"
+                width="60%"
                 style="background-position: inherit"
                 :src="item.src"
               />
@@ -240,13 +240,13 @@
 #sight_photo {
   margin-top: 1rem;
 
-  height: 60%;
+  
   width: 60%;
 
   /* border-radius: 100%; */
   background-size: cover;
-  height: 340px;
-  margin-bottom: 2rem;
+  height: 450px;
+  margin-bottom: 0.5rem;
 }
 #pic {
   margin-top: 20px;
