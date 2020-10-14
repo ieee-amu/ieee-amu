@@ -76,12 +76,8 @@
             Vission
           </h1>
           <p>
-            To help the local community through social actions and technical
-            projects of a humanitarian and sustainable nature, always seeking to
-            involve the local community in the projects so as to seek to
-            understand a little the reality of this population and then be able
-            to find effective and efficient solutions, obtaining mutual
-            understanding and collaboration
+            Helping underserved local communities to benefit from sustainable
+            technological advances.
           </p></v-col
         >
         <v-col cols="12" md="4">
@@ -129,9 +125,9 @@
             Mission
           </h1>
           <p>
-            Our main objective is to put undergraduate students in contact with
-            the population and their needs, as a way of using the knowledge that
-            is passed on to us for a greater good.
+            A network of undergraduates volunteering to partner with local
+            organizations and underserved communities to make the most of
+            technology for sustainable development.
           </p></v-col
         >
         <v-col cols="12" md="4">
@@ -160,8 +156,8 @@
             Values
           </h1>
           <p>
-            Our values are empathy, solidarity, teamwork, commitment and, of
-            course, pride in being IEEE SIGHT.
+            We hope to create and implement sustainable solutions to make a
+            difference in the lives of people.
           </p></v-col
         >
       </v-row>
@@ -169,11 +165,15 @@
       <spacer gap="5" />
       <v-row class="text-center"
         ><v-col cols="12">
-          <h1 style="font-family: 'Hammersmith One', sans-serif !important">
-            About Us
-          </h1>
-
-          <v-card>
+          <v-card elevation="11" outlined shaped tile>
+            <v-card color="primary">
+              <v-card-text
+                style="padding: 1rem"
+                class="text-center white--text headline"
+              >
+                About Us
+              </v-card-text>
+            </v-card>
             <v-card-text
               style="
                 padding: 1rem;
@@ -199,6 +199,7 @@
           </v-card>
         </v-col></v-row
       >
+      <spacer gap="5" />
       <v-row justify="center">
         <v-col cols="12" md="12">
           <div class="container">
@@ -260,7 +261,8 @@
 
         <v-col style="margin: 0 auto" cols="12" sm="8" md="4">
           <v-card class="mx-auto" max-width="400" height="200">
-            <v-card-title style="color: midnightblue; font-size: 25px"
+            <v-card-title
+              style="color: midnightblue; font-size: 25px; font-weight: bold"
               >Start a Group</v-card-title
             >
 
@@ -272,7 +274,8 @@
         </v-col>
         <v-col style="margin: 0 auto" cols="12" sm="8" md="4">
           <v-card class="mx-auto" max-width="400" height="200">
-            <v-card-title style="color: midnightblue; font-size: 25px"
+            <v-card-title
+              style="color: midnightblue; font-size: 25px; font-weight: bold"
               >Join a Sight Group</v-card-title
             >
 
@@ -284,7 +287,8 @@
         </v-col>
         <v-col style="margin: 0 auto" cols="12" sm="8" md="4">
           <v-card class="mx-auto" max-width="400" height="200">
-            <v-card-title style="color: midnightblue; font-size: 25px"
+            <v-card-title
+              style="color: midnightblue; font-size: 25px; font-weight: bold"
               >Volunteer</v-card-title
             >
 
