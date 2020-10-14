@@ -99,7 +99,7 @@
           </v-container>
         </v-form>
         <div class="text-center">
-          <v-btn large color="dark" @click="submit">
+          <v-btn id="submit_btn" large color="dark" @click="submit">
             Send &nbsp; <v-icon>mdi-send</v-icon>
           </v-btn>
         </div>
@@ -155,7 +155,18 @@ export default {
 </script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
-
+#submit_btn {
+  border: none;
+  background: white;
+  border: 1px solid black;
+  color: black;
+  transition: all 0.2s ease-out;
+}
+#submit_btn:hover {
+  background: black;
+  color: white;
+  transform: scale(1.1);
+}
 .order-last .font-weight-regular {
   width: 70%;
   margin: auto;
