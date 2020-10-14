@@ -163,22 +163,20 @@
       </v-row>
 
       <spacer gap="5" />
+      <h1
+        align="center"
+        style="
+          font-weight: bold;
+          font-family: 'Hammersmith One', sans-serif !important;
+          font-size: 35px;
+        "
+      >
+        About Us
+      </h1>
       <v-row class="text-center"
         ><v-col cols="12">
           <v-card elevation="11" outlined shaped tile>
-            <v-col cols="12" sm="12">
-              <v-card-text class="text-center" style="margin-top: 2rem"
-                ><h1
-                  style="
-                    font-weight: bold;
-                    font-family: 'Hammersmith One', sans-serif !important;
-                    font-size: 35px;
-                  "
-                >
-                  About Us
-                </h1></v-card-text
-              >
-            </v-col>
+            <v-col cols="12" sm="12"> </v-col>
             <v-card-text
               style="
                 padding: 1rem;
@@ -205,6 +203,16 @@
         </v-col></v-row
       >
       <spacer gap="5" />
+      <h1
+        align="center"
+        style="
+          font-weight: bold;
+          font-family: 'Hammersmith One', sans-serif !important;
+          font-size: 35px;
+        "
+      >
+        Steering Commitee
+      </h1>
       <v-row justify="center">
         <v-col cols="12" md="12">
           <div class="container">
@@ -212,20 +220,6 @@
               class="row team_cont"
               style="justify-content: center; background-color: #b2ebf2"
             >
-              <v-col cols="12" sm="12">
-                <v-card-text class="text-center" style="margin-top: 2rem"
-                  ><h1
-                    style="
-                      font-weight: bold;
-                      font-family: 'Hammersmith One', sans-serif !important;
-                      font-size: 35px;
-                    "
-                  >
-                    Steering Commitee
-                  </h1></v-card-text
-                >
-              </v-col>
-
               <v-col
                 v-for="members in sight_team"
                 :key="members.id"
@@ -310,7 +304,7 @@
   height: 240px;
 }
 .team-card {
-  margin: auto;
+  margin: 2rem;
   /* height: 330px; */
   background-color: rgba(0, 0, 0, 0.23);
   width: 380px;
