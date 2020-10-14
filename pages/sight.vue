@@ -22,30 +22,8 @@
           Special Interest Group On Humanitarian Technology
         </v-chip>
       </div>
-      <spacer gap="3" />
-      <v-container>
-        <v-card class="mx-auto" max-width="1000" color="#B2EBF2">
-          <v-card-text class="text--primary" style="">
-            IEEE SIGHT AMU is a student affinity group whose mission is to help
-            the local community through social actions and technical projects of
-            a humanitarian and sustainable nature, always seeking to involve the
-            local community in the projects so as to seek to understand a little
-            the reality of this population and then be able to find effective
-            and efficient solutions, obtaining mutual understanding and
-            collaboration. Created in 2016, it had its official foundation
-            before IEEE SIGHT ( Special Interest Group on Humanitarian
-            Technology ) on December 18, 2018, one of the first IEEE SIGHT
-            student affinity groups in India. Our main objective is to put
-            undergraduate students in contact with the population and their
-            needs, as a way of using the knowledge that is passed on to us for a
-            greater good. Our values are empathy, solidarity, teamwork,
-            commitment and, of course, pride in being IEEE SIGHT. What we know
-            and are can help in many different ways to make a better world, so
-            we are always asking members: Shall we make a better world together?
-          </v-card-text>
-        </v-card>
-      </v-container>
-      <spacer gap="3" />
+      <spacer gap="5" />
+      <spacer gap="5" />
 
       <!-- <v-card height="700">
         <v-tabs
@@ -188,14 +166,21 @@
         >
       </v-row>
 
-      <spacer gap="3" />
+      <spacer gap="5" />
       <v-row class="text-center"
         ><v-col cols="12">
           <h1 style="font-family: 'Hammersmith One', sans-serif !important">
             About Us
           </h1>
+
           <v-card>
-            <v-card-text style="padding: 1rem">
+            <v-card-text
+              style="
+                padding: 1rem;
+                font-family: 'Hammersmith One', sans-serif !important;
+                font-size: 17px;
+              "
+            >
               We are a part of a network of young volunteers from IEEE who aim
               to assist the local community through humanitarian activities and
               sustainable projects by leveraging technology. We seek to involve
@@ -390,9 +375,6 @@
 
 <script>
 import Spacer from '@/components/Spacer'
-import green from '../assets/go-green.svg'
-import teamwork from '../assets/teamwork-together.svg'
-import technology from '../assets/technology.svg'
 
 export default {
   components: {
@@ -405,21 +387,16 @@ export default {
       items1: [
         {
           tab: 'Vision',
-
-          src: green,
-
           content:
             'To help the local community through social actions and technical projects of a humanitarian and sustainable nature, always seeking to involve the local community in the projects so as to seek to understand a little the reality of this population and then be able to find effective and efficient solutions, obtaining mutual understanding and collaboration',
         },
         {
           tab: 'Mission',
-          src: technology,
           content:
             'Our main objective is to put undergraduate students in contact with the population and their needs, as a way of using the knowledge that is passed on to us for a greater good.',
         },
         {
           tab: 'Values',
-          src: teamwork,
           content:
             'Our values are empathy, solidarity, teamwork, commitment and, of course, pride in being IEEE SIGHT.',
         },
