@@ -390,9 +390,6 @@
 
 <script>
 import Spacer from '@/components/Spacer'
-import green from '../assets/go-green.svg'
-import teamwork from '../assets/teamwork-together.svg'
-import technology from '../assets/technology.svg'
 
 export default {
   components: {
@@ -405,21 +402,16 @@ export default {
       items1: [
         {
           tab: 'Vision',
-
-          src: green,
-
           content:
             'To help the local community through social actions and technical projects of a humanitarian and sustainable nature, always seeking to involve the local community in the projects so as to seek to understand a little the reality of this population and then be able to find effective and efficient solutions, obtaining mutual understanding and collaboration',
         },
         {
           tab: 'Mission',
-          src: technology,
           content:
             'Our main objective is to put undergraduate students in contact with the population and their needs, as a way of using the knowledge that is passed on to us for a greater good.',
         },
         {
           tab: 'Values',
-          src: teamwork,
           content:
             'Our values are empathy, solidarity, teamwork, commitment and, of course, pride in being IEEE SIGHT.',
         },
