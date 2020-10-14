@@ -73,7 +73,7 @@
             />
           </svg>
           <h1 style="font-family: 'Hammersmith One', sans-serif !important">
-            Vission
+            Vision
           </h1>
           <p>
             Helping underserved local communities to benefit from sustainable
@@ -166,14 +166,19 @@
       <v-row class="text-center"
         ><v-col cols="12">
           <v-card elevation="11" outlined shaped tile>
-            <v-card color="primary">
-              <v-card-text
-                style="padding: 1rem"
-                class="text-center white--text headline"
+            <v-col cols="12" sm="12">
+              <v-card-text class="text-center" style="margin-top: 2rem"
+                ><h1
+                  style="
+                    font-weight: bold;
+                    font-family: 'Hammersmith One', sans-serif !important;
+                    font-size: 35px;
+                  "
+                >
+                  About Us
+                </h1></v-card-text
               >
-                About Us
-              </v-card-text>
-            </v-card>
+            </v-col>
             <v-card-text
               style="
                 padding: 1rem;
@@ -208,14 +213,17 @@
               style="justify-content: center; background-color: #b2ebf2"
             >
               <v-col cols="12" sm="12">
-                <v-card class="mx-auto" max-width="400" color="primary">
-                  <v-card-text
-                    class="text-center white--text headline"
-                    style=""
+                <v-card-text class="text-center" style="margin-top: 2rem"
+                  ><h1
+                    style="
+                      font-weight: bold;
+                      font-family: 'Hammersmith One', sans-serif !important;
+                      font-size: 35px;
+                    "
                   >
-                    Steering Committee
-                  </v-card-text>
-                </v-card>
+                    Steering Commitee
+                  </h1></v-card-text
+                >
               </v-col>
 
               <v-col
@@ -247,55 +255,6 @@
               </v-col>
             </div>
           </div>
-        </v-col>
-      </v-row>
-
-      <v-row>
-        <v-col cols="12" sm="12">
-          <v-card-text class="text-center" style="margin: 3rem auto"
-            ><h1 style="text-decoration: underline">
-              Get Involved
-            </h1></v-card-text
-          >
-        </v-col>
-
-        <v-col style="margin: 0 auto" cols="12" sm="8" md="4">
-          <v-card class="mx-auto" max-width="400" height="200">
-            <v-card-title
-              style="color: midnightblue; font-size: 25px; font-weight: bold"
-              >Start a Group</v-card-title
-            >
-
-            <v-card-text class="text--primary" style="font-size: 15px">
-              Have an idea which you would love to implement? Email us at
-              amuieee.zhcet@gmail.com
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col style="margin: 0 auto" cols="12" sm="8" md="4">
-          <v-card class="mx-auto" max-width="400" height="200">
-            <v-card-title
-              style="color: midnightblue; font-size: 25px; font-weight: bold"
-              >Join a Sight Group</v-card-title
-            >
-
-            <v-card-text class="text--primary" style="font-size: 15px">
-              Join a desired project group and contribute? Email us at
-              amuieee.zhcet@gmail.com
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col style="margin: 0 auto" cols="12" sm="8" md="4">
-          <v-card class="mx-auto" max-width="400" height="200">
-            <v-card-title
-              style="color: midnightblue; font-size: 25px; font-weight: bold"
-              >Volunteer</v-card-title
-            >
-
-            <v-card-text class="text--primary" style="font-size: 15px">
-              Volunteer with us? Email us at amuieee.zhcet@gmail.com
-            </v-card-text>
-          </v-card>
         </v-col>
       </v-row>
     </div>
