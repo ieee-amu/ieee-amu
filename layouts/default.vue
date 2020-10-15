@@ -17,22 +17,49 @@
         <v-btn icon @click="changeMode">
           <v-icon>mdi-weather-sunny </v-icon>
         </v-btn>
-        <v-btn text small to="/#about-us">
-          <v-icon> mdi-home </v-icon>&nbsp; ABOUT &nbsp;
-        </v-btn>
-        <v-btn text small to="/team">
+        <v-btn
+          class="nav-link"
+          active-class="active-link"
+          text
+          small
+          to="/team"
+        >
           <v-icon> mdi-account </v-icon>&nbsp; TEAM &nbsp;
         </v-btn>
-        <v-btn text small to="/events">
+        <v-btn
+          class="nav-link"
+          active-class="active-link"
+          text
+          small
+          to="/events"
+        >
           <v-icon> mdi-calendar </v-icon>&nbsp; EVENTS &nbsp;
         </v-btn>
-        <v-btn text small to="/blog">
+        <v-btn
+          class="nav-link"
+          active-class="active-link"
+          text
+          small
+          to="/blog"
+        >
           <v-icon> mdi-book </v-icon>&nbsp; BLOG &nbsp;
         </v-btn>
-        <v-btn text small to="/sight">
+        <v-btn
+          class="nav-link"
+          active-class="active-link"
+          text
+          small
+          to="/sight"
+        >
           <v-icon> mdi-leaf </v-icon>&nbsp; IEEE-SIGHT &nbsp;
         </v-btn>
-        <v-btn text small to="/contact">
+        <v-btn
+          class="nav-link"
+          active-class="active-link"
+          text
+          small
+          to="/contact"
+        >
           <v-icon> mdi-contacts </v-icon>&nbsp; CONTACT
         </v-btn>
       </div>
@@ -98,7 +125,6 @@ export default {
       ],
       title: 'IEEE AMU',
       navItems: [
-        { title: 'About', icon: 'mdi-home', link: '/#about-us' },
         { title: 'Team', icon: 'mdi-account', link: '/team' },
         { title: 'Events', icon: 'mdi-calendar', link: '/events' },
         { title: 'Blog', icon: 'mdi-book', link: '/blog' },
@@ -119,6 +145,54 @@ export default {
 }
 </script>
 <style scoped>
+.nav-link::before {
+  background-color: transparent;
+}
+.nav-link {
+  padding: 1rem !important;
+  border-bottom: 4px solid transparent;
+
+  border-radius: 0;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.nav-link::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 32px;
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  animation: slide-out 300ms ease-in-out forwards;
+}
+.nav-link:hover {
+  color: white;
+}
+.nav-link:hover::after {
+  animation: slide-in 300ms;
+}
+@keyframes slide-out {
+  0% {
+    transform: none;
+  }
+  100% {
+    transform: translate(1000%, 0);
+  }
+}
+@keyframes slide-in {
+  0% {
+    transform: translate(-100%, 0);
+  }
+  100% {
+    transform: none;
+  }
+}
+.active-link {
+  color: white;
+  border-bottom: 4px solid white;
+}
 .developers {
   font-size: 10px;
 }

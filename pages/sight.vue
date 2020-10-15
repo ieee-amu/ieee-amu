@@ -18,34 +18,21 @@
           style="margin-bottom: 1px"
         >
         </v-img>
-        <v-chip class="ma-2" color="primary" style="font-size: 20px">
-          Special Interest Group On Humanitarian Technology
-        </v-chip>
+        <div class="text-center">
+          <v-chip
+            class="ma-2"
+            color="primary"
+            style="
+              font-family: 'Hammersmith One', sans-serif !important;
+              font-size: 14px;
+            "
+          >
+            Special Interest Group On Humanitarian Technology
+          </v-chip>
+        </div>
       </div>
-      <spacer gap="3" />
-      <v-container>
-        <v-card class="mx-auto" max-width="1000" color="#B2EBF2">
-          <v-card-text class="text--primary" style="">
-            IEEE SIGHT AMU is a student affinity group whose mission is to help
-            the local community through social actions and technical projects of
-            a humanitarian and sustainable nature, always seeking to involve the
-            local community in the projects so as to seek to understand a little
-            the reality of this population and then be able to find effective
-            and efficient solutions, obtaining mutual understanding and
-            collaboration. Created in 2016, it had its official foundation
-            before IEEE SIGHT ( Special Interest Group on Humanitarian
-            Technology ) on December 18, 2018, one of the first IEEE SIGHT
-            student affinity groups in India. Our main objective is to put
-            undergraduate students in contact with the population and their
-            needs, as a way of using the knowledge that is passed on to us for a
-            greater good. Our values are empathy, solidarity, teamwork,
-            commitment and, of course, pride in being IEEE SIGHT. What we know
-            and are can help in many different ways to make a better world, so
-            we are always asking members: Shall we make a better world together?
-          </v-card-text>
-        </v-card>
-      </v-container>
-      <spacer gap="3" />
+      <spacer gap="5" />
+      <spacer gap="5" />
 
       <!-- <v-card height="700">
         <v-tabs
@@ -95,15 +82,11 @@
             />
           </svg>
           <h1 style="font-family: 'Hammersmith One', sans-serif !important">
-            Vission
+            Vision
           </h1>
           <p>
-            To help the local community through social actions and technical
-            projects of a humanitarian and sustainable nature, always seeking to
-            involve the local community in the projects so as to seek to
-            understand a little the reality of this population and then be able
-            to find effective and efficient solutions, obtaining mutual
-            understanding and collaboration
+            Helping underserved local communities to benefit from sustainable
+            technological advances.
           </p></v-col
         >
         <v-col cols="12" md="4">
@@ -151,9 +134,9 @@
             Mission
           </h1>
           <p>
-            Our main objective is to put undergraduate students in contact with
-            the population and their needs, as a way of using the knowledge that
-            is passed on to us for a greater good.
+            A network of undergraduates volunteering to partner with local
+            organizations and underserved communities to make the most of
+            technology for sustainable development.
           </p></v-col
         >
         <v-col cols="12" md="4">
@@ -182,20 +165,34 @@
             Values
           </h1>
           <p>
-            Our values are empathy, solidarity, teamwork, commitment and, of
-            course, pride in being IEEE SIGHT.
+            We hope to create and implement sustainable solutions to make a
+            difference in the lives of people.
           </p></v-col
         >
       </v-row>
 
-      <spacer gap="3" />
+      <spacer gap="5" />
+      <h1
+        align="center"
+        style="
+          font-weight: bold;
+          font-family: 'Hammersmith One', sans-serif !important;
+          font-size: 35px;
+        "
+      >
+        About Us
+      </h1>
       <v-row class="text-center"
         ><v-col cols="12">
-          <h1 style="font-family: 'Hammersmith One', sans-serif !important">
-            About Us
-          </h1>
-          <v-card>
-            <v-card-text style="padding: 1rem">
+          <v-card elevation="11" outlined shaped tile>
+            <v-col cols="12" sm="12"> </v-col>
+            <v-card-text
+              style="
+                padding: 1rem;
+                font-family: 'Hammersmith One', sans-serif !important;
+                font-size: 17px;
+              "
+            >
               We are a part of a network of young volunteers from IEEE who aim
               to assist the local community through humanitarian activities and
               sustainable projects by leveraging technology. We seek to involve
@@ -214,6 +211,18 @@
           </v-card>
         </v-col></v-row
       >
+      <spacer gap="5" />
+      <h1
+        class="heading"
+        align="center"
+        style="
+          font-weight: bold;
+          font-family: 'Hammersmith One', sans-serif !important;
+          font-size: 35px;
+        "
+      >
+        Steering Commitee
+      </h1>
       <v-row justify="center">
         <v-col cols="12" md="12">
           <div class="container">
@@ -221,17 +230,6 @@
               class="row team_cont"
               style="justify-content: center; background-color: #b2ebf2"
             >
-              <v-col cols="12" sm="12">
-                <v-card class="mx-auto" max-width="400" color="primary">
-                  <v-card-text
-                    class="text-center white--text headline"
-                    style=""
-                  >
-                    Steering Committee
-                  </v-card-text>
-                </v-card>
-              </v-col>
-
               <v-col
                 v-for="members in sight_team"
                 :key="members.id"
@@ -263,52 +261,55 @@
           </div>
         </v-col>
       </v-row>
-
-      <v-row>
-        <v-col cols="12" sm="12">
-          <v-card-text class="text-center" style="margin: 3rem auto"
-            ><h1 style="text-decoration: underline">
-              Get Involved
-            </h1></v-card-text
-          >
-        </v-col>
-
-        <v-col style="margin: 0 auto" cols="12" sm="8" md="4">
-          <v-card class="mx-auto" max-width="400" height="200">
-            <v-card-title style="color: midnightblue; font-size: 25px"
-              >Start a Group</v-card-title
-            >
-
-            <v-card-text class="text--primary" style="font-size: 15px">
-              Have an idea which you would love to implement? Email us at
-              amuieee.zhcet@gmail.com
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col style="margin: 0 auto" cols="12" sm="8" md="4">
-          <v-card class="mx-auto" max-width="400" height="200">
-            <v-card-title style="color: midnightblue; font-size: 25px"
-              >Join a Sight Group</v-card-title
-            >
-
-            <v-card-text class="text--primary" style="font-size: 15px">
-              Join a desired project group and contribute? Email us at
-              amuieee.zhcet@gmail.com
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col style="margin: 0 auto" cols="12" sm="8" md="4">
-          <v-card class="mx-auto" max-width="400" height="200">
-            <v-card-title style="color: midnightblue; font-size: 25px"
-              >Volunteer</v-card-title
-            >
-
-            <v-card-text class="text--primary" style="font-size: 15px">
-              Volunteer with us? Email us at amuieee.zhcet@gmail.com
-            </v-card-text>
-          </v-card>
-        </v-col>
-      </v-row>
+      <h1
+        align="center"
+        style="
+          font-weight: bold;
+          font-family: 'Hammersmith One', sans-serif !important;
+          font-size: 35px;
+        "
+      >
+        Get Involved
+      </h1>
+      <v-container justify="center space-between">
+        <v-row>
+          <v-col style="margin: 0 auto" cols="12" sm="6" md="6">
+            <v-card class="mx-auto" height="200" max-width="420" elevation="16">
+              <v-card-title
+                style="color: midnightblue; font-size: 25px; font-weight: bold"
+                >Join Our IEEE-AMU Community</v-card-title
+              >
+              <v-card-text class="text--primary" style="font-size: 17px">
+                Fill out this form and reach out to us!!
+                <a
+                  href="https://forms.gle/bWFwZ5S87vg1hap9A"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Membership Form</a
+                >
+              </v-card-text>
+            </v-card>
+          </v-col>
+          <v-col style="margin: 0 auto" cols="12" sm="6" md="6">
+            <v-card class="mx-auto" height="200" max-width="420" elevation="16">
+              <v-card-title
+                style="color: midnightblue; font-size: 25px; font-weight: bold"
+                >Join a desired project</v-card-title
+              >
+              <v-card-text class="text--primary" style="font-size: 17px">
+                Want to contribute to a sustainable future? Email us at:
+                <a
+                  href="mailto:amuiee.zhcet@gmail.com"
+                  target="_blank"
+                  rel="noopener"
+                  >amuieee.zhcet@gmail.com</a
+                >
+              </v-card-text>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-container>
     </div>
   </div>
 </template>
@@ -320,7 +321,16 @@
   .team_cont {
     margin-top: 5rem !important;
   }
+  #heading {
+    margin: -1rem;
+  }
 }
+@media (max-width: 100px) {
+  #heading {
+    margin-bottom: -2rem;
+  }
+}
+
 .back {
   background-size: cover;
   background-position: center center;
@@ -349,6 +359,7 @@
   background-size: cover;
   /* height: 220px; */
 }
+
 .center {
   display: block;
   margin-top: 1rem;
@@ -362,10 +373,10 @@
   height: 240px;
 }
 .team-card {
-  margin: auto;
+  margin-top: 2rem;
   /* height: 330px; */
   background-color: rgba(0, 0, 0, 0.23);
-  width: 380px;
+  width: 440px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -390,9 +401,6 @@
 
 <script>
 import Spacer from '@/components/Spacer'
-import green from '../assets/go-green.svg'
-import teamwork from '../assets/teamwork-together.svg'
-import technology from '../assets/technology.svg'
 
 export default {
   components: {
@@ -405,21 +413,16 @@ export default {
       items1: [
         {
           tab: 'Vision',
-
-          src: green,
-
           content:
             'To help the local community through social actions and technical projects of a humanitarian and sustainable nature, always seeking to involve the local community in the projects so as to seek to understand a little the reality of this population and then be able to find effective and efficient solutions, obtaining mutual understanding and collaboration',
         },
         {
           tab: 'Mission',
-          src: technology,
           content:
             'Our main objective is to put undergraduate students in contact with the population and their needs, as a way of using the knowledge that is passed on to us for a greater good.',
         },
         {
           tab: 'Values',
-          src: teamwork,
           content:
             'Our values are empathy, solidarity, teamwork, commitment and, of course, pride in being IEEE SIGHT.',
         },
