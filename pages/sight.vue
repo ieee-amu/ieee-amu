@@ -18,7 +18,14 @@
           style="margin-bottom: 1px"
         >
         </v-img>
-        <v-chip class="ma-2" color="primary" style="font-size: 20px">
+        <v-chip
+          class="ma-2"
+          color="primary"
+          style="
+            font-family: 'Hammersmith One', sans-serif !important;
+            font-size: 17px;
+          "
+        >
           Special Interest Group On Humanitarian Technology
         </v-chip>
       </div>
@@ -251,6 +258,48 @@
           </div>
         </v-col>
       </v-row>
+      <h1
+        align="center"
+        style="
+          font-weight: bold;
+          font-family: 'Hammersmith One', sans-serif !important;
+          font-size: 35px;
+        "
+      >
+        Get Involved
+      </h1>
+      <v-container justify="center space-between">
+        <v-row>
+          <v-col style="margin: 0 auto" cols="12" sm="6" md="6">
+            <v-card class="mx-auto" height="200" max-width="420" elevation="16">
+              <v-card-title
+                style="color: midnightblue; font-size: 25px; font-weight: bold"
+                >Join Our IEEE-AMU Community</v-card-title
+              >
+              <v-card-text class="text--primary" style="font-size: 17px">
+                Fill out this form and reach out to us!!
+                <a href="https://forms.gle/bWFwZ5S87vg1hap9A">
+                  Membership Form</a
+                >
+              </v-card-text>
+            </v-card>
+          </v-col>
+          <v-col style="margin: 0 auto" cols="12" sm="6" md="6">
+            <v-card class="mx-auto" height="200" max-width="420" elevation="16">
+              <v-card-title
+                style="color: midnightblue; font-size: 25px; font-weight: bold"
+                >Join a desired project</v-card-title
+              >
+              <v-card-text class="text--primary" style="font-size: 17px">
+                Want to contribute to a sustainable future? Email us at:
+                <a href="mailto:amuiee.zhcet@gmail.com"
+                  >amuieee.zhcet@gmail.com</a
+                >
+              </v-card-text>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-container>
     </div>
   </div>
 </template>
@@ -291,6 +340,7 @@
   background-size: cover;
   /* height: 220px; */
 }
+
 .center {
   display: block;
   margin-top: 1rem;
@@ -304,10 +354,10 @@
   height: 240px;
 }
 .team-card {
-  margin: 2rem;
+  margin-top: 2rem;
   /* height: 330px; */
   background-color: rgba(0, 0, 0, 0.23);
-  width: 380px;
+  width: 440px;
   display: flex;
   justify-content: center;
   flex-direction: column;
