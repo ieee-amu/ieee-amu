@@ -24,7 +24,7 @@
             color="primary"
             style="
               font-family: 'Hammersmith One', sans-serif !important;
-              font-size: 10px;
+              font-size: 14px;
             "
           >
             Special Interest Group On Humanitarian Technology
