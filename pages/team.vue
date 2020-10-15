@@ -51,7 +51,7 @@
                 v-for="(link, type) in team.links"
                 :key="type"
                 :color="iconColor(type)"
-                class="mx-2 my-2"
+                class="mx-2 my-2 contact_btn"
                 fab
                 dark
                 small
@@ -143,6 +143,12 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
 
+.contact_btn {
+  transition: all 0.2s;
+}
+.contact_btn:hover {
+  transform: translateY(-6px);
+}
 .center {
   display: block;
   margin-left: auto;
