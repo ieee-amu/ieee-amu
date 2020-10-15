@@ -18,16 +18,18 @@
           style="margin-bottom: 1px"
         >
         </v-img>
-        <v-chip
-          class="ma-2"
-          color="primary"
-          style="
-            font-family: 'Hammersmith One', sans-serif !important;
-            font-size: 17px;
-          "
-        >
-          Special Interest Group On Humanitarian Technology
-        </v-chip>
+        <div class="text-center">
+          <v-chip
+            class="ma-2"
+            color="primary"
+            style="
+              font-family: 'Hammersmith One', sans-serif !important;
+              font-size: 17px;
+            "
+          >
+            Special Interest Group On Humanitarian Technology
+          </v-chip>
+        </div>
       </div>
       <spacer gap="5" />
       <spacer gap="5" />
@@ -211,6 +213,7 @@
       >
       <spacer gap="5" />
       <h1
+        class="heading"
         align="center"
         style="
           font-weight: bold;
@@ -278,7 +281,11 @@
               >
               <v-card-text class="text--primary" style="font-size: 17px">
                 Fill out this form and reach out to us!!
-                <a href="https://forms.gle/bWFwZ5S87vg1hap9A">
+                <a
+                  href="https://forms.gle/bWFwZ5S87vg1hap9A"
+                  target="_blank"
+                  rel="noopener"
+                >
                   Membership Form</a
                 >
               </v-card-text>
@@ -292,7 +299,10 @@
               >
               <v-card-text class="text--primary" style="font-size: 17px">
                 Want to contribute to a sustainable future? Email us at:
-                <a href="mailto:amuiee.zhcet@gmail.com"
+                <a
+                  href="mailto:amuiee.zhcet@gmail.com"
+                  target="_blank"
+                  rel="noopener"
                   >amuieee.zhcet@gmail.com</a
                 >
               </v-card-text>
@@ -311,7 +321,16 @@
   .team_cont {
     margin-top: 5rem !important;
   }
+  #heading {
+    margin: -1rem;
+  }
 }
+@media (max-width: 100px) {
+  #heading {
+    margin-bottom: -2rem;
+  }
+}
+
 .back {
   background-size: cover;
   background-position: center center;
