@@ -22,7 +22,7 @@
     "vue-instagram-embed": "^1.0.0"
   },
   "devDependencies": {
-    "@babel/compat-data": "7.11.0",
+    "@babel/compat-data": "7.12.1",
     "@nuxtjs/color-mode": "1.0.3",
     "@nuxtjs/eslint-config": "3.1.0",
     "@nuxtjs/eslint-module": "3.0.0",
