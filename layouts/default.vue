@@ -165,7 +165,7 @@ export default {
   width: 100%;
   height: 4px;
   background-color: white;
-  animation: slide-out 300ms ease-in-out forwards;
+  animation: slide-out 500ms ease-in-out forwards;
 }
 .nav-link:hover {
   color: white;
