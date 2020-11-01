@@ -1,21 +1,22 @@
 <template>
   <v-app>
-    <v-app-bar fixed app dark>
+    <v-app-bar fixed app color="#072540" height="80">
       <v-app-bar-nav-icon
         class="hidden-md-and-up"
         @click.stop="drawer = !drawer"
       ></v-app-bar-nav-icon>
-      <v-btn :to="`/`" depressed width="250px" height="50px">
-        <v-img
-          src="https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/logo.svg?alt=media&token=4f818ffd-d53e-463b-ada8-78b568e323cd"
-          width="250px"
-          height="50px"
-        ></v-img>
-      </v-btn>
+
+      <v-img
+        contain
+        src="https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/logo.svg?alt=media&token=4f818ffd-d53e-463b-ada8-78b568e323cd"
+        width="250px"
+        height="300px"
+      ></v-img>
+
       <v-spacer />
       <div class="hidden-sm-and-down">
         <v-btn icon @click="changeMode">
-          <v-icon>mdi-weather-sunny </v-icon>
+          <v-icon color="white">mdi-weather-sunny </v-icon>
         </v-btn>
         <v-btn
           class="nav-link"
@@ -23,6 +24,7 @@
           text
           small
           to="/team"
+          color="white"
         >
           <v-icon> mdi-account </v-icon>&nbsp; TEAM &nbsp;
         </v-btn>
@@ -32,6 +34,7 @@
           text
           small
           to="/events"
+          color="white"
         >
           <v-icon> mdi-calendar </v-icon>&nbsp; EVENTS &nbsp;
         </v-btn>
@@ -41,6 +44,7 @@
           text
           small
           to="/blog"
+          color="white"
         >
           <v-icon> mdi-book </v-icon>&nbsp; BLOG &nbsp;
         </v-btn>
@@ -50,6 +54,7 @@
           text
           small
           to="/sight"
+          color="white"
         >
           <v-icon> mdi-leaf </v-icon>&nbsp; IEEE-SIGHT &nbsp;
         </v-btn>
@@ -59,6 +64,7 @@
           text
           small
           to="/contact"
+          color="white"
         >
           <v-icon> mdi-contacts </v-icon>&nbsp; CONTACT
         </v-btn>
