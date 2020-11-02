@@ -6,12 +6,15 @@
         @click.stop="drawer = !drawer"
       ></v-app-bar-nav-icon>
 
-      <v-img
-        contain
-        src="https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/logo.svg?alt=media&token=4f818ffd-d53e-463b-ada8-78b568e323cd"
-        width="250px"
-        height="300px"
-      ></v-img>
+      <v-btn :to="`/`" depressed width="300px" height="50px" color="#244B59">
+        <v-img
+          contain
+          src="https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/logo.svg?alt=media&token=4f818ffd-d53e-463b-ada8-78b568e323cd"
+          width="250px"
+          height="300px"
+        ></v-img>
+      </v-btn>
+
 
       <v-spacer />
       <div class="hidden-sm-and-down">
