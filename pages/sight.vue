@@ -20,14 +20,15 @@
         </v-img>
         <div class="text-center">
           <v-chip
+            large
             class="ma-2"
             color="primary"
             style="
               font-family: 'Hammersmith One', sans-serif !important;
-              font-size: 14px;
+              font-size: 17px;
             "
           >
-            Special Interest Group On Humanitarian Technology
+            Special Interest Group On Humanitarian<br />Technology
           </v-chip>
         </div>
       </div>
@@ -276,11 +277,16 @@
           <v-col style="margin: 0 auto" cols="12" sm="6" md="6">
             <v-card class="mx-auto" height="200" max-width="420" elevation="16">
               <v-card-title
-                style="color: midnightblue; font-size: 25px; font-weight: bold"
+                style="
+                  color: midnightblue;
+                  font-size: 25px;
+                  font-weight: bold;
+                  word-break: break-word;
+                "
                 >Join Our IEEE-AMU Community</v-card-title
               >
               <v-card-text class="text--primary" style="font-size: 17px">
-                Fill out this form and reach out to us!!
+                Fill out this form and reach out to us!!<br />
                 <a
                   href="https://forms.gle/bWFwZ5S87vg1hap9A"
                   target="_blank"
