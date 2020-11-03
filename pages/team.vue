@@ -2,9 +2,9 @@
   <v-container>
     <v-row justify="center">
       <v-col cols="10" sm="6">
-        <v-card color="rgba(182, 187, 165, 1)">
+        <v-card color="#1167b1">
           <v-card-text
-            class="text-center headline black--text"
+            class="text-center headline white--text"
             style="font-family: 'Hammersmith One', sans-serif !important"
           >
             TEAM MEMBERS
@@ -160,6 +160,7 @@ export default {
   margin: auto;
   height: 500px;
   width: 340px;
+  background-color: #bae7ff !important;
 }
 .v-card__subtitle,
 .v-card__text,

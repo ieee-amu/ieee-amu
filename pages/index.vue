@@ -65,12 +65,9 @@
       <v-row justify="center">
         <v-col cols="12" md="12">
           <div class="container">
-            <div
-              class="row team_cont"
-              style="justify-content: center; background-color: #e3e1e1"
-            >
+            <div class="row team_cont" style="justify-content: center">
               <v-col cols="12" sm="12">
-                <v-card color="rgba(74, 74, 74, 1)">
+                <v-card color="#1167b1">
                   <v-card-text
                     class="text-center white--text headline"
                     style="
@@ -377,7 +374,8 @@ export default {
 .team-card {
   margin: auto;
   height: 330px;
-  background-color: rgba(0, 0, 0, 0.23);
+  /* background-color: rgba(0, 0, 0, 0.23); */
+  background-color: #187bcd40;
   width: 380px;
   display: flex;
   justify-content: center;
@@ -401,6 +399,8 @@ export default {
   margin-bottom: 1rem;
   border-radius: 10px;
   padding-bottom: 1.5rem;
+  background-color: #bae7ff;
+  box-shadow: 3px 3px 6px #00002b2e;
 }
 
 /* .team_btn a:hover {
