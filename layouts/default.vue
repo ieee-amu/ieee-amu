@@ -13,11 +13,14 @@
         height="50px"
       >
         <v-img
+          contain
           src="https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/logo.svg?alt=media&token=4f818ffd-d53e-463b-ada8-78b568e323cd"
           width="250px"
-          height="50px"
+          height="300px"
         ></v-img>
       </v-btn>
+
+
       <v-spacer />
       <div class="hidden-sm-and-down">
         <v-btn color="white" icon @click="changeMode">
@@ -30,6 +33,7 @@
           text
           small
           to="/team"
+          color="white"
         >
           <v-icon color="white"> mdi-account </v-icon>&nbsp; TEAM &nbsp;
         </v-btn>
@@ -40,6 +44,7 @@
           text
           small
           to="/events"
+          color="white"
         >
           <v-icon color="white"> mdi-calendar </v-icon>&nbsp; EVENTS &nbsp;
         </v-btn>
@@ -50,6 +55,7 @@
           text
           small
           to="/blog"
+          color="white"
         >
           <v-icon color="white"> mdi-book </v-icon>&nbsp; BLOG &nbsp;
         </v-btn>
@@ -60,6 +66,7 @@
           text
           small
           to="/sight"
+          color="white"
         >
           <v-icon color="white"> mdi-leaf </v-icon>&nbsp; IEEE-SIGHT &nbsp;
         </v-btn>
@@ -70,6 +77,7 @@
           text
           small
           to="/contact"
+          color="white"
         >
           <v-icon color="white"> mdi-contacts </v-icon>&nbsp; CONTACT
         </v-btn>
