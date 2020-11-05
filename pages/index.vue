@@ -166,10 +166,18 @@
         </v-col>
         <v-col style="margin: 0 auto; height: auto" cols="12" sm="8" md="4">
           <v-card>
-            <instagram-embed
+            <iframe
+              src="https://www.linkedin.com/embed/feed/update/urn:li:share:6721496838769299456"
+              height="1112"
+              style="width: 100%; height: 96vh"
+              frameborder="0"
+              allowfullscreen=""
+              title="Embedded post"
+            ></iframe>
+            <!-- <instagram-embed
               class="insta"
               :url="'https://www.instagram.com/p/CE6Nls1gPbf/?igshid=u6liozf0coet'"
-            />
+            /> -->
           </v-card>
         </v-col>
         <v-col style="margin: 0 auto" cols="12" sm="8" md="4">
@@ -178,8 +186,7 @@
               class="feed"
               src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAMUIEEE%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
               height="500"
-              width="250"
-              style="border: none; overflow: hidden; width: fit-content"
+              style="border: none; overflow: hidden; width: 100%"
               scrolling="no"
               frameborder="0"
               allowTransparency="true"
@@ -243,7 +250,7 @@
 
 <script>
 import Spacer from '@/components/Spacer'
-import InstagramEmbed from 'vue-instagram-embed'
+// import InstagramEmbed from 'vue-instagram-embed'
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
 export default {
@@ -251,7 +258,7 @@ export default {
   title: 'Autoplay',
   components: {
     Spacer,
-    InstagramEmbed,
+    // InstagramEmbed,
     Swiper,
     SwiperSlide,
   },
