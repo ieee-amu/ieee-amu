@@ -169,7 +169,7 @@
             <iframe
               src="https://www.linkedin.com/embed/feed/update/urn:li:share:6721496838769299456"
               height="1112"
-              style="width: 100%"
+              style="width: 100%; height: 96vh"
               frameborder="0"
               allowfullscreen=""
               title="Embedded post"
