@@ -7,28 +7,10 @@
         <v-tab href="#responded"> RESPONDED </v-tab>
 
         <v-tab-item value="unresponded">
-          <v-list>
-            <v-list-group v-for="msg in messages" :key="msg.id" no-action>
-              <template v-slot:activator>
-                <v-list-item-content>
-                  <v-list-item-title>
-                    <strong>{{ msg.visitor.fullName }}</strong>
-                    ({{ msg.visitor.email }})
-                  </v-list-item-title>
-                </v-list-item-content>
-              </template>
-              <v-list-item>
-                <v-list-item-content>
-                  <v-list-item-subtitle
-                    v-text="msg.message"
-                  ></v-list-item-subtitle>
-                </v-list-item-content>
-              </v-list-item>
-            </v-list-group>
-          </v-list>
+          <ContactMessages :messages="unrespondedMessages" />
         </v-tab-item>
         <v-tab-item value="responded">
-          All messages responded to, go here.
+          <ContactMessages :messages="respondedMessages" />
         </v-tab-item>
       </v-tabs>
     </v-row>
@@ -38,11 +20,14 @@
 <script>
 // Not implementing pagination in Firestore queries as it would be premature
 // optimization given the traffic this site is gonna receive.
+import ContactMessages from './contactMessages'
 
 export default {
+  components: { ContactMessages },
   data() {
     return {
-      messages: [],
+      respondedMessages: [],
+      unrespondedMessages: [],
     }
   },
   created() {
@@ -53,7 +38,11 @@ export default {
         querySnapshot.forEach((doc) => {
           const data = doc.data()
           data.id = doc.id // Add doc id field for v-for key
-          this.messages.push(data)
+          if (data.didAdminRespond) {
+            this.respondedMessages.push(data)
+          } else {
+            this.unrespondedMessages.push(data)
+          }
         })
       })
   },
