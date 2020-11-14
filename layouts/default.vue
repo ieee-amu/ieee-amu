@@ -15,7 +15,6 @@
         ></v-img>
       </v-btn>
 
-
       <v-spacer />
       <div class="hidden-sm-and-down">
         <v-btn icon @click="changeMode">
@@ -27,7 +26,6 @@
           text
           small
           to="/team"
-          color="white"
         >
           <v-icon> mdi-account </v-icon>&nbsp; TEAM &nbsp;
         </v-btn>
@@ -37,7 +35,6 @@
           text
           small
           to="/events"
-          color="white"
         >
           <v-icon> mdi-calendar </v-icon>&nbsp; EVENTS &nbsp;
         </v-btn>
@@ -47,7 +44,6 @@
           text
           small
           to="/blog"
-          color="white"
         >
           <v-icon> mdi-book </v-icon>&nbsp; BLOG &nbsp;
         </v-btn>
@@ -57,7 +53,6 @@
           text
           small
           to="/sight"
-          color="white"
         >
           <v-icon> mdi-leaf </v-icon>&nbsp; IEEE-SIGHT &nbsp;
         </v-btn>
@@ -67,7 +62,6 @@
           text
           small
           to="/contact"
-          color="white"
         >
           <v-icon> mdi-contacts </v-icon>&nbsp; CONTACT
         </v-btn>
@@ -142,6 +136,7 @@ export default {
       ],
     }
   },
+
   methods: {
     changeMode() {
       if (this.$vuetify.theme.dark === true) {
@@ -158,49 +153,34 @@ export default {
   background-color: transparent;
 }
 .nav-link {
-  padding: 1rem !important;
-  border-bottom: 4px solid transparent;
-
-  border-radius: 0;
-  text-decoration: none;
-  transition: all 0.2s;
+  color: white;
+  display: inline-block;
+  margin: 0;
+  text-transform: uppercase;
 }
 .nav-link::after {
-  content: '';
   display: block;
-  position: absolute;
-  left: 0;
-  top: 32px;
-  width: 100%;
-  height: 4px;
-  background-color: white;
-  animation: slide-out 500ms ease-in-out forwards;
+  content: '';
+  border-bottom: solid 3px #019fb6;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.nav-link:hover:after {
+  transform: scaleX(1);
 }
 .nav-link:hover {
-  color: white;
+  color: #019fb6 !important;
+  transition: color 200ms ease-in;
 }
-.nav-link:hover::after {
-  animation: slide-in 300ms;
-}
-@keyframes slide-out {
-  0% {
-    transform: none;
-  }
-  100% {
-    transform: translate(1000%, 0);
-  }
-}
-@keyframes slide-in {
-  0% {
-    transform: translate(-100%, 0);
-  }
-  100% {
-    transform: none;
-  }
+.nav-link:after {
+  transform-origin: 0% 50%;
+  position: relative;
+  top: 2px;
 }
 .active-link {
-  color: white;
-  border-bottom: 4px solid white;
+  /* border-bottom: solid 3px #019fb6; */
+  color: #019fb6;
+  font-weight: bold;
 }
 .developers {
   font-size: 10px;
