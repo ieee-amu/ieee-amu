@@ -5,8 +5,8 @@
         flat
         width="100%"
         tile
-        color="#072540"
         class="white--text text-center"
+        color="#03254c"
       >
         <v-card-text>
           <v-btn
