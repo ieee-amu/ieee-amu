@@ -282,9 +282,13 @@ export default {
       },
       coordinators: [],
       items: [
+        // {
+        //   src:
+        //     'https://firebasestorage.googleapis.com/v0/b/ieee-amu-7deee.appspot.com/o/Logopit_1591939004987%201%402x.png?alt=media&token=ab8d9a74-757d-4171-ad17-b030a36fd48a',
+        // },
         {
           src:
-            'https://firebasestorage.googleapis.com/v0/b/ieee-amu-7deee.appspot.com/o/Logopit_1591939004987%201%402x.png?alt=media&token=ab8d9a74-757d-4171-ad17-b030a36fd48a',
+            'https://firebasestorage.googleapis.com/v0/b/ieee-amu-7deee.appspot.com/o/Asset%202.png?alt=media&token=610204b4-0584-47f9-87bc-006e96c5271a',
         },
 
         {

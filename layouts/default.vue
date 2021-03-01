@@ -9,9 +9,9 @@
       <v-btn :to="`/`" depressed width="300px" height="50px" color="#244B59">
         <v-img
           contain
-          src="https://firebasestorage.googleapis.com/v0/b/ieee-amu.appspot.com/o/logo.svg?alt=media&token=4f818ffd-d53e-463b-ada8-78b568e323cd"
+          src="https://firebasestorage.googleapis.com/v0/b/ieee-amu-7deee.appspot.com/o/Asset%202.png?alt=media&token=610204b4-0584-47f9-87bc-006e96c5271a"
           width="250px"
-          height="300px"
+          height="50px"
         ></v-img>
       </v-btn>
 
