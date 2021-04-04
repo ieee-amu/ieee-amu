@@ -278,7 +278,6 @@
             <v-card class="mx-auto" height="200" max-width="420" elevation="16">
               <v-card-title
                 style="
-                  color: midnightblue;
                   font-size: 25px;
                   font-weight: bold;
                   word-break: break-word;
@@ -299,8 +298,7 @@
           </v-col>
           <v-col style="margin: 0 auto" cols="12" sm="6" md="6">
             <v-card class="mx-auto" height="200" max-width="420" elevation="16">
-              <v-card-title
-                style="color: midnightblue; font-size: 25px; font-weight: bold"
+              <v-card-title style="font-size: 25px; font-weight: bold"
                 >Join a desired project</v-card-title
               >
               <v-card-text class="text--primary" style="font-size: 17px">

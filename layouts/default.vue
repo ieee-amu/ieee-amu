@@ -6,13 +6,14 @@
         @click.stop="drawer = !drawer"
       ></v-app-bar-nav-icon>
 
-      <v-btn :to="`/`" depressed width="300px" height="50px" color="#244B59">
-        <v-img
-          contain
-          src="https://firebasestorage.googleapis.com/v0/b/ieee-amu-7deee.appspot.com/o/Asset%202.png?alt=media&token=610204b4-0584-47f9-87bc-006e96c5271a"
-          width="250px"
-          height="50px"
-        ></v-img>
+      <v-btn
+        id="logo_container"
+        :to="`/`"
+        depressed
+        height="50px"
+        color="#072540"
+      >
+        <v-img class="main_logo" contain width="250px" height="50px"></v-img>
       </v-btn>
 
       <v-spacer />
@@ -151,6 +152,27 @@ export default {
 <style scoped>
 .nav-link::before {
   background-color: transparent;
+}
+.main_logo {
+  background: url('https://firebasestorage.googleapis.com/v0/b/ieee-amu-7deee.appspot.com/o/Asset%202.png?alt=media&token=610204b4-0584-47f9-87bc-006e96c5271a');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#logo_container {
+  width: 300px;
+}
+@media screen and (max-width: 480px) {
+  .main_logo {
+    background: url('https://firebasestorage.googleapis.com/v0/b/ieee-amu-7deee.appspot.com/o/main_logo.png?alt=media&token=24eca515-027e-4c22-8634-205a3fb52fa5');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #logo_container {
+    width: 120px;
+    left: 23%;
+  }
 }
 .nav-link {
   color: white;
