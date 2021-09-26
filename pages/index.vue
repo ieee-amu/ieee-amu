@@ -167,13 +167,14 @@
         <v-col style="margin: 0 auto; height: auto" cols="12" sm="8" md="4">
           <v-card>
             <iframe
-              src="https://www.linkedin.com/embed/feed/update/urn:li:share:6721496838769299456"
+              src="https://www.linkedin.com/embed/feed/update/urn:li:share:6847741283012800512"
               height="1112"
               style="width: 100%; height: 96vh"
               frameborder="0"
               allowfullscreen=""
               title="Embedded post"
-            ></iframe>
+            >
+            </iframe>
             <!-- <instagram-embed
               class="insta"
               :url="'https://www.instagram.com/p/CE6Nls1gPbf/?igshid=u6liozf0coet'"
@@ -254,7 +255,7 @@ import Spacer from '@/components/Spacer'
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
 export default {
-  name: 'swiper-example-autoplay',
+  name: 'SwiperExampleAutoplay',
   title: 'Autoplay',
   components: {
     Spacer,

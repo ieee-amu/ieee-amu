@@ -304,10 +304,10 @@
               <v-card-text class="text--primary" style="font-size: 17px">
                 Want to contribute to a sustainable future? Email us at:
                 <a
-                  href="mailto:amuiee.zhcet@gmail.com"
+                  href="mailto:ieeestudentbranch@zhcet.ac.in"
                   target="_blank"
                   rel="noopener"
-                  >amuieee.zhcet@gmail.com</a
+                  >ieeestudentbranch@zhcet.ac.in</a
                 >
               </v-card-text>
             </v-card>
