@@ -48,15 +48,33 @@
         >
           <v-icon> mdi-book </v-icon>&nbsp; BLOG &nbsp;
         </v-btn>
-        <v-btn
-          class="nav-link"
-          active-class="active-link"
-          text
-          small
-          to="/sight"
-        >
-          <v-icon> mdi-leaf </v-icon>&nbsp; IEEE-SIGHT &nbsp;
-        </v-btn>
+        <v-menu open-on-hover bottom offset-y>
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn
+              class="nav-link"
+              active-class="active-link"
+              text
+              small
+              to="/home"
+              v-bind="attrs"
+              v-on="on"
+            >
+              <v-icon> mdi-leaf </v-icon>&nbsp; IEEE-SIGHT &nbsp;
+            </v-btn>
+          </template>
+          <v-list color="#072540">
+            <v-list-item
+              v-for="(item, index) in items"
+              :key="index"
+              :to="item.link"
+              link
+            >
+              <v-list-item-title style="color: #f4f4f4; font-size: 14px">{{
+                item.title
+              }}</v-list-item-title>
+            </v-list-item>
+          </v-list>
+        </v-menu>
         <v-btn
           class="nav-link"
           active-class="active-link"
@@ -132,8 +150,14 @@ export default {
         { title: 'Team', icon: 'mdi-account', link: '/team' },
         { title: 'Events', icon: 'mdi-calendar', link: '/events' },
         { title: 'Blog', icon: 'mdi-book', link: '/blog' },
-        { title: 'IEEE-Sight', icon: 'mdi-leaf', link: '/sight' },
+        { title: 'IEEE-Sight', icon: 'mdi-leaf', link: '/home' },
         { title: 'Contact Us', icon: 'mdi-contacts', link: '/contact' },
+      ],
+      items: [
+        { title: 'Home', link: '/home' },
+        { title: 'Steering Committee', link: '/Steering Committee' },
+        { title: 'Events', link: '/Events' },
+        { title: 'Epochal', link: '/Epochal' },
       ],
     }
   },
