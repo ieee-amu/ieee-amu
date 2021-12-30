@@ -47,6 +47,46 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  components: {},
+  data() {
+    return {
+      sight_team: [],
+      tab: null,
+      items1: [
+        {
+          tab: 'Vision',
+          content:
+            'To help the local community through social actions and technical projects of a humanitarian and sustainable nature, always seeking to involve the local community in the projects so as to seek to understand a little the reality of this population and then be able to find effective and efficient solutions, obtaining mutual understanding and collaboration',
+        },
+        {
+          tab: 'Mission',
+          content:
+            'Our main objective is to put undergraduate students in contact with the population and their needs, as a way of using the knowledge that is passed on to us for a greater good.',
+        },
+        {
+          tab: 'Values',
+          content:
+            'Our values are empathy, solidarity, teamwork, commitment and, of course, pride in being IEEE SIGHT.',
+        },
+      ],
+    }
+  },
+  created() {
+    this.$fireStore
+      .collection('sight_team')
+      .get()
+      .then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+          const docObj = doc.data()
+          docObj.id = doc.id
+          this.sight_team.push(docObj)
+        })
+      })
+  },
+}
+</script>
 <style scoped>
 @media (max-width: 600px) {
   #sight_photo {
@@ -170,43 +210,4 @@
   }
 }
 </style>
-<script>
-export default {
-  components: {},
-  data() {
-    return {
-      sight_team: [],
-      tab: null,
-      items1: [
-        {
-          tab: 'Vision',
-          content:
-            'To help the local community through social actions and technical projects of a humanitarian and sustainable nature, always seeking to involve the local community in the projects so as to seek to understand a little the reality of this population and then be able to find effective and efficient solutions, obtaining mutual understanding and collaboration',
-        },
-        {
-          tab: 'Mission',
-          content:
-            'Our main objective is to put undergraduate students in contact with the population and their needs, as a way of using the knowledge that is passed on to us for a greater good.',
-        },
-        {
-          tab: 'Values',
-          content:
-            'Our values are empathy, solidarity, teamwork, commitment and, of course, pride in being IEEE SIGHT.',
-        },
-      ],
-    }
-  },
-  created() {
-    this.$fireStore
-      .collection('sight_team')
-      .get()
-      .then((querySnapshot) => {
-        querySnapshot.forEach((doc) => {
-          const docObj = doc.data()
-          docObj.id = doc.id
-          this.sight_team.push(docObj)
-        })
-      })
-  },
-}
-</script>
+
