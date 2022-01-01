@@ -156,8 +156,6 @@ export default {
       items: [
         { title: 'Home', link: '/home' },
         { title: 'Steering Committee', link: '/Steering Committee' },
-        { title: 'Events', link: '/Events' },
-        { title: 'Epochal', link: '/Epochal' },
       ],
     }
   },
