@@ -22,7 +22,7 @@
               <a
                 href="https://docs.google.com/document/d/1jSSRcRRsOXl4YCsEkXs4AjMcTSGPIpmRX4aDKU1zxq4/edit?usp=sharing"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 style="font-weight: bold"
                 >READ MORE ABOUT EPOCHAL</a
               >
