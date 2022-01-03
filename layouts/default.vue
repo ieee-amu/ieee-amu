@@ -55,7 +55,7 @@
               active-class="active-link"
               text
               small
-              to="/home"
+              to="/sight/home"
               v-bind="attrs"
               v-on="on"
             >
@@ -154,9 +154,9 @@ export default {
         { title: 'Contact Us', icon: 'mdi-contacts', link: '/contact' },
       ],
       items: [
-        { title: 'Home', link: '/home' },
-        { title: 'Steering Committee', link: '/Steering Committee' },
-        { title: 'Epochal', link: '/epochal' },
+        { title: 'Home', link: '/sight/home' },
+        { title: 'Steering Committee', link: '/sight/committee' },
+        { title: 'Epochal', link: '/sight/epochal' },
       ],
     }
   },
