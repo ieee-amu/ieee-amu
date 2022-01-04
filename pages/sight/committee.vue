@@ -34,6 +34,29 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  components: {},
+  data() {
+    return {
+      sight_team: [],
+      tab: null,
+    }
+  },
+  created() {
+    this.$fireStore
+      .collection('sight_team')
+      .get()
+      .then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+          const docObj = doc.data()
+          docObj.id = doc.id
+          this.sight_team.push(docObj)
+        })
+      })
+  },
+}
+</script>
 <style scoped>
 @media (max-width: 1000px) {
   .formbanner1-title {
@@ -97,26 +120,4 @@
   background-size: cover;
 }
 </style>
-<script>
-export default {
-  components: {},
-  data() {
-    return {
-      sight_team: [],
-      tab: null,
-    }
-  },
-  created() {
-    this.$fireStore
-      .collection('sight_team')
-      .get()
-      .then((querySnapshot) => {
-        querySnapshot.forEach((doc) => {
-          const docObj = doc.data()
-          docObj.id = doc.id
-          this.sight_team.push(docObj)
-        })
-      })
-  },
-}
-</script>
+
