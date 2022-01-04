@@ -140,7 +140,7 @@
         align="center"
         style="
           font-weight: bold;
-          font-family: 'Hammersmith One', sans-serif !important;
+          font-family: 'Verdana', sans-serif !important;
           font-size: 35px;
         "
       >
@@ -154,7 +154,8 @@
               style="
                 padding: 1rem;
                 font-family: 'Hammersmith One', sans-serif !important;
-                font-size: 17px;
+                font-weight: lighter;
+                font-size: 16px;
               "
             >
               We are a part of a network of young volunteers from IEEE who aim
@@ -181,7 +182,7 @@
         align="center"
         style="
           font-weight: bold;
-          font-family: 'Hammersmith One', sans-serif !important;
+          font-family: 'Verdana', sans-serif !important;
           font-size: 35px;
         "
       >
@@ -204,7 +205,7 @@
                 <a
                   href="https://forms.gle/bWFwZ5S87vg1hap9A"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener"
                 >
                   Membership Form</a
                 >
@@ -221,7 +222,7 @@
                 <a
                   href="mailto:ieeestudentbranch@zhcet.ac.in"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener"
                   >ieeestudentbranch@zhcet.ac.in</a
                 >
               </v-card-text>
@@ -232,50 +233,6 @@
     </div>
   </div>
 </template>
-
-<script>
-import Spacer from '@/components/Spacer'
-export default {
-  components: {
-    Spacer,
-  },
-  data() {
-    return {
-      sight_team: [],
-      tab: null,
-      items1: [
-        {
-          tab: 'Vision',
-          content:
-            'To help the local community through social actions and technical projects of a humanitarian and sustainable nature, always seeking to involve the local community in the projects so as to seek to understand a little the reality of this population and then be able to find effective and efficient solutions, obtaining mutual understanding and collaboration',
-        },
-        {
-          tab: 'Mission',
-          content:
-            'Our main objective is to put undergraduate students in contact with the population and their needs, as a way of using the knowledge that is passed on to us for a greater good.',
-        },
-        {
-          tab: 'Values',
-          content:
-            'Our values are empathy, solidarity, teamwork, commitment and, of course, pride in being IEEE SIGHT.',
-        },
-      ],
-    }
-  },
-  created() {
-    this.$fireStore
-      .collection('sight_team')
-      .get()
-      .then((querySnapshot) => {
-        querySnapshot.forEach((doc) => {
-          const docObj = doc.data()
-          docObj.id = doc.id
-          this.sight_team.push(docObj)
-        })
-      })
-  },
-}
-</script>
 <style scoped>
 @media (max-width: 600px) {
   #sight_photo {
@@ -301,13 +258,12 @@ export default {
   width: 100%; /* fallback for old browsers */
 }
 .back {
-  background-size: cover;
+  width: 100%;
+  background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-  width: 90%;
   background-blend-mode: hard-light;
   height: 53vh;
-  background-color: cadetblue;
   position: absolute;
   background-image: url(https://firebasestorage.googleapis.com/v0/b/ieee-amu-7deee.appspot.com/o/sight-photos%2F2.png?alt=media&token=c502fd77-25ce-400a-8c63-9cbfa7086228);
 }
@@ -365,3 +321,46 @@ export default {
 }
 </style>
 
+<script>
+import Spacer from '@/components/Spacer'
+export default {
+  components: {
+    Spacer,
+  },
+  data() {
+    return {
+      sight_team: [],
+      tab: null,
+      items1: [
+        {
+          tab: 'Vision',
+          content:
+            'To help the local community through social actions and technical projects of a humanitarian and sustainable nature, always seeking to involve the local community in the projects so as to seek to understand a little the reality of this population and then be able to find effective and efficient solutions, obtaining mutual understanding and collaboration',
+        },
+        {
+          tab: 'Mission',
+          content:
+            'Our main objective is to put undergraduate students in contact with the population and their needs, as a way of using the knowledge that is passed on to us for a greater good.',
+        },
+        {
+          tab: 'Values',
+          content:
+            'Our values are empathy, solidarity, teamwork, commitment and, of course, pride in being IEEE SIGHT.',
+        },
+      ],
+    }
+  },
+  created() {
+    this.$fireStore
+      .collection('sight_team')
+      .get()
+      .then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+          const docObj = doc.data()
+          docObj.id = doc.id
+          this.sight_team.push(docObj)
+        })
+      })
+  },
+}
+</script>
