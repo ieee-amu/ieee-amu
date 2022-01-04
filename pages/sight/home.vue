@@ -205,7 +205,7 @@
                 <a
                   href="https://forms.gle/bWFwZ5S87vg1hap9A"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                 >
                   Membership Form</a
                 >
@@ -222,7 +222,7 @@
                 <a
                   href="mailto:ieeestudentbranch@zhcet.ac.in"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                   >ieeestudentbranch@zhcet.ac.in</a
                 >
               </v-card-text>
