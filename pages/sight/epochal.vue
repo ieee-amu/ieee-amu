@@ -1,5 +1,5 @@
 <template>
-  <div class="epochal" style="max-height: 1000px; margin-bottom: 800px">
+  <div class="epochal" style="margin-bottom: 800px">
     <div class="formbanner1-component">
       <v-container>
         <v-row justify="center">
@@ -9,7 +9,7 @@
               <p class="mt-2 pt-2" style="text-align: justify">
                 Epochal provides a platform for young aspiring engineers to come
                 together and be a part of a collaborative space; a society
-                (sub-section within SIGHT?) meant for learning and growing
+                (sub-section within SIGHT) meant for learning and growing
                 together in the field of research and engineering choosing from
                 among a variety of (sub-)societies. The idea is to foster
                 younger minds of ZHCET into identifying their niche, and
@@ -160,6 +160,26 @@
   </div>
 </template>
 <style scoped>
+@media (max-width: 1300px) {
+  .epochal {
+    padding-bottom: 500px;
+  }
+}
+@media (max-width: 960px) {
+  .epochal {
+    padding-bottom: 1400px;
+  }
+}
+@media (max-width: 650px) {
+  .epochal {
+    padding-bottom: 1600px;
+  }
+}
+@media (max-width: 430px) {
+  .epochal {
+    padding-bottom: 1950px;
+  }
+}
 .content {
   font-weight: 100;
   font-size: 14px;
