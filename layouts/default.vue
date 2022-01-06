@@ -102,17 +102,51 @@
       <v-divider></v-divider>
 
       <v-list dense>
-        <v-list-item
-          v-for="item in navItems"
-          :key="item.title"
-          :to="item.link"
-          link
-        >
+        <v-list-item to="/team">
           <v-list-item-icon>
-            <v-icon>{{ item.icon }}</v-icon>
+            <v-icon>mdi-account</v-icon>
           </v-list-item-icon>
           <v-list-item-content>
+            <v-list-item-title>Team</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item to="/events">
+          <v-list-item-icon>
+            <v-icon>mdi-calendar</v-icon>
+          </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title>Events</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item to="/blog">
+          <v-list-item-icon>
+            <v-icon>mdi-book</v-icon>
+          </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title>Blog</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-group :value="true" prepend-icon="mdi-leaf">
+          <template v-slot:activator>
+            <v-list-item-title>IEEE Sight</v-list-item-title>
+          </template>
+          <v-list-item
+            v-for="(item, index) in items"
+            :key="index"
+            :to="item.link"
+            link
+            class="list"
+          >
             <v-list-item-title>{{ item.title }}</v-list-item-title>
+          </v-list-item>
+        </v-list-group>
+
+        <v-list-item to="/contact">
+          <v-list-item-icon>
+            <v-icon>mdi-contacts</v-icon>
+          </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title>Contact Us</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -150,13 +184,13 @@ export default {
         { title: 'Team', icon: 'mdi-account', link: '/team' },
         { title: 'Events', icon: 'mdi-calendar', link: '/events' },
         { title: 'Blog', icon: 'mdi-book', link: '/blog' },
-        { title: 'IEEE-Sight', icon: 'mdi-leaf', link: '/home' },
+        { title: 'IEEE-Sight', icon: 'mdi-leaf', link: '/sight/home' },
         { title: 'Contact Us', icon: 'mdi-contacts', link: '/contact' },
       ],
       items: [
         { title: 'Home', link: '/sight/home' },
-        { title: 'Steering Committee', link: '/sight/committee' },
-        { title: 'Epochal', link: '/sight/epochal' },
+        { title: 'Steering Committee', link: '/sight/Committee' },
+        { title: 'Epochal', link: '/sight/Epochal' },
       ],
     }
   },
@@ -173,6 +207,10 @@ export default {
 }
 </script>
 <style scoped>
+.list {
+  width: 90%;
+  margin-left: 70px;
+}
 .nav-link::before {
   background-color: transparent;
 }
