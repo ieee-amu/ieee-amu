@@ -222,7 +222,7 @@
                         <a
                         :href="`mailto:${epochal.email}`"
                         target="_blank"
-                        rel="noopener"
+                        rel="noopener noreferrer"
                         style="text-decoration: none; color: black;font-size:16px;"
                         class="text-email"
                         >
