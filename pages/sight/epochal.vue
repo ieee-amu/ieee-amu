@@ -1,5 +1,5 @@
 <template>
-  <div class="epochal" style="margin-bottom: 1400px">
+  <div class="epochal" style="margin-bottom: 1360px">
     <div class="formbanner1-component">
       <v-container>
         <v-row justify="center">
@@ -310,17 +310,17 @@ export default {
 }
 @media (max-width: 965px) {
   .epochal {
-    padding-bottom: 2600px;
+    padding-bottom: 2700px;
   }
 }
 @media(max-width:699px){
   .epochal {
-    padding-bottom: 2800px;
+    padding-bottom: 2920px;
   }
 }
 @media(max-width:599px){
   .epochal {
-    padding-bottom: 3900px;
+    padding-bottom: 4500px;
   }
   .text-center{
     font-size:16px;
@@ -328,7 +328,7 @@ export default {
 }
 @media(max-width:455px){
   .epochal {
-    padding-bottom: 4000px;
+    padding-bottom: 4700px;
   }
   .text-center{
     font-size:16px;
@@ -339,13 +339,13 @@ export default {
 }
 @media (max-width: 430px) {
   .epochal {
-    padding-bottom: 4360px;
+    padding-bottom: 5100px;
   }
   
 }
 @media (max-width: 370px) {
   .epochal {
-    padding-bottom: 4850px;
+    padding-bottom: 5270px;
   }
   
 }
