@@ -1,5 +1,5 @@
 <template>
-  <div class="epochal" style="margin-bottom: 1300px">
+  <div class="epochal" style="margin-bottom: 1400px">
     <div class="formbanner1-component">
       <v-container>
         <v-row justify="center">
@@ -156,8 +156,9 @@
           </v-row>
         </v-container>
       </div>
+      <!-- | Mentors At Epochal Section |  -->
       <div >
-        <v-container contain height="200px">
+        <v-container contain >
           <v-row justify="center">
             <v-col cols="12" md="12">
               <div class="container">
@@ -208,9 +209,10 @@
                         :href="epochal.link"
                         target="_blank"
                         rel="noopener noreferrer"
-                        style="text-decoration: none; color: midnightblue;font-size:18px;font-weight:bold;"
+                        style="text-decoration: none; color: midnightblue;font-weight:bold;"
+                        class="meet"
                         >
-                          <span>SCHEDULE MEET
+                          <span >SCHEDULE MEET
                             <v-icon style="text-decoration: none; color: midnightblue;">
                               mdi-calendar 
                             </v-icon>
@@ -221,7 +223,8 @@
                         :href="`mailto:${epochal.email}`"
                         target="_blank"
                         rel="noopener"
-                        style="text-decoration: none; color: black;font-size:18px;"
+                        style="text-decoration: none; color: black;font-size:16px;"
+                        class="text-email"
                         >
                           <span>Email: {{epochal.email}}
                           </span>
@@ -235,6 +238,7 @@
           </v-row>
         </v-container>
       </div>
+      <!-- | Ending of Mentors At Epochal Section |  -->
     </div>
   </div>
 </template>
@@ -265,26 +269,88 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
-@media (max-width: 1300px) {
-  .epochal {
-    padding-bottom: 500px;
+@media(max-width: 1318px)
+{
+  .epochal{
+
+    padding-bottom:700px;
   }
 }
-@media (max-width: 960px) {
-  .epochal {
-    padding-bottom: 1400px;
+@media(max-width: 1260px)
+{
+  .epochal{
+
+    padding-bottom:1200px;
+  }
+}
+@media(max-width: 1130px)
+{
+  .epochal{
+
+    padding-bottom:1300px;
+  }
+  .team-card{
+    height:640px;
 
   }
+  .center{
+    height:340px;
+  }
+  .blockquote{
+    padding:4px;
+    padding-bottom: 2px;
+  }
+  .title{
+    font-size:15px;
+  }
+   .text-center{
+    font-size:16px;
+  }
+ 
 }
-@media (max-width: 650px) {
+@media (max-width: 965px) {
   .epochal {
-    padding-bottom: 1600px;
+    padding-bottom: 2600px;
+  }
+}
+@media(max-width:699px){
+  .epochal {
+    padding-bottom: 2800px;
+  }
+}
+@media(max-width:599px){
+  .epochal {
+    padding-bottom: 3900px;
+  }
+  .text-center{
+    font-size:16px;
+  }
+}
+@media(max-width:455px){
+  .epochal {
+    padding-bottom: 4000px;
+  }
+  .text-center{
+    font-size:16px;
+  }
+  .meet{
+    font-size:12px;
   }
 }
 @media (max-width: 430px) {
   .epochal {
-    padding-bottom: 1950px;
+    padding-bottom: 4360px;
   }
+  
+}
+@media (max-width: 370px) {
+  .epochal {
+    padding-bottom: 4850px;
+  }
+  
+}
+.meet{
+  font-size:16px;
 }
 .content {
   font-weight: 100;
@@ -298,6 +364,7 @@ export default {
   font-family: 'Verdana', sans-serif !important;
   font-weight: bold;
   word-break: break-word;
+
 }
 .formbanner1-component {
   background-size: cover;
@@ -326,6 +393,7 @@ export default {
   border-radius: 100%;
   background-size: cover;
   height: 240px;
+  
 }
 #pic {
   margin-top: 10px;
@@ -336,26 +404,12 @@ export default {
 
 .team-card {
   margin: auto;
-  height: 490px;
+  height: 550px;
   background-color: cornsilk;
-  width: 380px;
+  width: 440px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
-.team_btn {
-  margin-top: 20px;
-  color: royalblue;
-  background: white;
-  border: royalblue 2px solid;
-  padding: 10px;
-  transition: all 0.2s;
-}
-
-.team_btn:hover {
-  color: white;
-  background: royalblue !important;
-  /* border: royalblue 2px solid; */
 }
 .team_cont {
   margin-bottom: 1rem;
