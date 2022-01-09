@@ -1,5 +1,5 @@
 <template>
-  <div class="epochal" style="margin-bottom: 800px">
+  <div class="epochal" style="margin-bottom: 2150px">
     <div class="formbanner1-component">
       <v-container>
         <v-row justify="center">
@@ -156,29 +156,163 @@
           </v-row>
         </v-container>
       </div>
+      <!-- | Mentors At Epochal Section |  -->
+      <div >
+        <v-container contain >
+          <v-row justify="center">
+            <v-col cols="12" md="12">
+              <div class="container">
+                <div
+                class="row team_cont"
+                style="justify-content: center; background-color: #e3e1e1"
+                  >
+                  <v-col cols="12" sm="12">
+                    <v-card color="rgba(74, 74, 74, 1)">
+                      <v-card-text
+                      class="text-center  headline"
+                      style="
+                      font-family: 'Hammersmith One', sans-serif !important;
+                      background-color: #ffd180; color: midnightblue;
+                      " 
+                      >
+                        Mentors at Epochal
+                      </v-card-text>
+                    </v-card>
+                  </v-col>
+                  <v-col
+                    v-for="epochal in epochals"
+                    :key="epochal.id"
+                    :style="{ order: epochal.order }"
+                    cols="10"
+                    sm="6"
+                    md="4" 
+                  >
+                    <v-card class="team-card our-team">
+                      <v-img
+                      id="pic"
+                      class="center"
+                      style="width: 100%, background-position: inherit"
+                      :src="epochal.src"
+                      lazy-src="https://www.aminz.org.nz/themes/portal/uploads/profile-default-large.jpg"
+                      >
+                      </v-img>
+                      <v-card-text class="title text-center">
+                        {{ epochal.title }}
+                      </v-card-text>
+                      <v-card-text class="blockquote text-center">
+                        {{epochal.text}}
+                      </v-card-text>
+                      <v-card-subtitle
+                        class="text-center"
+                        >
+                        <a
+                        :href="epochal.link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style="text-decoration: none; color: midnightblue;font-weight:bold;"
+                        class="meet"
+                        >
+                          <span >SCHEDULE MEET
+                            <v-icon style="text-decoration: none; color: midnightblue;">
+                              mdi-calendar 
+                            </v-icon>
+                          </span>
+                        </a>
+                        <br/>
+                        <a
+                        :href="`mailto:${epochal.email}`"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style="text-decoration: none; color: black;font-size:16px;"
+                        class="text-email"
+                        >
+                          <span>Email: {{epochal.email}}
+                          </span>
+                        </a>
+                      </v-card-subtitle>
+                    </v-card>
+                  </v-col>
+                </div>
+              </div>
+            </v-col>
+          </v-row>
+        </v-container>
+      </div>
+      <!-- | Ending of Mentors At Epochal Section |  -->
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  components: {},
+  data() {
+    return {
+      epochals: [],
+    }
+  },
+  created() {
+    this.$fireStore
+      .collection('epochals')
+      .get()
+      .then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+          const docObj = doc.data()
+          docObj.id = doc.id
+          this.epochals.push(docObj)
+        })
+      })
+  },
+  
+}
+</script>
+
 <style scoped>
-@media (max-width: 1300px) {
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@media (max-width: 1260px) {
   .epochal {
-    padding-bottom: 500px;
+    padding-bottom: 890px;
   }
+  
 }
 @media (max-width: 960px) {
   .epochal {
-    padding-bottom: 1400px;
+    padding-bottom: 2200px;
   }
+  
 }
-@media (max-width: 650px) {
+@media (max-width: 660px) {
   .epochal {
-    padding-bottom: 1600px;
+    padding-bottom: 2400px;
   }
+  
 }
-@media (max-width: 430px) {
+@media (max-width: 600px) {
   .epochal {
-    padding-bottom: 1950px;
+    padding-bottom: 4000px;
   }
+  
+}
+@media (max-width: 450px) {
+  .epochal {
+    padding-bottom: 4300px;
+  }
+  
+}
+@media (max-width: 398px) {
+  .epochal {
+    padding-bottom: 4700px;
+  }
+  
+}
+@media (max-width: 353px) {
+  .epochal {
+    padding-bottom: 5000px;
+  }
+  
+}
+.meet{
+  font-size:16px;
 }
 .content {
   font-weight: 100;
@@ -192,6 +326,7 @@
   font-family: 'Verdana', sans-serif !important;
   font-weight: bold;
   word-break: break-word;
+
 }
 .formbanner1-component {
   background-size: cover;
@@ -207,5 +342,44 @@
   line-height: 1;
   letter-spacing: -1px;
   margin: 20px 0 15px;
+}
+
+.center {
+  display: block;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 60%;
+  width: 240px;
+  border-radius: 100%;
+  background-size: cover;
+  height: 240px;
+  
+}
+#pic {
+  margin-top: 10px;
+  border-radius: 100%;
+  background-size: cover;
+  height: 240px;
+}
+
+.team-card {
+  margin: auto;
+  height: 550px;
+  background-color: cornsilk;
+  width: 440px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.team_cont {
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  padding-bottom: 1.5rem;
+}
+.blockquote{
+  padding: 8px;
+  padding-top:4px;
 }
 </style>
