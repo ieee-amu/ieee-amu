@@ -1,5 +1,5 @@
 <template>
-  <div class="epochal" style="margin-bottom: 1360px">
+  <div class="epochal" style="margin-bottom: 2120px">
     <div class="formbanner1-component">
       <v-container>
         <v-row justify="center">
@@ -269,83 +269,45 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
-@media(max-width: 1318px)
-{
-  .epochal{
-
-    padding-bottom:700px;
-  }
-}
-@media(max-width: 1260px)
-{
-  .epochal{
-
-    padding-bottom:1200px;
-  }
-}
-@media(max-width: 1130px)
-{
-  .epochal{
-
-    padding-bottom:1300px;
-  }
-  .team-card{
-    height:640px;
-
-  }
-  .center{
-    height:340px;
-  }
-  .blockquote{
-    padding:4px;
-    padding-bottom: 2px;
-  }
-  .title{
-    font-size:15px;
-  }
-   .text-center{
-    font-size:16px;
-  }
- 
-}
-@media (max-width: 965px) {
+@media (max-width: 1260px) {
   .epochal {
-    padding-bottom: 2700px;
-  }
-}
-@media(max-width:699px){
-  .epochal {
-    padding-bottom: 2920px;
-  }
-}
-@media(max-width:599px){
-  .epochal {
-    padding-bottom: 4500px;
-  }
-  .text-center{
-    font-size:16px;
-  }
-}
-@media(max-width:455px){
-  .epochal {
-    padding-bottom: 4700px;
-  }
-  .text-center{
-    font-size:16px;
-  }
-  .meet{
-    font-size:12px;
-  }
-}
-@media (max-width: 430px) {
-  .epochal {
-    padding-bottom: 5100px;
+    padding-bottom: 700px;
   }
   
 }
-@media (max-width: 370px) {
+@media (max-width: 960px) {
   .epochal {
-    padding-bottom: 5270px;
+    padding-bottom: 1900px;
+  }
+  
+}
+@media (max-width: 660px) {
+  .epochal {
+    padding-bottom: 2200px;
+  }
+  
+}
+@media (max-width: 600px) {
+  .epochal {
+    padding-bottom: 3800px;
+  }
+  
+}
+@media (max-width: 450px) {
+  .epochal {
+    padding-bottom: 4100px;
+  }
+  
+}
+@media (max-width: 398px) {
+  .epochal {
+    padding-bottom: 4500px;
+  }
+  
+}
+@media (max-width: 353px) {
+  .epochal {
+    padding-bottom: 5000px;
   }
   
 }
